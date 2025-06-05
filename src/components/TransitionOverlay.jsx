@@ -1,23 +1,25 @@
 import { useEffect, useState } from 'react'
+import { TRANSITION_DURATION } from '../utils/Constants'
 
-const TransitionOverlay = ({ isEntering, onFadeOutComplete, duration = 500 }) => {
-  const [visible, setVisible] = useState(true)
+const TransitionOverlay = ({ isActive }) => {
+  const [visible, setVisible] = useState(isActive)
 
   useEffect(() => {
-    if (isEntering) {
-      // Estamos entrando a una página → fade-out
-      const timeout = setTimeout(() => {
-        setVisible(false)
-        if (onFadeOutComplete) onFadeOutComplete()
-      }, duration)
+    if (isActive) {
+      setVisible(true) // activa el overlay negro (opacity 1)
+    } else {
+      // desactiva el overlay (opacity 0) después de la duración
+      const timeout = setTimeout(() => setVisible(false), TRANSITION_DURATION)
       return () => clearTimeout(timeout)
     }
-  }, [isEntering, duration, onFadeOutComplete])
+  }, [isActive])
+
+  if (!visible) return null
 
   return (
     <div
-      className={`fixed inset-0 bg-black z-[9999] transition-opacity duration-[${duration}ms] pointer-events-none ${
-        visible ? 'opacity-100' : 'opacity-0'
+      className={`fixed inset-0 bg-black z-[9999] transition-opacity duration-[${TRANSITION_DURATION}ms] pointer-events-none ${
+        isActive ? 'opacity-100' : 'opacity-0'
       }`}
     />
   )

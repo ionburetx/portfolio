@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TransitionOverlay from '../components/TransitionOverlay'
 import { TRANSITION_DURATION } from '../utils/Constants'
+import { useTranslation } from 'react-i18next'
 
 const Welcome = () => {
-  const [showOverlay, setShowOverlay] = useState(true)
+  const [showOverlay, setShowOverlay] = useState(true) // empieza con overlay negro
+  const { t } = useTranslation()
 
   useEffect(() => {
+    // después de TRANSITION_DURATION, quitamos overlay (fade out)
     const timeout = setTimeout(() => {
       setShowOverlay(false)
     }, TRANSITION_DURATION)
@@ -32,19 +35,8 @@ const Welcome = () => {
 
       {/* ✅ H1 justificado a la izquierda con palabra 'aquí' en naranja */}
       <div
-  className="
-    absolute 
-    left-6 right-6 
-    top-[30%]         /* Posición móvil (más arriba) */
-    sm:top-[30%]      /* Posición tablet */
-    md:top-[35%]      /* Posición tablet grande / small desktop */
-    lg:top-[40%]      /* Desktop */
-    xl:top-[45%]      /* Desktop grande */
-    text-white z-10
-  "
->
-  <h1
-    className="font-bold text-white leading-tight break-keep"
+  className="absolute left-6 right-6 top-[30%]sm:top-[30%] md:top-[35%] lg:top-[40%] xl:top-[45%] text-white z-10">
+  <h1 className="font-bold text-white leading-tight break-keep"
     style={{
       maxWidth: '70vw',
       lineHeight: '1.2',
@@ -61,7 +53,7 @@ const Welcome = () => {
         whiteSpace: 'nowrap',
       }}
     >
-      ¿PREPARADO PARA VIAJAR CON ION?
+      {t('LanguagePage.preparado')}
     </span>
 
     {/* Segunda línea más pequeña y fina */}
@@ -73,24 +65,21 @@ const Welcome = () => {
         whiteSpace: 'nowrap',
       }}
     >
-      HAZ CLICK{' '}
+      {t('LanguagePage.click')}
       <button
         className="text-[#FF6347] italic bg-transparent p-0 m-0 border-none focus:outline-none focus:ring-0"
         onClick={() => alert('¡Aquí irá la animación y navegación!')}
         style={{ fontWeight: 400 }}
       >
-        AQUÍ
+        {t('LanguagePage.aquí')}
       </button>{' '}
-      Y DESCUBRE MÁS
+      {t('LanguagePage.descubre')}
     </em>
   </h1>
 </div>
 
 
-      {/* ✅ Fade-out al cargar */}
-      {showOverlay && (
-        <TransitionOverlay isEntering={true} duration={TRANSITION_DURATION} />
-      )}
+<TransitionOverlay isActive={showOverlay} />
     </div>
   )
 }

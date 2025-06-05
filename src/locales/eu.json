@@ -1,7 +1,8 @@
 {
-  "welcome": "Ongi etorri nire portfoliora",
-  "click_here": "Egin klik HEMEN",
-  "aboutMe": "Niri buruz",
-  "seeWorks": "Nire lan gehiago ikusi nahi badituzu, egin click",
-  "here": "HEMEN"
+  "LanguagePage": {
+    "preparado": "¿PREST IONEKIN BIDAIATZEKO?",
+    "click": "EGIN CLICK ",
+    "aquí": "HEMEN",
+    "descubre": "ETA EZAGUTU GEHIAGO"
+  }
 }

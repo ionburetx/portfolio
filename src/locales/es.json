@@ -1,7 +1,8 @@
 {
-  "welcome": "Bienvenido a mi portfolio",
-  "selectLanguage": "Selecciona un idioma",
-  "aboutMe": "Sobre mí",
-  "seeWorks": "Si quieres ver alguno de mis trabajos, haz click",
-  "here": "AQUÍ"
+  "LanguagePage": {
+    "preparado": "¿PREPARADO PARA VIAJAR CON ION?",
+    "click": "HAZ CLICK ",
+    "aquí": " AQUÍ",
+    "descubre": "Y DESCUBRE MÁS"
+  }
 }
