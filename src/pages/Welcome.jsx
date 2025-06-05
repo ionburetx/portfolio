@@ -24,7 +24,7 @@ const Welcome = () => {
 
 
       {/* ✅ Logo arriba a la derecha */}
-      <img
+      <img 
         src="/generalAssets/logo.png"
         alt="Logo"
         className="absolute top-4 left-4 w-8 md:w-12 lg:w-14 z-10"
