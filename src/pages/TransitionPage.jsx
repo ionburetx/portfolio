@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import TransitionOverlay from '../components/TransitionOverlay'
 import { TRANSITION_DURATION } from '../utils/Constants'
 
-const TransitionPage = () => {
+const TransitionPage = ({ targetPath }) => {
   const [opacity, setOpacity] = useState(0)
   const navigate = useNavigate()
   const location = useLocation()
