@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
 import HamburgerMenu from './HamburgerMenu'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isSpinning, setIsSpinning] = useState(false)
+  const navigate = useNavigate()
 
   const handleNavClick = (id) => {
     const el = document.getElementById(id)
@@ -13,14 +16,27 @@ const Header = () => {
     setIsOpen(false)
   }
 
+  const handleLogoClick = () => {
+    console.log('Logo clickeado')
+    if (isSpinning) return // evita clicks mientras gira
+    setIsSpinning(true)
+  }
+  const handleAnimationEnd = () => {
+    console.log('Animación terminada')
+    setIsSpinning(false)
+    navigate('/') // Aquí navegas a Language.jsx tras la animación
+  }
+  
+
   return (
     <>
       <header className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md z-40 flex items-center justify-between px-6 py-4">
         <img
           src="/generalAssets/logo.png"
           alt="Logo"
-          className="h-10 cursor-pointer"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className={`h-10 cursor-pointer ${isSpinning ? 'spin-animation' : ''}`}
+          onClick={handleLogoClick}
+          onAnimationEnd={handleAnimationEnd} // <--- Aquí el evento
         />
 
         <NavBar onNavClick={handleNavClick} />
