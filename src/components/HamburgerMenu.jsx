@@ -28,85 +28,112 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
   const menuRef = useRef(null)
 
   useEffect(() => {
-    if (!isOpen) return // solo escuchamos si está abierto
-
-    function handleClickOutside(event) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+    const handleClickOutside = (event) => {
+      if (
+        isOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
         onClose()
       }
     }
-
     document.addEventListener('mousedown', handleClickOutside)
-
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [isOpen, onClose])
 
-  const handleScrollTo = (id) => {
+  const handleCategoryClick = (id) => {
     const el = document.getElementById(id)
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' })
-      onClose()
     }
+    onClose()
   }
 
   return (
     <div
       ref={menuRef}
-      className={`fixed top-0 right-0 h-full bg-black text-white z-[40] transform transition-transform duration-300 ease-in-out
-      ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-      w-1/2 md:w-1/4`}
-      aria-hidden={!isOpen}
+      className={`fixed top-0 right-0 h-full bg-black text-white z-50
+        transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+        w-1/2 md:w-1/4`}
+      style={{ borderTopLeftRadius: '100vw' }}
     >
-      <nav className="flex flex-col pr-6 pt-24 space-y-6 font-semibold text-lg">
-        <button
-          onClick={() => handleScrollTo('sobre-mi')}
-          className="hover:text-[#FF6347] bg-transparent text-white text-right w-full"
+      {/* Botón de cerrar */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-6 text-white hover:text-[#FF6347] transition-colors duration-300 bg-transparent focus:outline-none focus:ring-0 active:bg-transparent hover:bg-transparent"
+        aria-label="Cerrar menú"
+      >
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          SOBRE MI
-        </button>
-        <button
-          onClick={() => handleScrollTo('trabajos')}
-          className="hover:text-[#FF6347] bg-transparent text-white text-right w-full"
-        >
-          TRABAJOS
-        </button>
-        <button
-          onClick={() => handleScrollTo('cv')}
-          className="hover:text-[#FF6347] bg-transparent text-white text-right w-full"
-        >
-          CV
-        </button>
-        <button
-          onClick={() => handleScrollTo('contacto')}
-          className="hover:text-[#FF6347] bg-transparent text-white text-right w-full"
-        >
-          CONTACTO
-        </button>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
 
-        <div className="mt-auto flex flex-col space-y-4 items-end">
-          {socialLinks.map(({ name, href, iconPath }) => (
-            <a
-              key={name}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group"
-              aria-label={name}
-            >
-              <svg
-                className="w-9 h-9 text-white transition-colors duration-200 group-hover:text-[#FF6347]"
-                fill="none"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {iconPath}
-              </svg>
-            </a>
-          ))}
-        </div>
-      </nav>
+      <nav className="flex flex-col pt-24 pr-6 space-y-10 font-semibold text-lg">
+  {/* Categorías */}
+  <button
+    onClick={() => handleCategoryClick('sobre-mi')}
+    className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
+  >
+    SOBRE MI
+  </button>
+  <button
+    onClick={() => handleCategoryClick('trabajos')}
+    className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
+  >
+    TRABAJOS
+  </button>
+  <button
+    onClick={() => handleCategoryClick('cv')}
+    className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
+  >
+    CV
+  </button>
+  <button
+    onClick={() => handleCategoryClick('contacto')}
+    className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
+  >
+    CONTACTO
+  </button>
+
+  {/* Links sociales */}
+  <div className="mt-20 flex flex-col space-y-6 items-end">
+    {socialLinks.map(({ name, href, iconPath }) => (
+      <a
+        key={name}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={onClose}
+        className="group"
+        aria-label={name}
+      >
+        <svg
+          className="w-9 h-9 text-white transition-colors duration-200 group-hover:text-[#FF6347]"
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {iconPath}
+        </svg>
+      </a>
+    ))}
+  </div>
+</nav>
+
     </div>
   )
 }
