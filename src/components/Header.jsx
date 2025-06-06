@@ -29,7 +29,7 @@ const Header = () => {
 
         {/* Botón hamburguesa visible solo en md y menos */}
         <button
-className="md:hidden fixed top-4 right-6 focus:outline-none text-white bg-transparent hover:text-[#FF6347] transition-colors duration-300 z-60"
+className="md:hidden fixed top-4 right-6 focus:outline-none text-white bg-transparent hover:text-[#FF6347] transition-colors duration-300 z-50"
   onClick={toggleMenu}
   aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
   aria-expanded={isOpen}

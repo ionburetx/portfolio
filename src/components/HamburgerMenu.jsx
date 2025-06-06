@@ -1,31 +1,48 @@
-import React from 'react'
-
+import React, { useEffect, useRef } from 'react'
 
 const socialLinks = [
   {
     name: 'Instagram',
     href: 'https://instagram.com/tu_usuario',
     iconPath: (
-      <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6z" />
+      <path fill="currentColor" d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6z" />
     )
   },
   {
     name: 'GitHub',
     href: 'https://github.com/tu_usuario',
     iconPath: (
-      <path d="M12 2C6.48 2 2 6.48 2 12a9.99 9.99 0 006.84 9.5c.5.09.68-.22.68-.48v-1.68c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.08 2.92.82.09-.65.35-1.08.64-1.33-2.22-.26-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 7.6c.85 0 1.7.12 2.5.35 1.9-1.3 2.75-1.02 2.75-1.02.55 1.4.2 2.44.1 2.7.64.7 1.03 1.59 1.03 2.68 0 3.85-2.35 4.68-4.59 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z" />
+      <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12a9.99 9.99 0 006.84 9.5c.5.09.68-.22.68-.48v-1.68c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.08 2.92.82.09-.65.35-1.08.64-1.33-2.22-.26-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 7.6c.85 0 1.7.12 2.5.35 1.9-1.3 2.75-1.02 2.75-1.02.55 1.4.2 2.44.1 2.7.64.7 1.03 1.59 1.03 2.68 0 3.85-2.35 4.68-4.59 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z" />
     )
   },
   {
     name: 'LinkedIn',
     href: 'https://linkedin.com/in/tu_usuario',
     iconPath: (
-      <path d="M4.98 3.5a2.5 2.5 0 11-.001 5.001 2.5 2.5 0 01.001-5.001zM3 9h4v12H3V9zm7.5 0h3.572v1.795h.05c.497-.942 1.712-1.94 3.526-1.94 3.774 0 4.474 2.483 4.474 5.709V21H17v-6.48c0-1.545-.03-3.533-2.152-3.533-2.153 0-2.483 1.68-2.483 3.417V21h-4V9z" />
+      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 11-.001 5.001 2.5 2.5 0 01.001-5.001zM3 9h4v12H3V9zm7.5 0h3.572v1.795h.05c.497-.942 1.712-1.94 3.526-1.94 3.774 0 4.474 2.483 4.474 5.709V21H17v-6.48c0-1.545-.03-3.533-2.152-3.533-2.153 0-2.483 1.68-2.483 3.417V21h-4V9z" />
     )
   }
 ]
 
 const HamburgerMenu = ({ isOpen, onClose }) => {
+  const menuRef = useRef(null)
+
+  useEffect(() => {
+    if (!isOpen) return // solo escuchamos si está abierto
+
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        onClose()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isOpen, onClose])
+
   const handleScrollTo = (id) => {
     const el = document.getElementById(id)
     if (el) {
@@ -36,12 +53,13 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 h-full bg-black text-white z-50 transform transition-transform duration-300 ease-in-out
+      ref={menuRef}
+      className={`fixed top-0 right-0 h-full bg-black text-white z-[40] transform transition-transform duration-300 ease-in-out
       ${isOpen ? 'translate-x-0' : 'translate-x-full'}
       w-1/2 md:w-1/4`}
       aria-hidden={!isOpen}
     >
-      <nav className="flex flex-col pr-6 pt-16 space-y-6 font-semibold text-lg">
+      <nav className="flex flex-col pr-6 pt-24 space-y-6 font-semibold text-lg">
         <button
           onClick={() => handleScrollTo('sobre-mi')}
           className="hover:text-[#FF6347] bg-transparent text-white text-right w-full"
@@ -74,12 +92,12 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#FF6347] text-white"
+              className="group"
               aria-label={name}
             >
               <svg
-                className="w-6 h-6"
-                fill="currentColor"
+                className="w-9 h-9 text-white transition-colors duration-200 group-hover:text-[#FF6347]"
+                fill="none"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
