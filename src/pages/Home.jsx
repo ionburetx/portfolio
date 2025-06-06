@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from '../components/Header'
+import ContactSection from "../components/ContactSection";
+
 
 const Home = () => {
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div className="relative w-screen min-h-screen overflow-auto">
       {/* Fondo que cubre todo el viewport */}
       <img
         src="/generalAssets/fondoBio.png"
@@ -17,9 +19,15 @@ const Home = () => {
          <Header />
 
       {/* Contenido principal con padding top para no quedar debajo del header */}
-      <main className="relative z-10 text-white p-8 pt-20 md:pt-24">
-        <h1 className="text-3xl md:text-5xl font-bold">Bienvenido a mi portfolio</h1>
-        <p className="mt-4 text-lg">Aquí irán las secciones de biografía, trabajos, etc.</p>
+      <main className="relative z-10 text-white pt-24">
+        {/* Sección temporal de bienvenida */}
+        <section className="px-8 mb-32">
+          <h1 className="text-3xl md:text-5xl font-bold">Bienvenido a mi portfolio</h1>
+          <p className="mt-4 text-lg">Aquí irán las secciones de biografía, trabajos, etc.</p>
+        </section>
+
+        {/* Aquí irá la sección de contacto */}
+        <ContactSection />
       </main>
 
     </div>

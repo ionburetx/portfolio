@@ -28,7 +28,7 @@ const Welcome = () => {
       <img 
         src="/generalAssets/logo.png"
         alt="Logo"
-        className="absolute top-4 left-4 w-8 md:w-12 lg:w-14 z-10"
+        className="absolute top-4 left-4 h-10 z-10"
       />
 
       <div className="absolute left-6 right-6 top-[30%] sm:top-[30%] md:top-[35%] lg:top-[40%] xl:top-[45%] text-white z-10">
