@@ -32,7 +32,7 @@ const CV = () => {
             <a
                 href="/generalAssets/CVdescarga.pdf" // <-- la ruta a tu PDF, SIN espacio mejor
                 download
-                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 border border-white bg-white/10 rounded-md hover:bg-white/20 transition w-fit max-w-[90%]"
+                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 border border-white bg-white/10 rounded-md hover:text-tomato transition w-fit max-w-[90%]"
             >
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,10 +53,10 @@ const CV = () => {
             </div>
         </div>
         {/* Columna derecha */}
-        <div className="w-2/3 space-y-12">
+        <div className="w-2/3 space-y-12 overflow-y-auto max-h-[calc(100vh-100px)] pr-4">
             {/* SOBRE MÍ */}
           <div className="space-y-4">
-            <p className="text-white/80 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
               Diseñador gráfico con sólida base, combinada con un creciente interés y conocimiento en el desarrollo front-end. Gracias a mi experiencia en diseño, tengo un enfoque creativo, que combinando con tecnologías clave (HTML, CSS y JavaScript) logro tener un perfil multidisciplinario aportando un valor único al equipo para la creación de interfaces visuales atractivas y funcionales.
             </p>
           </div>
