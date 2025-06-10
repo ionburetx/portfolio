@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import ContactSection from "../components/ContactSection";
+import CV from "../components/CV";
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         </section>
 
         {/* Aquí irá la sección de contacto */}
+        <CV />
         <ContactSection />
       </main>
 
