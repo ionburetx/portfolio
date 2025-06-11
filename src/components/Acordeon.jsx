@@ -7,7 +7,8 @@ const Acordeon = ({ title, items }) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const isFormacion = title.toLowerCase().includes("formación"); // o "educación"
+  // Detectar si es la sección de Estudios
+  const isEstudios = title.toLowerCase().includes("estudios");
 
   return (
     <div className="space-y-6">
@@ -19,21 +20,21 @@ const Acordeon = ({ title, items }) => {
               className="flex justify-between items-start cursor-pointer"
               onClick={() => toggleIndex(index)}
             >
-              {/* Texto principal */}
+              {/* Columna de texto */}
               <div className="max-w-[80%] break-words">
                 <h4 className="text-lg font-semibold">{item.title}</h4>
 
-                {/* Mostrar where y when directamente SOLO en EXPERIENCIA */}
-                {!isFormacion && (
+                {/* Experiencia: mostrar where y when siempre */}
+                {!isEstudios && (
                   <p className="text-sm text-white/60 mt-1">
-                    {item.when} {item.where && `| ${item.where}`}
+                    {item.where} {item.where && `| ${item.when}`}
                   </p>
                 )}
 
-                {/* Mostrar where y when SOLO al abrir en FORMACIÓN */}
-                {isFormacion && openIndex === index && (
+                {/* Estudios: mostrar where y when solo al desplegar */}
+                {isEstudios && openIndex === index && (
                   <p className="text-sm text-white/60 mt-1">
-                    {item.when} {item.where && `| ${item.where}`}
+                    {item.where} {item.where && `| ${item.when}`}
                   </p>
                 )}
               </div>
@@ -50,7 +51,7 @@ const Acordeon = ({ title, items }) => {
 
             {/* Contenido desplegable */}
             {openIndex === index && (
-              <p className="mt-2 text-white/80 leading-relaxed">{item.content}</p>
+              <p className="mt-2 text-white/80 leading-relaxed whitespace-pre-line">{item.content}</p>
             )}
           </div>
         ))}
@@ -60,5 +61,3 @@ const Acordeon = ({ title, items }) => {
 };
 
 export default Acordeon;
-
-
