@@ -48,7 +48,7 @@ const Welcome = () => {
               whiteSpace: 'nowrap',
             }}
           >
-            {t('LanguagePage.preparado')}
+            {t('WelcomePage.preparado')}
           </span>
 
           <em
@@ -59,15 +59,15 @@ const Welcome = () => {
               whiteSpace: 'nowrap',
             }}
           >
-            {t('LanguagePage.click')}{' '}
+            {t('WelcomePage.click')}{' '}
             <button
               className="text-[#FF6347] italic bg-transparent p-0 m-0 border-none focus:outline-none focus:ring-0"
               onClick={() => navigate('/transition-to-home', { state: { target: '/Home' } })} // 👈 CAMBIO AQUI
               style={{ fontWeight: 400 }}
             >
-              {t('LanguagePage.aquí')}
+              {t('WelcomePage.aquí')}
             </button>{' '}
-            {t('LanguagePage.descubre')}
+            {t('WelcomePage.descubre')}
           </em>
         </h1>
       </div>

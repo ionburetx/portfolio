@@ -1,8 +1,97 @@
 {
-  "LanguagePage": {
+  "WelcomePage": {
     "preparado": "¿PREST IONEKIN BIDAIATZEKO?",
     "click": "EGIN CLICK ",
     "aquí": "HEMEN",
     "descubre": "ETA EZAGUTU GEHIAGO"
+  },
+  "HomePage": {
+      "HEADER": {
+        "about": "NIRI BURUZ",
+        "projects": "LANAK",
+        "cv": "CV",
+        "contact": "KONTAKTUA"
+      },
+      "CV": {
+        "RightColumn": {
+          "name": "Ion",
+          "surname": "Burgoa Etxaburu",
+          "profession":"Diseinatzaile Grafikoa / FrontEnd PRogramatzailea ",
+          "indicator": [
+            {"about me": "NIRI BURUZ",
+            "studies":  "IKASKETAK",
+            "experience": "LAN ESPERIENTZIA"}],
+          "download": "Deskargatu Nire CV"
+        },
+        "LeftColumn": {
+          "ABOUT ME": "Diseinu munduan oinarri sendo eta frontend garapenaren inguruko gero eta interes eta ezagutza handiagoarekin konbinatutako diseinatzaile grafikoa naiz. Nire diseinatzeko esperientziari esker, ikuspegi sortzailea landu dut eta teknologia gakoekin (HTML, CSS eta JavaScript) bateratuz, diziplina anitzeko profila lortu dut. Honi esker, interfaze bisual erakargarri eta funtzionalak sortzeko balio berezia eman diezaioket edozein lan talderi",
+          "STUDIES": "IKASKETAK",
+          "studies": [
+      {
+        "title": "Sorkuntza eta Diseinuan Gradua",
+        "where": "EHU",
+        "when": "2009-2013"
+      },
+      {
+        "title": "Diseinu Grafikoa, Sormen Argazkilaritza eta 2.0 Sareak Masterra",
+        "where": "MASS MEDIA",
+        "when": "2013-2014"
+      },
+         {
+        "title": "Fabrikazio Mekanikoko Piezen Diseinu eta Sorkuntza Ikastaroa",
+        "where": "LEARTIKER",
+        "when": "2016-2017"
+      },
+         {
+        "title": "Irakasleen Prestakuntza Masterra",
+        "where": "VIU",
+        "when": "2016-2017"
+      },
+         {
+        "title": "Web ingurumenaren garapena eta programazioa (FrontEnd) BootCamp",
+        "where": "PEÑASCAL F5",
+        "when": "2025"
+      }
+    ],
+          "EXPERIENCE": "LAN ESPERIENTZIA",
+          "experience":[
+            {
+              "title": "Diseinatzaile Grafikoa",
+              "where": "7Metrópolis (Colombia)",
+              "when": "2015",
+              "content": "Adobe Pack tresnen maisutasuna diseinu bisual erakargarri eta eraginkorrak sortzeko.."
+            },
+            {
+              "title": "Diseinatzaile grafiko eta argazkilaria",
+              "where": "DRA! (España)",
+              "when": "2017-18",
+              "content": "- Kanpainen Sorkuntza\n- Merkataritza elektronikorako kalitate handiko irudiak sortzeko esperientzia.\n- Photoshop eta Lightroom irudiak editatzeko softwarearen erabilera irudiak hobetzeko eta optimizatzeko.\n- Erabiltzaileen interakzioaren azterketa eta plataforma digitaletan eduki bisualen optimizazioa."
+            },
+            {
+              "title": "Diseinatzaile Grafikoa",
+              "where": "Quick Digital (España)",
+              "when": "2018",
+              "content": "- Ikaskuntza elektronikoko plataformetarako interfaze bisualen diseinua, erabiltzaile-esperientzia erakargarriak eta erabiltzeko errazak sortzera bideratuta.\n- Diseinu grafikoaren printzipioen aplikazioa marka-identitatearekin bat datozen interfaz bisual eraginkorrak sortzeko plataforma digitaletan.\n- Diziplina anitzeko taldeekin (garatzaileak, hezitzaileak, eduki-diseinatzaileak) lankidetzan aritzea ikaskuntza elektronikoko plataforma eraginkorrak eta erakargarriak sortzeko."
+            },
+            {
+              "title": "Diseinatzaile Grafikoa",
+              "where": "Alquimia Trip (Chile)",
+              "when": "2022-23",
+              "content": "- Markaren garapena eta diseinua\n- Bezeroen beharren analisian esperientzia.\n- Lan hibridoan esperientzia"
+            },
+            {
+              "title": "Arte Irakaslea",
+              "where": "Pinot & Picasso (Australia)",
+              "when": "2020-23",
+              "content": "- EKontzeptuak irakasten eta azaltzen esperientzia.\n- Lankidetza-ingurune bat sustatzea.\n- Sormen-arazoak konpontzea eta irakaskuntza ikaskuntza-estilo desberdinetara egokitzea.\n- Sormen-proiektuak antolatzea eta kudeatzea, eta horrek plangintza, koordinazioa eta epeak betetzea dakar."
+            },
+            {
+              "title": "Diseinatzaile Grafikoa",
+              "when": "2015",
+              "content": "Adobe Suite tresnen menperatzea diseinu bisual erakargarri eta eraginkorrak sortzeko."
+        }
+        ]
+  }
+  }
   }
 }

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { sendForm } from '@emailjs/browser';
+
 
 const ContactForm = () => {
   const [sending, setSending] = useState(false);
@@ -11,11 +13,11 @@ const ContactForm = () => {
     setResultMessage(null);
 
     emailjs
-      .sendForm(
-        "service_s7id6vq",      // <-- Cambia aquí por tu Service ID de EmailJS
-        "template_90v4wzb",     // <-- Cambia aquí por tu Template ID de EmailJS
+      sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         e.target,
-        "-93qECVyr1U_x-3TG"    // <-- Cambia aquí por tu Public Key (User ID) de EmailJS
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
