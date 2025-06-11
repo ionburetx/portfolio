@@ -17,11 +17,12 @@
           "name": "Ion",
           "surname": "Burgoa Etxaburu",
           "profession":"Graphic Designer / FrontEnd Developer",
-          "indicator": [
-            {"about me": "About me",
-            "studies":  "Studies",
-            "experience": "Experience"}],
-            "download": "Download My CV"
+          "indicator": {
+            "aboutMe": "About me",
+            "studies": "Studies",
+            "experience": "Experience"
+        },
+          "download": "Download My CV"
         },
         "LeftColumn": {
           "ABOUT ME": "A graphic designer with a solid foundation, combined with a growing interest and knowledge of front-end development. Thanks to my design experience, I have a creative approach, which, combined with key technologies (HTML, CSS, and JavaScript), I achieve a multidisciplinary profile, contributing unique value to the team in creating attractive and functional visual interfaces.",

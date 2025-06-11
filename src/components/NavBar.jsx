@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 
 const NavBar = ({ onNavClick }) => {
+  const { t } = useTranslation();
   const handleClick = (id) => {
     if(onNavClick) onNavClick(id)
   }
@@ -11,25 +13,25 @@ const NavBar = ({ onNavClick }) => {
         onClick={() => handleClick('sobre-mi')}
         className="hover:text-[#FF6347] bg-transparent"
       >
-        SOBRE MI
+        {t("HomePage.HEADER.about")}
       </button>
       <button
         onClick={() => handleClick('trabajos')}
         className="hover:text-[#FF6347] bg-transparent"
       >
-        TRABAJOS
+        {t("HomePage.HEADER.projects")}
       </button>
       <button
         onClick={() => handleClick('cv')}
         className="hover:text-[#FF6347] bg-transparent"
       >
-        CV
+        {t("HomePage.HEADER.cv")}
       </button>
       <button
         onClick={() => handleClick('contacto')}
         className="hover:text-[#FF6347] bg-transparent"
       >
-        CONTACTO
+        {t("HomePage.HEADER.contact")}
       </button>
     </nav>
   )

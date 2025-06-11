@@ -2,9 +2,17 @@ import SectionHeader from "./SectionHeader";
 import Acordeon from "./Acordeon";
 import CVes from "../locales/es.json";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+
+// ... importaciones iguales ...
 
 const CV = () => {
-  const content = CVes["es"];
+  const { t } = useTranslation();
+
+const studies = t("HomePage.CV.LeftColumn.studies", { returnObjects: true });
+const experience = t("HomePage.CV.LeftColumn.experience", { returnObjects: true });
+
 
   const scrollRef = useRef(null);
   const sobreMiRef = useRef(null);
@@ -53,29 +61,41 @@ const CV = () => {
       <div className="flex flex-row gap-6 sm:gap-10 md:gap-14 w-full h-[calc(100vh-8rem)]">
         {/* Columna izquierda */}
         <div className="w-1/3 space-y-8 sticky top-24 self-start h-fit">
+          {/* Nombre y título */}
           <div>
             <h1 className="text-xl sm:text-2xl md:text-3xl uppercase text-white/50 font-bold">
-              ION BURGOA ETXABURU
+              {t("HomePage.CV.RightColumn.name").toUpperCase()}{" "}
+              {t("HomePage.CV.RightColumn.surname").toUpperCase()}
             </h1>
             <h2 className="text-sm sm:text-base md:text-xl text-white font-bold">
-              Diseñador Gráfico /<br />
-              Desarrollador FrontEnd
+              {t("HomePage.CV.RightColumn.profession")}
             </h2>
           </div>
 
-          {/* Indicadores con scrollspy */}
-          <div className="space-y-2">
-            <p className={`uppercase text-sm font-bold ${activeSection === "sobreMi" ? "text-tomato" : "text-white"}`}>
-              SOBRE MÍ
-            </p>
-            <p className={`uppercase text-sm font-bold ${activeSection === "estudios" ? "text-tomato" : "text-white"}`}>
-              ESTUDIOS
-            </p>
-            <p className={`uppercase text-sm font-bold ${activeSection === "experiencia" ? "text-tomato" : "text-white"}`}>
-              EXPERIENCIA
-            </p>
-          </div>
+          {/* Indicadores scrollspy */}
+          <p
+            className={`uppercase text-sm font-bold ${
+              activeSection === "sobreMi" ? "text-tomato" : "text-white"
+            }`}
+          >
+            {t("HomePage.CV.RightColumn.indicator.aboutMe")}
+          </p>
+          <p
+            className={`uppercase text-sm font-bold ${
+              activeSection === "estudios" ? "text-tomato" : "text-white"
+            }`}
+          >
+            {t("HomePage.CV.RightColumn.indicator.studies")}
+          </p>
+          <p
+            className={`uppercase text-sm font-bold ${
+              activeSection === "experiencia" ? "text-tomato" : "text-white"
+            }`}
+          >
+            {t("HomePage.CV.RightColumn.indicator.experience")}
+          </p>
 
+          {/* Botón de descarga */}
           <div>
             <a
               href="/generalAssets/CVdescarga.pdf"
@@ -97,13 +117,13 @@ const CV = () => {
                 />
               </svg>
               <span className="uppercase text-xs sm:text-sm font-semibold">
-                Descarga mi CV
+                {t("HomePage.CV.RightColumn.download")}
               </span>
             </a>
           </div>
         </div>
 
-        {/* Columna derecha con scroll y referencias */}
+        {/* Columna derecha con scroll y contenido */}
         <div
           ref={scrollRef}
           className="w-2/3 space-y-12 overflow-y-auto max-h-[calc(100vh-8rem)] pr-4"
@@ -111,18 +131,24 @@ const CV = () => {
           {/* SOBRE MÍ */}
           <div ref={sobreMiRef} className="space-y-4">
             <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
-              Diseñador gráfico con sólida base, combinada con un creciente interés y conocimiento en el desarrollo front-end. Gracias a mi experiencia en diseño, tengo un enfoque creativo, que combinando con tecnologías clave (HTML, CSS y JavaScript) logro tener un perfil multidisciplinario aportando un valor único al equipo para la creación de interfaces visuales atractivas y funcionales.
+              {t("HomePage.CV.LeftColumn.ABOUT ME")}
             </p>
           </div>
 
           {/* Estudios */}
           <div ref={estudiosRef}>
-            <Acordeon title="Estudios" items={content.studies} />
+            <Acordeon
+              title={t("HomePage.CV.LeftColumn.STUDIES")}
+              items={studies}
+            />
           </div>
 
           {/* Experiencia */}
           <div ref={experienciaRef}>
-            <Acordeon title="Experiencia" items={content.experience} />
+            <Acordeon
+              title={t("HomePage.CV.LeftColumn.EXPERIENCE")}
+              items={experience}
+            />
           </div>
         </div>
       </div>

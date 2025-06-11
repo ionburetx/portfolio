@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Acordeon = ({ title, items }) => {
   const [openIndex, setOpenIndex] = useState(null);
+  const { t } = useTranslation();
 
   const toggleIndex = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -51,7 +53,7 @@ const Acordeon = ({ title, items }) => {
 
             {/* Contenido desplegable */}
             {openIndex === index && (
-              <p className="mt-2 text-white/80 leading-relaxed whitespace-pre-line">{item.content}</p>
+              <p className="mt-2 text-white/80 leading-relaxed whitespace-pre-line">{t(item.content)}</p>
             )}
           </div>
         ))}

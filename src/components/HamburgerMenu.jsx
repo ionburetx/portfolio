@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { useTranslation } from "react-i18next";
 
 const socialLinks = [
   {
@@ -25,6 +26,7 @@ const socialLinks = [
 ]
 
 const HamburgerMenu = ({ isOpen, onClose }) => {
+  const { t } = useTranslation();
   const menuRef = useRef(null)
 
   useEffect(() => {
@@ -89,25 +91,25 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
             onClick={() => handleCategoryClick('sobre-mi')}
             className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
           >
-            SOBRE MI
+            {t("HomePage.HEADER.about")}
           </button>
           <button
             onClick={() => handleCategoryClick('trabajos')}
             className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
           >
-            TRABAJOS
+            {t("HomePage.HEADER.projects")}
           </button>
           <button
             onClick={() => handleCategoryClick('cv')}
             className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
           >
-            CV
+            {t("HomePage.HEADER.cv")}
           </button>
           <button
             onClick={() => handleCategoryClick('contacto')}
             className="text-right hover:text-[#FF6347] w-full bg-transparent text-white"
           >
-            CONTACTO
+            {t("HomePage.HEADER.contact")}
           </button>
         </div>
 

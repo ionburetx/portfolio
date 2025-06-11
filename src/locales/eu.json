@@ -17,10 +17,11 @@
           "name": "Ion",
           "surname": "Burgoa Etxaburu",
           "profession":"Diseinatzaile Grafikoa / FrontEnd PRogramatzailea ",
-          "indicator": [
-            {"about me": "NIRI BURUZ",
-            "studies":  "IKASKETAK",
-            "experience": "LAN ESPERIENTZIA"}],
+          "indicator": {
+            "aboutMe": "Niri buruz",
+            "studies": "Ikasketak",
+            "experience": "Lan esperientzia"
+        },
           "download": "Deskargatu Nire CV"
         },
         "LeftColumn": {

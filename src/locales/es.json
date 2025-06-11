@@ -17,10 +17,11 @@
           "name": "Ion",
           "surname": "Burgoa Etxaburu",
           "profession":"Diseñador Gráfico / Desarrollador FrontEnd",
-          "indicator": [
-            {"about me": "Sobre mi",
-            "studies":  "estudios",
-            "experience": "experiencia"}],
+          "indicator": {
+            "aboutMe": "Sobre mí",
+            "studies": "Estudios",
+            "experience": "Experiencia"
+        },
           "download": "Descarga Mi CV"
         },
         "LeftColumn": {
