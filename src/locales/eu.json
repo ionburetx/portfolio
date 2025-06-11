@@ -89,10 +89,22 @@
             {
               "title": "Diseinatzaile Grafikoa",
               "when": "2015",
-              "content": "Adobe Suite tresnen menperatzea diseinu bisual erakargarri eta eraginkorrak sortzeko."
+              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+            }
+          ]
         }
-        ]
+      },
+      "Contact": {
+        "content": "Bidali mezu bat!\n Galderarik edo iradokizunik baduzu, edo kaixo esan nahi duzu besterik gabe? AURRERA!",
+        "form": {
+          "nameLabel": "Izena",
+          "namePlaceholder": "Zure izena",
+          "emailLabel": "Helbide elektronikoa",
+          "emailPlaceholder": "Zure emaila",
+          "messageLabel": "Mezua",
+          "messagePlaceholder": "Zure mezua",
+          "sendButton": "BIDALI"
+        }
+      }
+    }
   }
-  }
-  }
-}

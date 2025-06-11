@@ -6,93 +6,105 @@
     "descubre": "Y DESCUBRE MÁS"
   },
   "HomePage": {
-      "HEADER": {
-        "about": "SOBRE MI",
-        "projects": "TRABAJOS",
-        "cv": "CV",
-        "contact": "CONTACTO"
-      },
-      "CV": {
-        "RightColumn": {
-          "name": "Ion",
-          "surname": "Burgoa Etxaburu",
-          "profession":"Diseñador Gráfico / Desarrollador FrontEnd",
-          "indicator": {
-            "aboutMe": "Sobre mí",
-            "studies": "Estudios",
-            "experience": "Experiencia"
+    "HEADER": {
+      "about": "SOBRE MI",
+      "projects": "TRABAJOS",
+      "cv": "CV",
+      "contact": "CONTACTO"
+    },
+    "CV": {
+      "RightColumn": {
+        "name": "Ion",
+        "surname": "Burgoa Etxaburu",
+        "profession": "Diseñador Gráfico / Desarrollador FrontEnd",
+        "indicator": {
+          "aboutMe": "Sobre mí",
+          "studies": "Estudios",
+          "experience": "Experiencia"
         },
-          "download": "Descarga Mi CV"
-        },
-        "LeftColumn": {
-          "ABOUT ME": "Diseñador gráfico con sólida base, combinada con un creciente interés y conocimiento en el desarrollo front-end. Gracias a mi experiencia en diseño, tengo un enfoque creativo, que combinando con tecnologías clave (HTML, CSS y JavaScript) logro tener un perfil multidisciplinario aportando un valor único al equipo para la creación de interfaces visuales atractivas y funcionales.",
-          "STUDIES": "ESTUDIOS",
-          "studies": [
-      {
-        "title": "Grado en Creación y Diseño",
-        "where": "EHU",
-        "when": "2009-2013"
+        "download": "Descarga Mi CV"
       },
-      {
-        "title": "Máster en Diseño Gráfico, Fotografía Creativa y Redes 2.0",
-        "where": "MASS MEDIA",
-        "when": "2013-2014"
-      },
-         {
-        "title": "Curso Diseño y Creación de Piezas de Mecanizado",
-        "where": "LEARTIKER",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Máster en Formación del Profesorado",
-        "where": "VIU",
-        "when": "2016-2017"
-      },
-         {
-        "title": "BootCamp Desarrollo y programación en entorno web (FrontEnd)",
-        "where": "PEÑASCAL F5",
-        "when": "2025"
-      }
-    ],
-          "EXPERIENCE": "EXPERIENCIA",
-          "experience":[
-            {
-              "title": "Diseñador Gráfico",
-              "where": "7Metrópolis (Colombia)",
-              "when": "2015",
-              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
-            },
-            {
-              "title": "Diseñador Gráfico y Fotógrafo",
-              "where": "DRA! (España)",
-              "when": "2017-18",
-              "content": "- Creación de campañas\n- Experiencia en creación de imágenes de alta calidad para comercio electrónico.\n- Uso de software de edición de imágenes Photoshop y Lightroom para la mejora y optimización de imágenes.\n- Análisis de la interacción de los usuarios y la optimización de contenido visual en plataformas digitales."
-            },
-            {
-              "title": "Diseñador Gráfico",
-              "where": "Quick Digital (España)",
-              "when": "2018",
-              "content": "- Diseño de interfaces visuales para plataformas de e-learning, enfocándome en la creación de experiencias de usuario atractivas y fáciles de usar.\n- Aplicación de principios de diseño gráfico para la creación de interfaces visuales eficientes y coherentes con la identidad de la marca en plataformas digitales.\n- Trabajo en colaboración con equipos multidisciplinarios (desarrolladores, pedagogos, diseñadores de contenido) para crear plataformas de e-learning efectivas y atractivas."
-            },
-            {
-              "title": "Diseñador Gráfico",
-              "where": "Alquimia Trip (Chile)",
-              "when": "2022-23",
-              "content": "- Desarrollo y diseño del branding de la marca\n- Experiencia en análisis de necesidades del cliente.\n- Experiencia en trabajo híbrido"
-            },
-            {
-              "title": "Instructor de arte",
-              "where": "Pinot & Picasso (Australia)",
-              "when": "2020-23",
-              "content": "- Experiencia en la enseñanza y explicación de conceptos.\n- Fomentar un ambiente de trabajo colaborativo.\n- Resolver problemas creativos y adaptar enseñanzas a varios estilos de aprendizaje.\n- Organización y gestión de proyectos creativos, lo que implica planificación, coordinación y cumplimiento de plazos."
-            },
-            {
-              "title": "Diseñador Gráfico",
-              "when": "2015",
-              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
-        }
+      "LeftColumn": {
+        "ABOUT ME": "Diseñador gráfico con sólida base, combinada con un creciente interés y conocimiento en el desarrollo front-end. Gracias a mi experiencia en diseño, tengo un enfoque creativo, que combinando con tecnologías clave (HTML, CSS y JavaScript) logro tener un perfil multidisciplinario aportando un valor único al equipo para la creación de interfaces visuales atractivas y funcionales.",
+        "STUDIES": "ESTUDIOS",
+        "studies": [
+          {
+            "title": "Grado en Creación y Diseño",
+            "where": "EHU",
+            "when": "2009-2013"
+          },
+          {
+            "title": "Máster en Diseño Gráfico, Fotografía Creativa y Redes 2.0",
+            "where": "MASS MEDIA",
+            "when": "2013-2014"
+          },
+          {
+            "title": "Curso Diseño y Creación de Piezas de Mecanizado",
+            "where": "LEARTIKER",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Máster en Formación del Profesorado",
+            "where": "VIU",
+            "when": "2016-2017"
+          },
+          {
+            "title": "BootCamp Desarrollo y programación en entorno web (FrontEnd)",
+            "where": "PEÑASCAL F5",
+            "when": "2025"
+          }
+        ],
+        "EXPERIENCE": "EXPERIENCIA",
+        "experience": [
+          {
+            "title": "Diseñador Gráfico",
+            "where": "7Metrópolis (Colombia)",
+            "when": "2015",
+            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+          },
+          {
+            "title": "Diseñador Gráfico y Fotógrafo",
+            "where": "DRA! (España)",
+            "when": "2017-18",
+            "content": "- Creación de campañas\n- Experiencia en creación de imágenes de alta calidad para comercio electrónico.\n- Uso de software de edición de imágenes Photoshop y Lightroom para la mejora y optimización de imágenes.\n- Análisis de la interacción de los usuarios y la optimización de contenido visual en plataformas digitales."
+          },
+          {
+            "title": "Diseñador Gráfico",
+            "where": "Quick Digital (España)",
+            "when": "2018",
+            "content": "- Diseño de interfaces visuales para plataformas de e-learning, enfocándome en la creación de experiencias de usuario atractivas y fáciles de usar.\n- Aplicación de principios de diseño gráfico para la creación de interfaces visuales eficientes y coherentes con la identidad de la marca en plataformas digitales.\n- Trabajo en colaboración con equipos multidisciplinarios (desarrolladores, pedagogos, diseñadores de contenido) para crear plataformas de e-learning efectivas y atractivas."
+          },
+          {
+            "title": "Diseñador Gráfico",
+            "where": "Alquimia Trip (Chile)",
+            "when": "2022-23",
+            "content": "- Desarrollo y diseño del branding de la marca\n- Experiencia en análisis de necesidades del cliente.\n- Experiencia en trabajo híbrido"
+          },
+          {
+            "title": "Instructor de arte",
+            "where": "Pinot & Picasso (Australia)",
+            "when": "2020-23",
+            "content": "- Experiencia en la enseñanza y explicación de conceptos.\n- Fomentar un ambiente de trabajo colaborativo.\n- Resolver problemas creativos y adaptar enseñanzas a varios estilos de aprendizaje.\n- Organización y gestión de proyectos creativos, lo que implica planificación, coordinación y cumplimiento de plazos."
+          },
+          {
+            "title": "Diseñador Gráfico",
+            "when": "2015",
+            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+          }
         ]
-  }
-  }
+      }
+    },
+    "Contact": {
+      "content": "¡Envíame un mensaje!\n ¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar? ¡ADELANTE! ",
+      "form": {
+        "nameLabel": "Nombre",
+        "namePlaceholder": "Tu nombre",
+        "emailLabel": "Dirección de correo electrónico",
+        "emailPlaceholder": "Tu email",
+        "messageLabel": "Mensaje",
+        "messagePlaceholder": "Tu mensaje",
+        "sendButton": "Disparar"
+      }
+    }
   }
 }

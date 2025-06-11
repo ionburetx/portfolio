@@ -89,10 +89,22 @@
             {
               "title": "Graphic Designer",
               "when": "2015",
-              "content": "Mastery of Adobe Suite tools for creating attractive and effective visual designs."
+              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+            }
+         ]
+       }
+      },
+      "Contact": {
+        "content": "Send me a message!\n Do you have a question or suggestion, or just want to say hello? GO AHEAD! ",
+        "form": {
+          "nameLabel": "Name",
+          "namePlaceholder": "Your name",
+          "emailLabel": "Email",
+          "emailPlaceholder": "Your email",
+          "messageLabel": "Message",
+          "messagePlaceholder": "Your message",
+          "sendButton": "SHOOT"
         }
-        ]
+      }
+    }
   }
-  }
-  }
-}
