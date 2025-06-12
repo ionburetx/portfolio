@@ -12,6 +12,12 @@
         "cv": "CV",
         "contact": "KONTAKTUA"
       },
+      "SectionHeader": {
+        "about": "NIRI BURUZ",
+        "projects": "LANAK",
+        "cv": "CV",
+        "contact": "KONTAKTUA"
+      },
       "CV": {
         "RightColumn": {
           "name": "Ion",
@@ -95,7 +101,8 @@
         }
       },
       "Contact": {
-        "content": "Bidali mezu bat!\n Galderarik edo iradokizunik baduzu, edo kaixo esan nahi duzu besterik gabe? AURRERA!",
+        "headline": "Bidali mezu bat!", 
+        "subline":  "Galderarik edo iradokizunik baduzu, edo kaixo esan nahi duzu besterik gabe? AURRERA!",
         "form": {
           "nameLabel": "Izena",
           "namePlaceholder": "Zure izena",

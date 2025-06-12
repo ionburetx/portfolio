@@ -12,6 +12,12 @@
       "cv": "CV",
       "contact": "CONTACTO"
     },
+    "SectionHeader": {
+      "about": "SOBRE MÍ",
+      "projects": "TRABAJOS",
+      "cv": "CV",
+      "contact": "CONTACTO"
+    },
     "CV": {
       "RightColumn": {
         "name": "Ion",
@@ -95,7 +101,8 @@
       }
     },
     "Contact": {
-      "content": "¡Envíame un mensaje!\n ¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar? ¡ADELANTE! ",
+      "headline": "¡Envíame un mensaje!",
+      "subline": "¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar? ¡ADELANTE! ",
       "form": {
         "nameLabel": "Nombre",
         "namePlaceholder": "Tu nombre",

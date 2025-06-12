@@ -56,7 +56,7 @@ const experience = t("HomePage.CV.LeftColumn.experience", { returnObjects: true 
 
   return (
     <section id="cv" className="w-full min-h-screen px-6 py-16 text-white">
-      <SectionHeader title="CV" />
+      <SectionHeader titleKey="cv" />
 
       <div className="flex flex-row gap-6 sm:gap-10 md:gap-14 w-full h-[calc(100vh-8rem)]">
         {/* Columna izquierda */}

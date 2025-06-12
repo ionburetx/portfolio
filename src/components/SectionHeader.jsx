@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const SectionHeader = ({ title }) => {
+const SectionHeader = ({ titleKey }) => {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex flex-col items-center justify-center mb-16">
 
@@ -23,7 +25,8 @@ const SectionHeader = ({ title }) => {
         viewport={{ once: true }}
         className="text-2xl md:text-3xl font-bold tracking-widest text-white uppercase text-center"
       >
-        {title}
+         {t(`HomePage.SectionHeader.${titleKey}`)}
+
       </motion.h1>
 
       {/* Línea inferior: derecha hacia el centro con círculo a la izquierda */}
