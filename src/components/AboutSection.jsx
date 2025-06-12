@@ -97,6 +97,11 @@ export const AboutSection = ({ onScrollToNext }) => {
       h-auto
       object-contain
 
+      scale-110       // Se aplica por defecto (solo móviles)
+    sm:scale-100    // A partir de sm: (≥640px), vuelve al tamaño normal
+    sm:mx-0
+    -mx-4           // Móvil: saca un poco por los lados
+
       lg:absolute
       lg:top-0
       lg:right-[-5%]
