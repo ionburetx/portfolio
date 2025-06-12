@@ -9,7 +9,7 @@ export const AboutSection = ({ onScrollToNext }) => {
       id="about"
       className="relative w-full h-screen flex flex-col justify-start items-center overflow-hidden px-4 md:px-8 lg:px-20 pt-20">
 
-      {/* ✅ Encabezado colocado correctamente debajo del Header */}
+      {/* ✅ Encabezado */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,97 +21,154 @@ export const AboutSection = ({ onScrollToNext }) => {
 
       {/* ✅ Contenido principal */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-[1400px]">
-        
+
         {/* Textos */}
-        <div className="flex flex-col gap-3 w-full lg:w-1/2 text-center lg:text-left items-center lg:items-start">
-          
-          <motion.h1
-            initial={{ y: "-100vh", rotate: 180, opacity: 0 }}
-            animate={{ y: 0, rotate: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="text-6xl lg:text-8xl font-bold text-[#FF5733]"
-          >
-            <motion.span
-              animate={{ rotate: [0, 180, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: 'linear' }}
-              className="inline-block"
+        <div className="relative w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-3">
+
+          {/* Desktop layout exclusivo */}
+          <div className="hidden lg:flex w-full items-start justify-start gap-8 relative z-30 -ml-12">
+            
+            {/* Columna izquierda: h2 + h3 */}
+<div className="flex flex-col gap-0 p-0 m-0 items-end text-right lg:translate-y-[50px]">
+  <motion.h2
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.3, duration: 1 }}
+    className="text-[6rem] font-semibold text-white leading-none m-0 p-0"
+  >
+    HOLA
+  </motion.h2>
+
+  <motion.h3
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.5, duration: 1 }}
+    className="text-[4rem] text-white leading-none m-0 p-0"
+  >
+    Soy
+  </motion.h3>
+</div>
+
+            {/* Columna derecha: h1, p, flecha */}
+            <div className="w-full flex flex-col items-start bg-green-900/10 pl-8 lg:pl-12">
+  <motion.h1
+    initial={{ y: -200, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left text-left"
+  >
+    ion
+  </motion.h1>
+
+  <motion.p
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 1.2, duration: 1 }}
+    className="text-white text-[1.75rem] max-w-[55rem] w-full text-left mt-6"
+  >
+                Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?
+              </motion.p>
+
+              <motion.button
+  onClick={onScrollToNext}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1.4, duration: 1 }}
+  className="bg-transparent text-white hover:text-[#FF5733] transition-colors"
+  aria-label="Scroll to next section"
+>
+  <ChevronDown className="w-28 h-28 animate-bounce" />
+</motion.button>
+
+            </div>
+          </div>
+
+          {/* Mobile & Tablet layout (sin cambios) */}
+          <div className="flex flex-col lg:hidden items-center text-center gap-3 relative z-30">
+            <div
+              className={`
+                absolute 
+                w-full 
+                flex justify-center
+                top-[82%]
+                sm:top-[83%]
+                md:top-[84%]
+              `}
             >
-              ION
-            </motion.span>
-          </motion.h1>
+              <motion.h1
+  initial={{ y: -200, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 1 }}
+  className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left lg:-translate-x-4 border"
+>
+  ion
+</motion.h1>
 
-          <motion.h2
-            initial={{ x: "-100vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 1 }}
-            className="text-4xl lg:text-5xl font-semibold text-white"
-          >
-            HOLA
-          </motion.h2>
+            </div>
 
-          <motion.h3
-            initial={{ x: "100vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="text-2xl lg:text-3xl text-white"
-          >
-            Soy
-          </motion.h3>
+            <motion.h2
+              initial={{ x: "-100vw", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 1 }}
+              className="text-[6rem] font-semibold text-white leading-tight m-0"
+            >
+              HOLA
+            </motion.h2>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 1 }}
-            className="text-white text-base lg:text-lg max-w-md"
-          >
-            Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?
-          </motion.p>
+            <motion.h3
+  initial={{ x: "100vw", opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ delay: 0.5, duration: 1 }}
+  className="text-[4rem] text-white leading-tight m-0"
+>
+  Soy
+</motion.h3>
 
-          <motion.button
-            onClick={onScrollToNext}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4, duration: 1 }}
-            className="mt-6 text-white hover:text-[#FF5733] transition-colors"
-            aria-label="Scroll to next section"
-          >
-            <ChevronDown className="w-10 h-10 animate-bounce" />
-          </motion.button>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 1 }}
+              className="text-white text-base max-w-md border"
+            >
+              Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?
+            </motion.p>
+
+            <motion.button
+              onClick={onScrollToNext}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.4, duration: 1 }}
+              className="mt-6 text-white hover:text-[#FF5733] transition-colors"
+              aria-label="Scroll to next section"
+            >
+              <ChevronDown className="w-10 h-10 animate-bounce" />
+            </motion.button>
+          </div>
         </div>
+        
 
         {/* Imagen */}
         <motion.div
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 1.2, duration: 1 }}
-  className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-10 lg:mb-0"
->
-  <img
-    src="/generalAssets/fotobio.png"
-    alt="My Illustration"
-    className="
-      pointer-events-none 
-      select-none
-
-      w-full
-      h-auto
-      object-contain
-
-      scale-110       // Se aplica por defecto (solo móviles)
-    sm:scale-100    // A partir de sm: (≥640px), vuelve al tamaño normal
-    sm:mx-0
-    -mx-4           // Móvil: saca un poco por los lados
-
-      lg:absolute
-      lg:top-0
-      lg:right-[-5%]
-      lg:h-screen
-      lg:w-auto
-      lg:object-right
-    "
-  />
-</motion.div>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 1 }}
+          className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-10 lg:mb-0"
+        >
+          <img
+            src="/generalAssets/fotobio.png"
+            alt="My Illustration"
+            className="
+              pointer-events-none 
+              select-none
+              w-full h-auto object-contain
+              scale-110 sm:scale-100 sm:mx-0 -mx-4
+              lg:absolute lg:top-0 lg:right-[-5%] lg:h-screen lg:w-auto lg:object-right
+            "
+          />
+        </motion.div>
       </div>
     </section>
   )
 }
+
