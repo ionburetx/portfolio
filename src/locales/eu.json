@@ -18,11 +18,17 @@
         "cv": "CV",
         "contact": "KONTAKTUA"
       },
+      "AboutMe": {
+      "ion": "ion",
+      "hey": "EPA",
+      "im": "Naiz",
+      "text": "Mundu artistikoko adar guztiengatik sentitzen dut pasioa. Diseinu grafikoa, frontend garapena eta argazkigintza dira nire esparruak. Nire lanak ikusi nahi al dituzu?"
+    },
       "CV": {
         "RightColumn": {
           "name": "Ion",
           "surname": "Burgoa Etxaburu",
-          "profession":"Diseinatzaile Grafikoa / FrontEnd PRogramatzailea ",
+          "profession":"Diseinatzaile Grafikoa / FrontEnd Programatzailea ",
           "indicator": {
             "aboutMe": "Niri buruz",
             "studies": "Ikasketak",

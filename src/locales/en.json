@@ -18,6 +18,12 @@
         "cv": "CV",
         "contact": "CONTACT"
       },
+      "AboutMe": {
+      "ion": "ion",
+      "hey": "HEY",
+      "im": "I´m",
+      "text": "A passionate individual in the artistic sector across all its branches. I am dedicated to graphic design, frontend development, and photography. Do you want to see some of my work?"
+    },
       "CV": {
         "RightColumn": {
           "name": "Ion",

@@ -2,8 +2,10 @@
 import { motion } from 'framer-motion'
 import SectionHeader from './SectionHeader'
 import { ChevronDown } from 'lucide-react'
+import { useTranslation } from "react-i18next";
 
 export const AboutSection = ({ onScrollToNext }) => {
+  const { t } = useTranslation();
   return (
     <section
       id="about"
@@ -36,7 +38,7 @@ export const AboutSection = ({ onScrollToNext }) => {
     transition={{ delay: 0.3, duration: 1 }}
     className="text-[6rem] font-semibold text-white leading-none m-0 p-0"
   >
-    HOLA
+    {t("HomePage.AboutMe.hey")}
   </motion.h2>
 
   <motion.h3
@@ -45,7 +47,7 @@ export const AboutSection = ({ onScrollToNext }) => {
     transition={{ delay: 0.5, duration: 1 }}
     className="text-[4rem] text-white leading-none m-0 p-0"
   >
-    Soy
+    {t("HomePage.AboutMe.im")}
   </motion.h3>
 </div>
 
@@ -57,7 +59,7 @@ export const AboutSection = ({ onScrollToNext }) => {
     transition={{ duration: 1 }}
     className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left text-left"
   >
-    ion
+    {t("HomePage.AboutMe.ion")}
   </motion.h1>
 
   <motion.p
@@ -66,7 +68,7 @@ export const AboutSection = ({ onScrollToNext }) => {
     transition={{ delay: 1.2, duration: 1 }}
     className="text-white text-[1.75rem] max-w-[55rem] w-full text-left mt-6"
   >
-                Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?
+                {t("HomePage.AboutMe.text")}
               </motion.p>
 
               <motion.button
