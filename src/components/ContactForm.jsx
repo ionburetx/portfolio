@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { sendForm } from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 
@@ -14,13 +13,13 @@ const ContactForm = () => {
     setSending(true);
     setResultMessage(null);
 
-    emailjs
-      sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
+
+    sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
       .then(
         (result) => {
           setSending(false);
