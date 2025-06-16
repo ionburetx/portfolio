@@ -1,13 +1,46 @@
 'use client'
-import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import SectionHeader from './SectionHeader'
 import { ChevronDown } from 'lucide-react'
 import { useTranslation } from "react-i18next";
 
 export const AboutSection = ({ onScrollToNext }) => {
   const { t } = useTranslation();
-  const [flipStarted, setFlipStarted] = useState(false);
+  const controls = useAnimation()
+  const [slideFinished, setSlideFinished] = useState(false)
+
+  // Animación de slide + rotación inicial
+  useEffect(() => {
+    controls.start({
+      y: 0,
+      rotateX: 180,
+      opacity: 1,
+      transition: { duration: 2.5, ease: "easeOut" }
+    }).then(() => setSlideFinished(true))
+  }, [controls])
+
+  // Cuando termina el slide, empieza rotar cada 5 segundos
+  useEffect(() => {
+    if (!slideFinished) return
+
+    // Rota 180° para quedar derecho
+    controls.start({
+      rotateX: 0,
+      transition: { duration: 1, ease: "easeInOut" }
+    }).then(() => {
+      let rotated = false
+      const interval = setInterval(() => {
+        controls.start({
+          rotateX: rotated ? 0 : 180,
+          transition: { duration: 1, ease: "easeInOut" }
+        })
+        rotated = !rotated
+      }, 5000)
+
+      return () => clearInterval(interval)
+    })
+  }, [slideFinished, controls])
 
   return (
     <section
@@ -34,68 +67,66 @@ export const AboutSection = ({ onScrollToNext }) => {
           <div className="hidden lg:flex w-full items-start justify-start gap-8 relative z-30 -ml-12">
             
             {/* Columna izquierda: h2 + h3 */}
-<div className="flex flex-col gap-0 p-0 m-0 items-end text-right lg:translate-y-[50px]">
-  <motion.h2
-    initial={{ x: '-100vw', opacity: 0 }}
-    animate={{ x: 0, opacity: 1 }}
-    transition={{ delay: 0.3, duration: 1 }}
-    className="text-[6rem] font-semibold text-white leading-none m-0 p-0"
-  >
-    {t("HomePage.AboutMe.hey")}
-  </motion.h2>
+            <div className="flex flex-col gap-0 p-0 m-0 items-end text-right lg:translate-y-[50px]">
+              <motion.h2
+                initial={{ x: '-100vw', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 1 }}
+                className="text-[6rem] font-semibold text-white leading-none m-0 p-0"
+              >
+                {t("HomePage.AboutMe.hey")}
+              </motion.h2>
 
-  <motion.h3
-    initial={{ x: '100vw', opacity: 0 }}
-    animate={{ x: 0, opacity: 1 }}
-    transition={{ delay: 0.5, duration: 1 }}
-    className="text-[4rem] text-white leading-none m-0 p-0"
-  >
-    {t("HomePage.AboutMe.im")}
-  </motion.h3>
-</div>
+              <motion.h3
+                initial={{ x: '100vw', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+                className="text-[4rem] text-white leading-none m-0 p-0"
+              >
+                {t("HomePage.AboutMe.im")}
+              </motion.h3>
+            </div>
 
             {/* Columna derecha: h1, p, flecha */}
-            {/* Columna derecha: h1, p, flecha */}
-<div className="w-full flex flex-col items-start pl-1 lg:pl-1" style={{ perspective: '1000px' }}>
-  <motion.h1
-    initial={{ y: -100, opacity: 0, rotateX: 90 }}
-    animate={{ y: 0, opacity: 1, rotateX: 0 }}
-    transition={{ delay: 0.2, duration: 1, ease: 'easeOut' }}
-    className="font-bold text-[#FF5733] text-[15rem] leading-[1] text-left"
-  >
-    {t("HomePage.AboutMe.ion")}
-  </motion.h1>
+            <div className="w-full flex flex-col items-start pl-1 lg:pl-1" style={{ perspective: '1000px' }}>
+              <motion.h1
+                initial={{ y: '-100vh', rotateX: 180, opacity: 0 }}
+                animate={controls}
+                style={{ transformStyle: 'preserve-3d' }}
+                className="font-bold text-[#FF5733] text-[15rem] leading-[1] text-left"
+              >
+                {t("HomePage.AboutMe.ion")}
+              </motion.h1>
 
+              <div className="flex flex-col items-start w-full max-w-[55rem]">
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 2.2, duration: 1 }}
+                  className="text-white text-[1.75rem] w-full text-left mt-6"
+                >
+                  {t("HomePage.AboutMe.text")}
+                </motion.p>
 
-  <div className="flex flex-col items-start w-full max-w-[55rem]">
-    <motion.p
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 2.2, duration: 1 }}
-      className="text-white text-[1.75rem] w-full text-left mt-6"
-    >
-      {t("HomePage.AboutMe.text")}
-    </motion.p>
-
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 3.2, duration: 1 }}
-      className="w-full flex justify-center mt-6"
-    >
-      <motion.button
-        onClick={onScrollToNext}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 3.2, duration: 1 }}
-        className="bg-transparent text-white hover:text-[#FF5733] transition-colors"
-        aria-label="Scroll to next section"
-      >
-        <ChevronDown className="w-28 h-28 animate-bounce" />
-      </motion.button>
-    </motion.div>
-  </div>
-</div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 3.2, duration: 1 }}
+                  className="w-full flex justify-center mt-6"
+                >
+                  <motion.button
+                    onClick={onScrollToNext}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 3.2, duration: 1 }}
+                    className="bg-transparent text-white hover:text-[#FF5733] transition-colors"
+                    aria-label="Scroll to next section"
+                  >
+                    <ChevronDown className="w-28 h-28 animate-bounce" />
+                  </motion.button>
+                </motion.div>
+              </div>
+            </div>
           </div>
 
           {/* Mobile & Tablet layout (sin cambios) */}
@@ -111,13 +142,13 @@ export const AboutSection = ({ onScrollToNext }) => {
               `}
             >
               <motion.h1
-  initial={{ y: -200, opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ duration: 1 }}
-  className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left lg:-translate-x-4 border"
->
-  ion
-</motion.h1>
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left lg:-translate-x-4 border"
+              >
+                ion
+              </motion.h1>
 
             </div>
 
@@ -131,14 +162,13 @@ export const AboutSection = ({ onScrollToNext }) => {
             </motion.h2>
 
             <motion.h3
-  initial={{ x: "100vw", opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ delay: 0.5, duration: 1 }}
-  className="text-[4rem] text-white leading-tight m-0"
->
-  Soy
-</motion.h3>
-
+              initial={{ x: "100vw", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+              className="text-[4rem] text-white leading-tight m-0"
+            >
+              Soy
+            </motion.h3>
 
             <motion.p
               initial={{ opacity: 0 }}
@@ -186,4 +216,3 @@ export const AboutSection = ({ onScrollToNext }) => {
     </section>
   )
 }
-
