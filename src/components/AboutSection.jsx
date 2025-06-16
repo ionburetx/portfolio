@@ -173,7 +173,7 @@ export const AboutSection = ({ onScrollToNext }) => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1.2, duration: 1 }}
+              transition={{ delay: 3, duration: 1 }}
               className="text-white text-base max-w-md border"
             >
               Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?
@@ -183,7 +183,7 @@ export const AboutSection = ({ onScrollToNext }) => {
               onClick={onScrollToNext}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1.4, duration: 1 }}
+              transition={{ delay: 0, duration: 0.5 }}
               className="mt-6 text-white hover:text-[#FF5733] transition-colors"
               aria-label="Scroll to next section"
             >
@@ -197,7 +197,7 @@ export const AboutSection = ({ onScrollToNext }) => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
           className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-10 lg:mb-0"
         >
           <img
