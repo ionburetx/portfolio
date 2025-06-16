@@ -65,7 +65,7 @@ El desarrollo se ha realizado utilizando React y Vite. Se ha seguido una arquite
 📁 [Repositorio en GitHub](https://github.com/ionburetx/portfolio)
 
 Estructura del proyecto:
-
+```text
 PORTFOLIO
 ├── node_modules
 ├── public
@@ -92,7 +92,7 @@ PORTFOLIO
 ├── READMEproyectofinal.md
 ├── tailwind.config.js
 ├── vite.config.js
-
+```
 ---
 
 ## 🌐 Web publicada
