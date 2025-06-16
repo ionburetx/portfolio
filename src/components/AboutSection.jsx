@@ -55,7 +55,7 @@ export const AboutSection = ({ onScrollToNext }) => {
 </div>
 
             {/* Columna derecha: h1, p, flecha */}
-            <div className="w-full flex flex-col items-start pl-8 lg:pl-12">
+            <div className="w-full flex flex-col items-start pl-4 lg:pl-4 -ml-4">
   <motion.h1
     initial={{ y: '-100vh', opacity: 0, rotateX: 180 }}
     animate={{ y: 0, opacity: 1, rotateX: 180 }}
@@ -72,7 +72,7 @@ export const AboutSection = ({ onScrollToNext }) => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 1.2, duration: 1 }}
-    className="text-white text-[1.75rem] max-w-[55rem] w-full text-left mt-6"
+    className="text-white text-[1.75rem] max-w-[20rem] w-full text-left mt-6"
   >
                 {t("HomePage.AboutMe.text")}
               </motion.p>
