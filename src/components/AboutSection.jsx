@@ -182,10 +182,10 @@ export const AboutSection = ({ onScrollToNext }) => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 3, duration: 1 }}
-    className="mt-[90vh] text-white hover:text-[#FF5733] transition-colors"
+    className=" bg-transparent text-white hover:text-[#FF5733] transition-colors"
     aria-label="Scroll to next section"
   >
-    <ChevronDown className="w-10 h-10 animate-bounce" />
+    <ChevronDown className="w-20 h-20 animate-bounce" />
   </motion.button>
 </div>
 
