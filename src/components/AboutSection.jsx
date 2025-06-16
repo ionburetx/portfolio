@@ -158,13 +158,13 @@ export const AboutSection = ({ onScrollToNext }) => {
     {/* Columna derecha: h1 + párrafo */}
     <div className="w-[65%] flex flex-col items-start text-left pl-2 -mt-32">
       <motion.h1
-        initial={{ y: -200, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="font-bold text-[#FF5733] text-[8rem] animate-ionFlip leading-[1]"
-      >
-        {t("HomePage.AboutMe.ion")}
-      </motion.h1>
+  initial={{ y: '-100vh', rotateX: 180, opacity: 0 }}
+  animate={controls}
+  style={{ transformStyle: 'preserve-3d' }}
+  className="font-bold text-[#FF5733] text-[8rem] leading-[1]"
+>
+  {t("HomePage.AboutMe.ion")}
+</motion.h1>
 
       <motion.p
         initial={{ opacity: 0 }}
