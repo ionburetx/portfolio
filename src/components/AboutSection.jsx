@@ -129,67 +129,67 @@ export const AboutSection = ({ onScrollToNext }) => {
             </div>
           </div>
 
-          {/* Mobile & Tablet layout (sin cambios) */}
-          <div className="flex flex-col lg:hidden items-center text-center gap-3 relative z-30">
-            <div
-              className={`
-                absolute 
-                w-full 
-                flex justify-center
-                top-[82%]
-                sm:top-[83%]
-                md:top-[84%]
-              `}
-            >
-              <motion.h1
-                initial={{ y: -200, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left lg:-translate-x-4 border"
-              >
-                ion
-              </motion.h1>
+{/* Mobile & Tablet layout */}
+<div className="flex flex-col lg:hidden items-center text-center gap-3 relative z-30">
 
-            </div>
+  <div className="absolute top-[5%] -left-6 z-40 w-full px-0 flex justify-between items-start">
+    {/* Columna izquierda: h2 + h3 */}
+    <div className="w-[40%] flex flex-col items-end text-right pr-2">
+      <motion.h2
+        initial={{ x: "-100vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 1 }}
+        className="text-[2.5rem] font-semibold text-white leading-tight"
+      >
+        {t("HomePage.AboutMe.hey")}
+      </motion.h2>
 
-            <motion.h2
-              initial={{ x: "-100vw", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.3, duration: 1 }}
-              className="text-[6rem] font-semibold text-white leading-tight m-0"
-            >
-              HOLA
-            </motion.h2>
+      <motion.h3
+        initial={{ x: "100vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="text-[1.6rem] text-white leading-tight"
+      >
+        {t("HomePage.AboutMe.im")}
+      </motion.h3>
+    </div>
 
-            <motion.h3
-              initial={{ x: "100vw", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="text-[4rem] text-white leading-tight m-0"
-            >
-              Soy
-            </motion.h3>
+    {/* Columna derecha: h1 + párrafo */}
+    <div className="w-[60%] flex flex-col items-start text-left pl-2">
+      <motion.h1
+        initial={{ y: -200, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="font-bold text-[#FF5733] text-[8rem] animate-ionFlip leading-[1]"
+      >
+        {t("HomePage.AboutMe.ion")}
+      </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 3, duration: 1 }}
-              className="text-white text-base max-w-md border"
-            >
-              Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?
-            </motion.p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="text-white text-[1.4rem] mt-2 max-w-xs"
+      >
+        {t("HomePage.AboutMe.text")}
+      </motion.p>
+    </div>
+  </div>
 
-            <motion.button
-              onClick={onScrollToNext}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0, duration: 0.5 }}
-              className="mt-6 text-white hover:text-[#FF5733] transition-colors"
-              aria-label="Scroll to next section"
-            >
-              <ChevronDown className="w-10 h-10 animate-bounce" />
-            </motion.button>
-          </div>
+  {/* Flecha abajo */}
+  <motion.button
+    onClick={onScrollToNext}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 3, duration: 1 }}
+    className="mt-[90vh] text-white hover:text-[#FF5733] transition-colors"
+    aria-label="Scroll to next section"
+  >
+    <ChevronDown className="w-10 h-10 animate-bounce" />
+  </motion.button>
+</div>
+
+
         </div>
         
 
