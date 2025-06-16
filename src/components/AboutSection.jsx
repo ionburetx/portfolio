@@ -130,11 +130,11 @@ export const AboutSection = ({ onScrollToNext }) => {
           </div>
 
 {/* Mobile & Tablet layout */}
-<div className="flex flex-col lg:hidden items-center text-center gap-3 relative z-30">
+<div className="flex flex-col lg:hidden items-center text-center gap-3 relative z-30 px-4">
 
-  <div className="absolute top-[5%] -left-6 z-40 w-full px-0 flex justify-between items-start">
+  <div className="w-full flex justify-between items-start">
     {/* Columna izquierda: h2 + h3 */}
-    <div className="w-[40%] flex flex-col items-end text-right pr-2">
+    <div className="w-[40%] flex flex-col items-end text-right pr-2 -mt-24">
       <motion.h2
         initial={{ x: "-100vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -155,7 +155,7 @@ export const AboutSection = ({ onScrollToNext }) => {
     </div>
 
     {/* Columna derecha: h1 + párrafo */}
-    <div className="w-[60%] flex flex-col items-start text-left pl-2">
+    <div className="w-[65%] flex flex-col items-start text-left pl-2 -mt-32">
       <motion.h1
         initial={{ y: -200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -169,7 +169,7 @@ export const AboutSection = ({ onScrollToNext }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="text-white text-[1.4rem] mt-2 max-w-xs"
+        className="text-white text-[1rem] mt-2 max-w-full pr-4"
       >
         {t("HomePage.AboutMe.text")}
       </motion.p>
@@ -198,7 +198,7 @@ export const AboutSection = ({ onScrollToNext }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
-          className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-10 lg:mb-0"
+          className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-0 lg:mb-0"
         >
           <img
             src="/generalAssets/fotobio.png"
