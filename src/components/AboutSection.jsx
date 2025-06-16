@@ -45,7 +45,8 @@ export const AboutSection = ({ onScrollToNext }) => {
   return (
     <section
       id="about"
-      className="relative w-full h-screen flex flex-col justify-start items-center overflow-hidden px-4 md:px-8 lg:px-20 pt-20">
+      className="relative w-full min-h-screen flex flex-col justify-start items-center overflow-visible px-4 md:px-8 lg:px-20 pt-20 pb-16"
+>
 
       {/* ✅ Encabezado */}
       <motion.div
