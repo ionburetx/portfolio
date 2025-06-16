@@ -1,11 +1,14 @@
 'use client'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import SectionHeader from './SectionHeader'
 import { ChevronDown } from 'lucide-react'
 import { useTranslation } from "react-i18next";
 
 export const AboutSection = ({ onScrollToNext }) => {
   const { t } = useTranslation();
+  const [flipStarted, setFlipStarted] = useState(false);
+
   return (
     <section
       id="about"
@@ -33,8 +36,8 @@ export const AboutSection = ({ onScrollToNext }) => {
             {/* Columna izquierda: h2 + h3 */}
 <div className="flex flex-col gap-0 p-0 m-0 items-end text-right lg:translate-y-[50px]">
   <motion.h2
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
+    initial={{ x: '-100vw', opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
     transition={{ delay: 0.3, duration: 1 }}
     className="text-[6rem] font-semibold text-white leading-none m-0 p-0"
   >
@@ -42,8 +45,8 @@ export const AboutSection = ({ onScrollToNext }) => {
   </motion.h2>
 
   <motion.h3
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
+    initial={{ x: '100vw', opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
     transition={{ delay: 0.5, duration: 1 }}
     className="text-[4rem] text-white leading-none m-0 p-0"
   >
@@ -52,13 +55,16 @@ export const AboutSection = ({ onScrollToNext }) => {
 </div>
 
             {/* Columna derecha: h1, p, flecha */}
-            <div className="w-full flex flex-col items-start bg-green-900/10 pl-8 lg:pl-12">
+            <div className="w-full flex flex-col items-start pl-8 lg:pl-12">
   <motion.h1
-    initial={{ y: -200, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 1 }}
-    className="font-bold text-[#FF5733] text-[15rem] animate-ionFlip leading-[1] text-left text-left"
-  >
+    initial={{ y: '-100vh', opacity: 0, rotateX: 180 }}
+    animate={{ y: 0, opacity: 1, rotateX: 180 }}
+    transition={{ delay: 0.1, duration: 2 }}
+    onAnimationComplete={() => setFlipStarted(true)}
+    className={`font-bold text-[#FF5733] text-[15rem] leading-[1] text-left ${
+    flipStarted ? 'animate-ionFlip' : ''
+  }`}
+>
     {t("HomePage.AboutMe.ion")}
   </motion.h1>
 
