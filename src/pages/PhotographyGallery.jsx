@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import FlechaSimple from '../components/FlechaSimple'  // <- IMPORTA el componente
+import FlechaSimple from '../components/FlechaSimple'
+import Masonry from 'react-masonry-css'
+import Header from '../components/Header'  // IMPORTAMOS Header
 
 const PhotographyGallery = () => {
   const { category } = useParams()
@@ -35,37 +37,60 @@ const PhotographyGallery = () => {
     navigate(`/galeria/${categories[nextIndex]}`)
   }
 
+  // Scroll to top al montar la página
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  // Breakpoints para Masonry (responsive)
+  const breakpointColumnsObj = {
+    default: 4,
+    1024: 3,
+    768: 2,
+    480: 1,
+  }
+
   return (
     <div className="min-h-screen bg-black text-white p-4">
-      <div className="flex items-center mb-6 justify-center">
-  <FlechaSimple direction="left" onClick={goToPrevious} className="mr-2" />
-  
-  <h1 className="text-3xl font-bold uppercase text-center mx-4">
-    {category}
-  </h1>
-  
-  <FlechaSimple direction="right" onClick={goToNext} className="ml-2" />
-  
-  <button
-    onClick={() => navigate('/home')}
-    className="fixed top-4 right-4 text-white text-4xl p-0 m-0 hover:text-[#FF5733] focus:outline-none"
-  style={{ background: 'none', border: 'none' }}
-  aria-label="Cerrar galería"
->
-  ✕
-</button>
-</div>
+      {/* Header sticky */}
+      <Header className="sticky top-0 z-50" />
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {/* Contenedor del título, flechas y botón cerrar */}
+      <div className="flex items-center justify-center mt-4 mb-6 relative">
+        {/* Contenedor solo del título y flechas, para que no ocupen todo el ancho */}
+        <div className="flex items-center space-x-2">
+          <FlechaSimple direction="left" onClick={goToPrevious} />
+          <h1 className="text-3xl font-bold uppercase">{category}</h1>
+          <FlechaSimple direction="right" onClick={goToNext} />
+        </div>
+
+        {/* Botón cerrar posicionado en la misma línea, a la derecha */}
+        <button
+          onClick={() => navigate('/home')}
+          className="text-white text-4xl hover:text-[#FF5733] focus:outline-none absolute right-0"
+          style={{ background: 'none', border: 'none' }}
+          aria-label="Cerrar galería"
+        >
+          ✕
+        </button>
+      </div>
+
+      {/* Galería Masonry */}
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Foto ${index + 1}`}
-            className="w-full h-auto object-cover"
+            className="w-full mb-4 object-cover rounded"
+            style={{ display: 'block' }}
           />
         ))}
-      </div>
+      </Masonry>
     </div>
   )
 }

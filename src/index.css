@@ -61,6 +61,23 @@ h1 {
   animation: ionFlip 5s ease-in-out infinite;
 }
 
+.my-masonry-grid {
+  display: flex;
+  margin-left: -1rem; /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 1rem; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Opcional: espacios entre imágenes */
+.my-masonry-grid_column > img {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem; /* ejemplo */
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
