@@ -1,17 +1,24 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
 import HamburgerMenu from './HamburgerMenu'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 const Header = ({ className = '' }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isSpinning, setIsSpinning] = useState(false)
   const navigate = useNavigate()
+  const location = useLocation()
 
   const handleNavClick = (id) => {
-    const el = document.getElementById(id)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' })
+    if (location.pathname === '/home' || location.pathname === '/') {
+      // Si estamos en home, hacemos scroll
+      const el = document.getElementById(id)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      // Si no, navegamos a home con hash para que el efecto scroll se haga luego
+      navigate(`/home#${id}`)
     }
     setIsOpen(false)
   }
@@ -74,3 +81,4 @@ const Header = ({ className = '' }) => {
 }
 
 export default Header
+
