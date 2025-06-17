@@ -47,7 +47,8 @@ const PhotographyGallery = () => {
     default: 4,
     1024: 3,
     768: 2,
-    480: 1,
+    480: 2,
+    0: 2,
   }
 
   return (
