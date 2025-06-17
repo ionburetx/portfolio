@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import FlechaSimple from '../components/FlechaSimple'
 import Masonry from 'react-masonry-css'
 import Header from '../components/Header'  // IMPORTAMOS Header
@@ -83,13 +83,14 @@ const PhotographyGallery = () => {
         columnClassName="my-masonry-grid_column"
       >
         {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Foto ${index + 1}`}
-            className="w-full mb-4 object-cover rounded"
-            style={{ display: 'block' }}
-          />
+          <Link key={index} to={`/galeria/${category}/foto/${index}`}>
+            <img
+              src={src}
+              alt={`Foto ${index + 1}`}
+              className="w-full mb-4 object-cover rounded cursor-pointer"
+              style={{ display: 'block' }}
+            />
+          </Link>
         ))}
       </Masonry>
     </div>
