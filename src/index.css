@@ -78,6 +78,16 @@ h1 {
   border-radius: 0.5rem; /* ejemplo */
 }
 
+/* Ocultar barras de scroll (horizontal y vertical) */
+.hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 
 @media (prefers-color-scheme: light) {
   :root {

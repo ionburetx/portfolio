@@ -52,7 +52,7 @@ const PhotographyGallery = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white p-4">
+    <div className="min-h-screen bg-black text-white p-4 hide-scrollbar">
       {/* Header sticky */}
       <Header className="sticky top-0 z-50" />
 
