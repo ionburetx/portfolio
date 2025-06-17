@@ -25,7 +25,8 @@ const Home = () => {
       {/* Overlay negro encima del fondo */}
       <div className="absolute inset-0 bg-black opacity-60 z-10" />
 
-      <Header />
+      <Header className="relative z-20" />
+
 
       {/* Contenido principal con padding top para no quedar debajo del header */}
      <main className="relative z-10 text-white pt-10 md:pt-14">

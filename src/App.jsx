@@ -3,6 +3,7 @@ import Language from './pages/Language'
 import Welcome from './pages/Welcome'
 import TransitionPage from './pages/TransitionPage'
 import Home from './pages/Home'
+import PhotographyGallery from './pages/PhotographyGallery'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/Welcome" element={<Welcome />} />
         <Route path="/transition-to-home" element={<TransitionPage />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/galeria/:category" element={<PhotographyGallery />} />
         {/* Más rutas luego */}
       </Routes>
   )

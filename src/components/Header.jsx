@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import HamburgerMenu from './HamburgerMenu'
 import { useNavigate } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ className = '' }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isSpinning, setIsSpinning] = useState(false)
   const navigate = useNavigate()
@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-40">
+      <header className={`fixed top-0 left-0 w-full z-40 ${className}`}>
         {/* Overlay con blur degradado sin color */}
         <div className="absolute inset-0 backdrop-blur-md pointer-events-none z-[-1] mask-gradient" />
 
@@ -74,4 +74,3 @@ const Header = () => {
 }
 
 export default Header
-
