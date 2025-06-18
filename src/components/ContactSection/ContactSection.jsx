@@ -1,5 +1,5 @@
-import SectionHeader from "./SectionHeader";
-import SocialIcons from "./SocialIcons";
+import SectionHeader from "../SectionHeader";
+import SocialIcons from "../SocialIcons";
 import ContactForm from "./ContactForm";
 import { useTranslation } from "react-i18next";
 

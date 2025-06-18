@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Header from '../components/Header'
-import ContactSection from "../components/ContactSection";
-import CV from "../components/CV";
-import ProjectsSection from '../components/ProjectsSection'
-import { AboutSection } from "../components/AboutSection";
+import ContactSection from "../components/ContactSection/ContactSection";
+import CV from "../components/CVSection/CV";
+import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
+import AboutSection from "../components/AboutSection/AboutSection";
 
 const Home = () => {
   const location = useLocation()

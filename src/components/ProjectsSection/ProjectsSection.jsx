@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import SectionHeader from './SectionHeader'
-import PhotographyCard from './PhotographyCard'
+import SectionHeader from '../SectionHeader'
+import PhotographyCard from './Photography/PhotographyCard'
 
 const ProjectsSection = () => {
   const navigate = useNavigate()

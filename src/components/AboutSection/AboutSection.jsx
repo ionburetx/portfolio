@@ -1,11 +1,11 @@
 'use client'
 import { motion, useAnimation } from 'framer-motion'
 import { useState, useEffect } from 'react'
-import SectionHeader from './SectionHeader'
+import SectionHeader from '../SectionHeader'
 import { ChevronDown } from 'lucide-react'
 import { useTranslation } from "react-i18next";
 
-export const AboutSection = ({ onScrollToNext }) => {
+const AboutSection = ({ onScrollToNext }) => {
   const { t } = useTranslation();
   const controls = useAnimation()
   const [slideFinished, setSlideFinished] = useState(false)
@@ -217,3 +217,5 @@ export const AboutSection = ({ onScrollToNext }) => {
     </section>
   )
 }
+
+export default AboutSection

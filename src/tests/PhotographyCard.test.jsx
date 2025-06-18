@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import PhotographyCard from '../components/PhotographyCard'
+import PhotographyCard from '../components/ProjectsSection/Photography/PhotographyCard'
 
 describe('PhotographyCard', () => {
   const image = '/test-image.jpg'

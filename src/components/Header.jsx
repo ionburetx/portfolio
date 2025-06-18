@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import NavBar from './NavBar'
-import HamburgerMenu from './HamburgerMenu'
+import NavBar from './Menu/NavBar'
+import HamburgerMenu from './Menu/HamburgerMenu'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const Header = ({ className = '' }) => {

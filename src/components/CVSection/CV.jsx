@@ -1,6 +1,6 @@
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../SectionHeader";
 import Acordeon from "./Acordeon";
-import CVes from "../locales/es.json";
+import CVes from "../../locales/es.json";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
