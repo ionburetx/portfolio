@@ -52,20 +52,22 @@ const PhotographyGallery = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white p-4 hide-scrollbar">
-      {/* Header sticky */}
-      <Header className="sticky top-0 z-50" />
+      <div className="min-h-screen bg-black text-white hide-scrollbar">
+    {/* Header sticky */}
+    <div className="sticky top-0 z-50 bg-black shadow-md">
+      <Header />
+    </div>
 
-      {/* Contenedor del título, flechas y botón cerrar */}
-      <div className="flex items-center justify-center mt-4 mb-6 relative">
-        {/* Contenedor solo del título y flechas, para que no ocupen todo el ancho */}
+    {/* Bloque sticky: Título + flechas + botón X */}
+    <div className="sticky top-16 z-40 bg-black shadow-md px-4">
+      <div className="flex items-center justify-center py-4 relative">
         <div className="flex items-center space-x-2">
           <FlechaSimple direction="left" onClick={goToPrevious} />
           <h1 className="text-3xl font-bold uppercase">{category}</h1>
           <FlechaSimple direction="right" onClick={goToNext} />
         </div>
 
-        {/* Botón cerrar posicionado en la misma línea, a la derecha */}
+        {/* Botón cerrar */}
         <button
           onClick={() => navigate('/home')}
           className="text-white text-4xl hover:text-[#FF5733] focus:outline-none absolute right-0"
@@ -75,8 +77,10 @@ const PhotographyGallery = () => {
           ✕
         </button>
       </div>
+    </div>
 
-      {/* Galería Masonry */}
+    {/* Galería que sí se scrolléa */}
+    <div className="p-4">
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
@@ -94,7 +98,8 @@ const PhotographyGallery = () => {
         ))}
       </Masonry>
     </div>
-  )
+  </div>
+)
 }
 
 export default PhotographyGallery
