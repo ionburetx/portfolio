@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SectionHeader from '../SectionHeader'
 import PhotographyCard from './Photography/PhotographyCard'
+import GraphicDesignCat from './GraphicDesign/GraphicDesignCat'
 
 const ProjectsSection = () => {
   const navigate = useNavigate()
@@ -46,7 +47,18 @@ const ProjectsSection = () => {
     <section id="projects" className="w-full min-h-screen px-0 mb-32">
       <SectionHeader title="Proyectos" />
 
-      {/* Otras categorías aquí */}
+      {/* Diseño Gráfico */}
+      <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
+        Diseño Gráfico
+      </h2>
+      <GraphicDesignCat />
+
+      {/* Desarrollo Web */}
+      <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
+        Desarrollo Web
+      </h2>
+
+      {/* Aquí podrías incluir tarjetas o contenido más adelante */}
 
       {/* Categoría Fotografía */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-12 tracking-wider">
