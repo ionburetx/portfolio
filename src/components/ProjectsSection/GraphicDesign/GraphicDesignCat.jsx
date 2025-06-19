@@ -1,5 +1,6 @@
-import React from 'react'
-import Illustration from './IlustracionCat/illustration'
+import React from "react";
+import Illustration from "./IlustracionCat/illustration";
+import IdeCorCat from "./IdeCorCat/IdeCorCat";
 
 const GraphicDesignCat = () => {
   return (
@@ -16,14 +17,16 @@ const GraphicDesignCat = () => {
       <h3 className="text-white text-xl md:text-2xl font-semibold uppercase">
         Identidad Corporativa
       </h3>
+      <IdeCorCat />
 
       {/* Otros */}
       <h3 className="text-white text-xl md:text-2xl font-semibold uppercase">
         Otros
       </h3>
     </div>
-  )
-}
+  );
+};
 
-export default GraphicDesignCat
+export default GraphicDesignCat;
+
 
