@@ -94,7 +94,7 @@ const OtrosCat = () => {
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">BROKIS</h3>
             <p className="text-base mb-3">Diseñador Gráfico</p>
-            <p className="text-lg">Descripción corta del proyecto 1.</p>
+            <p className="text-lg">1.</p>
             <button
               type="button"
               aria-label="Más info sobre Brokis"
@@ -119,7 +119,7 @@ const OtrosCat = () => {
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">CASCOS</h3>
             <p className="text-base mb-3">Director Creativo</p>
-            <p className="text-lg">Descripción corta del proyecto 2.</p>
+            <p className="text-lg">2.</p>
             <button
               type="button"
               aria-label="Más info sobre Cascos"
@@ -149,7 +149,7 @@ const OtrosCat = () => {
             <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
               <h3 className="text-2xl font-semibold mb-3">TRÍPTICOS</h3>
               <p className="text-base mb-3">Diseñador Gráfico</p>
-              <p className="text-lg">Descripción corta del proyecto 3.</p>
+              <p className="text-lg">3.</p>
               <button
                 type="button"
                 aria-label="Más info sobre Trípticos"
@@ -166,7 +166,7 @@ const OtrosCat = () => {
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">CARTELES</h3>
             <p className="text-base mb-3">Diseñador Gráfico</p>
-            <p className="text-lg">Descripción corta del proyecto 4.</p>
+            <p className="text-lg">4.</p>
             <button
               type="button"
               aria-label="Más info sobre Carteles"
