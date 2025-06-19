@@ -93,7 +93,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('dra')}>
             <img
-              src="src/assets/ideCor/Dra/logu/dradultz.png"
+              src="src/assets/ideCor/Dra/DRA!.jpg"
               alt="DRA!"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -118,7 +118,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('7metropolis')}>
             <img
-              src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
+              src="src/assets/ideCor/7Metropolis/7m.jpg"
               alt="7 Metropolis"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -149,7 +149,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row lg:flex-row-reverse w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('kresala')}>
             <img
-              src="src/assets/ideCor/Kresala/kresala 2 jpeg.jpg"
+              src="src/assets/ideCor/Kresala/kresala.jpg"
               alt="Kresala"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -188,7 +188,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('constone')}>
             <img
-              src="src/assets/ideCor/Constone/constone logo.jpg"
+              src="src/assets/ideCor/Constone/constone.jpg"
               alt="Constone"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -205,7 +205,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('codigo')}>
             <img
-              src="src/assets/ideCor/Codigo/codigo logo.jpg"
+              src="src/assets/ideCor/Codigo/codigo.jpg"
               alt="Código"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -230,7 +230,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('alquimiatrip')}>
             <img
-              src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
+              src="src/assets/ideCor/alquimia/alquimia.jpg"
               alt="Alquimia Trip"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
