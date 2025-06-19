@@ -1,10 +1,52 @@
 import Card from "./Card";
+import { useInView } from "react-intersection-observer";
 
 const IdeCorCat = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: "-50px 0px"
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: "-50px 0px"
+  });
   return (
     <div className="w-full">
+      <style>
+        {`
+          .slide-from-right {
+            opacity: 0;
+            transform: translateX(50%);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+          }
+
+          .slide-from-left {
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+          }
+
+          .slide-from-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          .slide-from-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        `}
+      </style>
+
       {/* Primera fila */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+      <div 
+        ref={ref1}
+        className={`grid grid-cols-1 md:grid-cols-4 gap-0 slide-from-right ${
+          inView1 ? 'visible' : ''
+        }`}
+      >
         {/* Imagen 1 */}
         <div className="col-span-1">
           <img
@@ -53,7 +95,12 @@ const IdeCorCat = () => {
       </div>
 
       {/* Segunda fila - invertida: texto primero, imagen después */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+      <div 
+        ref={ref2}
+        className={`grid grid-cols-1 md:grid-cols-4 gap-0 slide-from-left ${
+          inView2 ? 'visible' : ''
+        }`}
+      >
         {/* Texto 3 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
           <h3 className="text-2xl font-semibold mb-3">Empresa 3</h3>
