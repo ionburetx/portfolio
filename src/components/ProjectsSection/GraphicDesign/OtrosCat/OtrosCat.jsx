@@ -1,41 +1,33 @@
-import Card from "./Card";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const IdeCorCat = () => {
+const OtrosCat = () => {
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
-    // Intentar recuperar el estado de las animaciones de sessionStorage
-    const saved = sessionStorage.getItem('ideCorAnimations');
+    const saved = sessionStorage.getItem('otrosAnimations');
     return saved ? JSON.parse(saved) : {
       row1: false,
-      row2: false,
-      row3: false
+      row2: false
     };
   });
 
   // Guardar el estado de las animaciones en sessionStorage cuando cambie
   useEffect(() => {
-    sessionStorage.setItem('ideCorAnimations', JSON.stringify(hasAnimated));
+    sessionStorage.setItem('otrosAnimations', JSON.stringify(hasAnimated));
   }, [hasAnimated]);
 
   const handleProjectClick = (projectId) => {
-    // Guardar la posición actual del scroll antes de navegar
     localStorage.setItem('lastScrollPosition', window.scrollY);
     navigate(`/project/${projectId}`);
   };
+
   const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0,
     rootMargin: "-50px 0px"
   });
   const [ref2, inView2] = useInView({
-    triggerOnce: true,
-    threshold: 0,
-    rootMargin: "-50px 0px"
-  });
-  const [ref3, inView3] = useInView({
     triggerOnce: true,
     threshold: 0,
     rootMargin: "-50px 0px"
@@ -90,23 +82,23 @@ const IdeCorCat = () => {
         className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-right', inView1, 'row1')}`}
       >
         {/* Imagen 1 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('dra')}>
+        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('brokis')}>
           <img
-            src="src/assets/ideCor/Dra/logu/dradultz.png"
-            alt="DRA!"
+            src="src/assets/otros/brokis/trptico argi2 trasero.jpg"
+            alt="Brokis"
             className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
           />
         </div>
 
         {/* Texto 1 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">DRA!</h3>
+          <h3 className="text-2xl font-semibold mb-3">BROKIS</h3>
           <p className="text-base mb-3">Diseñador Gráfico</p>
           <p className="text-lg">Descripción corta del proyecto 1.</p>
           <button
             type="button"
-            aria-label="Más info sobre DRA!"
-            onClick={() => handleProjectClick('dra')}
+            aria-label="Más info sobre Brokis"
+            onClick={() => handleProjectClick('brokis')}
             className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
           >
             +
@@ -114,23 +106,23 @@ const IdeCorCat = () => {
         </div>
 
         {/* Imagen 2 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('7metropolis')}>
+        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('cascos')}>
           <img
-            src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
-            alt="7 Metropolis"
+            src="src/assets/otros/cascos/Packaging cascos 3D.jpg"
+            alt="Cascos"
             className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
           />
         </div>
 
         {/* Texto 2 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">7METRÓPOLIS</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
+          <h3 className="text-2xl font-semibold mb-3">CASCOS</h3>
+          <p className="text-base mb-3">Director Creativo</p>
           <p className="text-lg">Descripción corta del proyecto 2.</p>
           <button
             type="button"
-            aria-label="Más info sobre 7 Metropolis"
-            onClick={() => handleProjectClick('7metropolis')}
+            aria-label="Más info sobre Cascos"
+            onClick={() => handleProjectClick('cascos')}
             className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
           >
             +
@@ -145,13 +137,13 @@ const IdeCorCat = () => {
       >
         {/* Texto 3 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">KRESALA</h3>
-          <p className="text-base mb-3">Consultor</p>
+          <h3 className="text-2xl font-semibold mb-3">TRÍPTICOS</h3>
+          <p className="text-base mb-3">Diseñador Gráfico</p>
           <p className="text-lg">Descripción corta del proyecto 3.</p>
           <button
             type="button"
-            aria-label="Más info sobre Empresa 3"
-            onClick={() => handleProjectClick('kresala')}
+            aria-label="Más info sobre Trípticos"
+            onClick={() => handleProjectClick('tripticos')}
             className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
           >
             +
@@ -159,23 +151,23 @@ const IdeCorCat = () => {
         </div>
 
         {/* Imagen 3 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('kresala')}>
+        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('tripticos')}>
           <img
-            src="src/assets/ideCor/Kresala/kresala 2 jpeg.jpg"
-            alt="Kresala"
+            src="src/assets/otros/tripticos/triptico la salle.jpg"
+            alt="TRÍPTICOS"
             className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
           />
         </div>
 
         {/* Texto 4 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">CONSTONE</h3>
-          <p className="text-base mb-3">Director Creativo</p>
+          <h3 className="text-2xl font-semibold mb-3">CARTELES</h3>
+          <p className="text-base mb-3">Diseñador Gráfico</p>
           <p className="text-lg">Descripción corta del proyecto 4.</p>
           <button
             type="button"
-            aria-label="Más info sobre Empresa 4"
-            onClick={() => handleProjectClick('constone')}
+            aria-label="Más info sobre Carteles"
+            onClick={() => handleProjectClick('carteles')}
             className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
           >
             +
@@ -183,68 +175,16 @@ const IdeCorCat = () => {
         </div>
 
         {/* Imagen 4 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('constone')}>
+        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('carteles')}>
           <img
-            src="src/assets/ideCor/Constone/constone logo.jpg"
-            alt="Constone"
+            src="src/assets/otros/carteles/cartel1.jpg"
+            alt="Carteles"
             className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
           />
-        </div>
-      </div>
-
-      {/* Tercera fila - desde derecha */}
-      <div 
-        ref={ref3}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-right', inView3, 'row3')}`}
-      >
-        {/* Imagen 5 y Texto 5 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('codigo')}>
-          <img
-            src="src/assets/ideCor/Codigo/codigo logo.jpg"
-            alt="Código"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
-
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">CÓDIGO</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 1.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre CÓDIGO"
-            onClick={() => handleProjectClick('codigo')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
-        </div>
-
-        {/* Imagen 6 y Texto 6 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('alquimiatrip')}>
-          <img
-            src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
-            alt="Alquimia Trip"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
-
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">ALQUIMIA TRIP</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 2.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Alquimia Trip"
-            onClick={() => handleProjectClick('alquimiatrip')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default IdeCorCat;
+export default OtrosCat;

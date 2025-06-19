@@ -5,6 +5,7 @@ import TransitionPage from './pages/TransitionPage'
 import Home from './pages/Home'
 import PhotographyGallery from './pages/PhotographyGallery'
 import PhotoViewer from './pages/PhotoViewer'
+import ProjectDetailView from './pages/ProjectDetailView'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/galeria/:category" element={<PhotographyGallery />} />
         <Route path="/galeria/:category/foto/:photoIndex" element={<PhotoViewer />} />
+        <Route path="/project/:projectId" element={<ProjectDetailView />} />
         {/* Más rutas luego */}
       </Routes>
   )

@@ -9,23 +9,40 @@ import AboutSection from "../components/AboutSection/AboutSection";
 const Home = () => {
   const location = useLocation()
 
-  // 👉 Aquí va la función de scroll
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '')
-      const el = document.getElementById(id)
-      if (el) {
-        // Pequeño delay para esperar renderizado
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth' })
-        }, 100)
+    // Restaurar la posición del scroll después de que el componente se monte completamente
+    const restoreScroll = () => {
+      const lastScrollPosition = localStorage.getItem('lastScrollPosition');
+      if (lastScrollPosition) {
+        window.scrollTo({
+          top: parseInt(lastScrollPosition),
+          behavior: 'instant' // Usamos 'instant' para evitar la animación
+        });
+        localStorage.removeItem('lastScrollPosition');
       }
+    };
+
+    // Darle tiempo al DOM para renderizarse completamente
+    const timer = setTimeout(restoreScroll, 100);
+
+    // Si hay un hash en la URL, manejarlo después de restaurar el scroll
+    if (location.hash) {
+      const hashTimer = setTimeout(() => {
+        const id = location.hash.replace('#', '')
+        const el = document.getElementById(id)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 200);
+      return () => clearTimeout(hashTimer);
     }
-  }, [location])
+
+    return () => clearTimeout(timer);
+  }, [location]);
 
   return (
     <div className="relative w-screen min-h-screen overflow-auto">
