@@ -79,108 +79,111 @@ const OtrosCat = () => {
       {/* Primera fila - desde derecha */}
       <div 
         ref={ref1}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-right', inView1, 'row1')}`}
+        className={`flex flex-col lg:flex-row gap-0 ${getAnimationClass('slide-from-right', inView1, 'row1')}`}
       >
-        {/* Imagen 1 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('brokis')}>
-          <img
-            src="src/assets/otros/brokis/trptico argi2 trasero.jpg"
-            alt="Brokis"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
+        {/* Card 1 */}
+        <div className="flex flex-row w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('brokis')}>
+            <img
+              src="src/assets/otros/brokis/trptico argi2 trasero.jpg"
+              alt="Brokis"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
+
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">BROKIS</h3>
+            <p className="text-base mb-3">Diseñador Gráfico</p>
+            <p className="text-lg">Descripción corta del proyecto 1.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre Brokis"
+              onClick={() => handleProjectClick('brokis')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
 
-        {/* Texto 1 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">BROKIS</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 1.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Brokis"
-            onClick={() => handleProjectClick('brokis')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
-        </div>
+        {/* Card 2 */}
+        <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('cascos')}>
+            <img
+              src="src/assets/otros/cascos/Packaging cascos 3D.jpg"
+              alt="Cascos"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
 
-        {/* Imagen 2 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('cascos')}>
-          <img
-            src="src/assets/otros/cascos/Packaging cascos 3D.jpg"
-            alt="Cascos"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
-
-        {/* Texto 2 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">CASCOS</h3>
-          <p className="text-base mb-3">Director Creativo</p>
-          <p className="text-lg">Descripción corta del proyecto 2.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Cascos"
-            onClick={() => handleProjectClick('cascos')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">CASCOS</h3>
+            <p className="text-base mb-3">Director Creativo</p>
+            <p className="text-lg">Descripción corta del proyecto 2.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre Cascos"
+              onClick={() => handleProjectClick('cascos')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Segunda fila - desde izquierda */}
       <div 
         ref={ref2}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-left', inView2, 'row2')}`}
-      >
-        {/* Texto 3 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">TRÍPTICOS</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 3.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Trípticos"
-            onClick={() => handleProjectClick('tripticos')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
-          >
-            +
-          </button>
+        className={`flex flex-col lg:flex-row gap-0 ${getAnimationClass('slide-from-left', inView2, 'row2')}`}
+      >          {/* Card 3 */}
+          <div className="flex flex-row lg:flex-row-reverse w-full lg:w-1/2">
+            <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('tripticos')}>
+              <img
+                src="src/assets/otros/tripticos/triptico la salle.jpg"
+                alt="Trípticos"
+                className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+              />
+            </div>
+
+            <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+              <h3 className="text-2xl font-semibold mb-3">TRÍPTICOS</h3>
+              <p className="text-base mb-3">Diseñador Gráfico</p>
+              <p className="text-lg">Descripción corta del proyecto 3.</p>
+              <button
+                type="button"
+                aria-label="Más info sobre Trípticos"
+                onClick={() => handleProjectClick('tripticos')}
+                className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
+              >
+                +
+              </button>
+            </div>
         </div>
 
-        {/* Imagen 3 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('tripticos')}>
-          <img
-            src="src/assets/otros/tripticos/triptico la salle.jpg"
-            alt="TRÍPTICOS"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
+        {/* Card 4 */}
+        <div className="flex flex-row w-full lg:w-1/2">
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">CARTELES</h3>
+            <p className="text-base mb-3">Diseñador Gráfico</p>
+            <p className="text-lg">Descripción corta del proyecto 4.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre Carteles"
+              onClick={() => handleProjectClick('carteles')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
+            >
+              +
+            </button>
+          </div>
 
-        {/* Texto 4 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">CARTELES</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 4.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Carteles"
-            onClick={() => handleProjectClick('carteles')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
-          >
-            +
-          </button>
-        </div>
-
-        {/* Imagen 4 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('carteles')}>
-          <img
-            src="src/assets/otros/carteles/cartel1.jpg"
-            alt="Carteles"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('carteles')}>
+            <img
+              src="src/assets/otros/carteles/cartel1.jpg"
+              alt="Carteles"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
         </div>
       </div>
     </div>

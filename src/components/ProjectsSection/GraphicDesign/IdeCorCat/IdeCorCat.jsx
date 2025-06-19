@@ -87,160 +87,168 @@ const IdeCorCat = () => {
       {/* Primera fila - desde derecha */}
       <div 
         ref={ref1}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-right', inView1, 'row1')}`}
+        className={`flex flex-col lg:flex-row gap-0 ${getAnimationClass('slide-from-right', inView1, 'row1')}`}
       >
-        {/* Imagen 1 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('dra')}>
-          <img
-            src="src/assets/ideCor/Dra/logu/dradultz.png"
-            alt="DRA!"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
+        {/* Card 1 */}
+        <div className="flex flex-row w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('dra')}>
+            <img
+              src="src/assets/ideCor/Dra/logu/dradultz.png"
+              alt="DRA!"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
+
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">DRA!</h3>
+            <p className="text-base mb-3">Diseñador Gráfico</p>
+            <p className="text-lg">Descripción corta del proyecto 1.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre DRA!"
+              onClick={() => handleProjectClick('dra')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
 
-        {/* Texto 1 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">DRA!</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 1.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre DRA!"
-            onClick={() => handleProjectClick('dra')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
-        </div>
+        {/* Card 2 */}
+        <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('7metropolis')}>
+            <img
+              src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
+              alt="7 Metropolis"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
 
-        {/* Imagen 2 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('7metropolis')}>
-          <img
-            src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
-            alt="7 Metropolis"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
-
-        {/* Texto 2 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">7METRÓPOLIS</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 2.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre 7 Metropolis"
-            onClick={() => handleProjectClick('7metropolis')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">7METRÓPOLIS</h3>
+            <p className="text-base mb-3">Diseñador Gráfico</p>
+            <p className="text-lg">Descripción corta del proyecto 2.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre 7 Metropolis"
+              onClick={() => handleProjectClick('7metropolis')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Segunda fila - desde izquierda */}
       <div 
         ref={ref2}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-left', inView2, 'row2')}`}
+        className={`flex flex-col lg:flex-row gap-0 ${getAnimationClass('slide-from-left', inView2, 'row2')}`}
       >
-        {/* Texto 3 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">KRESALA</h3>
-          <p className="text-base mb-3">Consultor</p>
-          <p className="text-lg">Descripción corta del proyecto 3.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Empresa 3"
-            onClick={() => handleProjectClick('kresala')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
-          >
-            +
-          </button>
+        {/* Card 3 */}
+        <div className="flex flex-row lg:flex-row-reverse w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('kresala')}>
+            <img
+              src="src/assets/ideCor/Kresala/kresala 2 jpeg.jpg"
+              alt="Kresala"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
+
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">KRESALA</h3>
+            <p className="text-base mb-3">Consultor</p>
+            <p className="text-lg">Descripción corta del proyecto 3.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre Kresala"
+              onClick={() => handleProjectClick('kresala')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
 
-        {/* Imagen 3 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('kresala')}>
-          <img
-            src="src/assets/ideCor/Kresala/kresala 2 jpeg.jpg"
-            alt="Kresala"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
+        {/* Card 4 */}
+        <div className="flex flex-row lg:flex-row w-full lg:w-1/2">
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">CONSTONE</h3>
+            <p className="text-base mb-3">Director Creativo</p>
+            <p className="text-lg">Descripción corta del proyecto 4.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre Constone"
+              onClick={() => handleProjectClick('constone')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
+            >
+              +
+            </button>
+          </div>
 
-        {/* Texto 4 */}
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">CONSTONE</h3>
-          <p className="text-base mb-3">Director Creativo</p>
-          <p className="text-lg">Descripción corta del proyecto 4.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Empresa 4"
-            onClick={() => handleProjectClick('constone')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
-          >
-            +
-          </button>
-        </div>
-
-        {/* Imagen 4 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('constone')}>
-          <img
-            src="src/assets/ideCor/Constone/constone logo.jpg"
-            alt="Constone"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('constone')}>
+            <img
+              src="src/assets/ideCor/Constone/constone logo.jpg"
+              alt="Constone"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
         </div>
       </div>
 
       {/* Tercera fila - desde derecha */}
       <div 
         ref={ref3}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-0 ${getAnimationClass('slide-from-right', inView3, 'row3')}`}
+        className={`flex flex-col lg:flex-row gap-0 ${getAnimationClass('slide-from-right', inView3, 'row3')}`}
       >
-        {/* Imagen 5 y Texto 5 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('codigo')}>
-          <img
-            src="src/assets/ideCor/Codigo/codigo logo.jpg"
-            alt="Código"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
+        {/* Card 5 */}
+        <div className="flex flex-row w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('codigo')}>
+            <img
+              src="src/assets/ideCor/Codigo/codigo logo.jpg"
+              alt="Código"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
+
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">CÓDIGO</h3>
+            <p className="text-base mb-3">Diseñador Gráfico</p>
+            <p className="text-lg">Descripción corta del proyecto 5.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre CÓDIGO"
+              onClick={() => handleProjectClick('codigo')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-arrow-right transition self-start border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
 
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">CÓDIGO</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 1.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre CÓDIGO"
-            onClick={() => handleProjectClick('codigo')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
-        </div>
+        {/* Card 6 */}
+        <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
+          <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('alquimiatrip')}>
+            <img
+              src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
+              alt="Alquimia Trip"
+              className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+            />
+          </div>
 
-        {/* Imagen 6 y Texto 6 */}
-        <div className="col-span-1 cursor-pointer" onClick={() => handleProjectClick('alquimiatrip')}>
-          <img
-            src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
-            alt="Alquimia Trip"
-            className="w-full h-full object-cover aspect-square hover:opacity-90 transition-opacity"
-          />
-        </div>
-
-        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">ALQUIMIA TRIP</h3>
-          <p className="text-base mb-3">Diseñador Gráfico</p>
-          <p className="text-lg">Descripción corta del proyecto 2.</p>
-          <button
-            type="button"
-            aria-label="Más info sobre Alquimia Trip"
-            onClick={() => handleProjectClick('alquimiatrip')}
-            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
-          >
-            +
-          </button>
+          <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
+            <h3 className="text-2xl font-semibold mb-3">ALQUIMIA TRIP</h3>
+            <p className="text-base mb-3">Diseñador Gráfico</p>
+            <p className="text-lg">Descripción corta del proyecto 6.</p>
+            <button
+              type="button"
+              aria-label="Más info sobre Alquimia Trip"
+              onClick={() => handleProjectClick('alquimiatrip')}
+              className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
     </div>
