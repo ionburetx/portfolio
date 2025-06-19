@@ -50,7 +50,7 @@ const IdeCorCat = () => {
         {/* Imagen 1 */}
         <div className="col-span-1">
           <img
-            src="src/assets/ideCor/Dra/logu/egur kolori.png"
+            src="src/assets/ideCor/Dra/logu/dradultz.png"
             alt="DRA!"
             className="w-full h-full object-cover aspect-square"
           />
@@ -73,7 +73,7 @@ const IdeCorCat = () => {
         {/* Imagen 2 */}
         <div className="col-span-1">
           <img
-            src="src/assets/ideCor/7Metropolis/Coasters/coaster1.jpg"
+            src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
             alt="7 Metropolis"
             className="w-full h-full object-cover aspect-square"
           />
@@ -81,7 +81,7 @@ const IdeCorCat = () => {
 
         {/* Texto 2 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
-          <h3 className="text-2xl font-semibold mb-3">7 Metropolis</h3>
+          <h3 className="text-2xl font-semibold mb-3">7METRÓPOLIS</h3>
           <p className="text-base mb-3">Diseñador Gráfico</p>
           <p className="text-lg">Descripción corta del proyecto 2.</p>
           <button
@@ -103,7 +103,7 @@ const IdeCorCat = () => {
       >
         {/* Texto 3 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">Empresa 3</h3>
+          <h3 className="text-2xl font-semibold mb-3">KRESALA</h3>
           <p className="text-base mb-3">Consultor</p>
           <p className="text-lg">Descripción corta del proyecto 3.</p>
           <button
@@ -118,7 +118,7 @@ const IdeCorCat = () => {
         {/* Imagen 3 */}
         <div className="col-span-1">
           <img
-            src="src/assets/ideCor/Dra/logu/dradultb.png"
+            src="src/assets/ideCor/Kresala/kresala 2 jpeg.jpg"
             alt="Empresa 3"
             className="w-full h-full object-cover aspect-square"
           />
@@ -126,7 +126,7 @@ const IdeCorCat = () => {
 
         {/* Texto 4 */}
         <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white items-end text-right">
-          <h3 className="text-2xl font-semibold mb-3">Empresa 4</h3>
+          <h3 className="text-2xl font-semibold mb-3">CONSTONE</h3>
           <p className="text-base mb-3">Director Creativo</p>
           <p className="text-lg">Descripción corta del proyecto 4.</p>
           <button
@@ -141,10 +141,56 @@ const IdeCorCat = () => {
         {/* Imagen 4 */}
         <div className="col-span-1">
           <img
-            src="src/assets/ideCor/7Metropolis/Logos/logo colaboraciones.png"
+            src="src/assets/ideCor/Constone/constone logo.jpg"
             alt="Empresa 4"
             className="w-full h-full object-cover aspect-square"
           />
+        </div>
+
+        {/* Imagen 5 */}
+        <div className="col-span-1">
+          <img
+            src="src/assets/ideCor/Codigo/codigo logo.jpg"
+            alt="DRA!"
+            className="w-full h-full object-cover aspect-square"
+          />
+        </div>
+
+        {/* Texto 5 */}
+        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
+          <h3 className="text-2xl font-semibold mb-3">CÓDIGO</h3>
+          <p className="text-base mb-3">Diseñador Gráfico</p>
+          <p className="text-lg">Descripción corta del proyecto 1.</p>
+          <button
+            type="button"
+            aria-label="Más info sobre DRA!"
+            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
+          >
+            +
+          </button>
+        </div>
+
+        {/* Imagen 6 */}
+        <div className="col-span-1">
+          <img
+            src="src/assets/ideCor/7Metropolis/Logos/logo.jpg"
+            alt="7 Metropolis"
+            className="w-full h-full object-cover aspect-square"
+          />
+        </div>
+
+        {/* Texto 6 */}
+        <div className="col-span-1 flex flex-col pt-8 p-6 relative text-white">
+          <h3 className="text-2xl font-semibold mb-3">ALQUIMIA TRIP</h3>
+          <p className="text-base mb-3">Diseñador Gráfico</p>
+          <p className="text-lg">Descripción corta del proyecto 2.</p>
+          <button
+            type="button"
+            aria-label="Más info sobre 7 Metropolis"
+            className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
+          >
+            +
+          </button>
         </div>
       </div>
     </div>
