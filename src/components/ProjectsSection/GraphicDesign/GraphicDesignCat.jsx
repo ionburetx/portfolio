@@ -4,9 +4,9 @@ import IdeCorCat from "./IdeCorCat/IdeCorCat";
 
 const GraphicDesignCat = () => {
   return (
-    <div className="pl-6 md:pl-20 space-y-6">
+    <div className="pl-6 md:pl-20">
       {/* Ilustración */}
-      <div>
+      <div className="mb-4">
         <h3 className="text-white text-xl md:text-2xl font-semibold uppercase mb-4">
           Ilustración
         </h3>
@@ -14,15 +14,21 @@ const GraphicDesignCat = () => {
       </div>
 
       {/* Identidad Corporativa */}
-      <h3 className="text-white text-xl md:text-2xl font-semibold uppercase">
-        Identidad Corporativa
-      </h3>
-      <IdeCorCat />
+      <div className="-ml-6 md:-ml-20 mb-4">
+        <div className="pl-6 md:pl-20">
+          <h3 className="text-white text-xl md:text-2xl font-semibold uppercase mb-4">
+            Identidad Corporativa
+          </h3>
+        </div>
+        <IdeCorCat />
+      </div>
 
       {/* Otros */}
-      <h3 className="text-white text-xl md:text-2xl font-semibold uppercase">
-        Otros
-      </h3>
+      <div className="pl-6 md:pl-20">
+        <h3 className="text-white text-xl md:text-2xl font-semibold uppercase">
+          Otros
+        </h3>
+      </div>
     </div>
   );
 };
