@@ -106,12 +106,13 @@ const Dra = () => {
   Como querían también poner un rótulo fuera de los comercios infantiles que tenían, les diseñé 2 opciones diferentes. Uno era de listones de madera de diferentes colores con el logo versionado impreso en él, y el otro era un collage de azulejos de colores.
 </p>
 
-<div className="flex flex-row w-full">
+<div className="flex flex-row gap-4 w-full">
   {['egur kolori.png', 'azulejo1.png'].map((name) => (
     <div
       key={name}
-      className="flex justify-center items-center w-1/2 h-80">
-      <div className="w-80 h-80 rounded overflow-hidden">
+      className="w-full lg:w-1/2 flex justify-center items-center"
+    >
+      <div className="w-90 h-90 rounded overflow-hidden">
         <img
           src={images[name]}
           alt={name}
