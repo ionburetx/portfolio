@@ -23,6 +23,14 @@ Cada pieza debía comunicar tanto el sabor del vino como el compromiso social de
 Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a sembrar futuro.
       </p>
 
+      <div className="w-full h-40 overflow-hidden mb-6 sm:h-52 md:h-64">
+  <img
+    src={images['logo.jpg']}
+    alt="Logo principal"
+    className="w-full h-full object-cover"
+  />
+</div>
+
       {/* Contenedor principal: texto + imagen (stack en mobile, side-by-side en tablet) */}
 <div className="flex flex-col sm:flex-row w-full gap-6">
   
@@ -97,8 +105,8 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
         {/* Primera fila: 2 imágenes (50% cada una) */}
         <div className="flex flex-row gap-4">
           {['posavasos frontal.jpg', 'posavasos trasero.jpg'].map((name) => (
-            <div key={name} className="w-1/2 aspect-[4/5] overflow-hidden">
-              <img src={images[name]} alt={name} className="w-full h-full object-cover" />
+            <div key={name} className="w-1/2 flex justify-center items-center">
+              <img src={images[name]} alt={name} className="w-full h-auto object-contain" />
             </div>
           ))}
         </div>
@@ -106,8 +114,8 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
         {/* Segunda fila: 3 imágenes (33.3% cada una) */}
         <div className="flex flex-row gap-4 mt-4">
           {['menu american ugly.png', 'menu horacio barbato.png', 'menu osaki.png'].map((name) => (
-            <div key={name} className="w-1/3 aspect-[4/5] overflow-hidden">
-              <img src={images[name]} alt={name} className="w-full h-full object-cover" />
+            <div key={name} className="w-1/3 flex justify-center items-center">
+              <img src={images[name]} alt={name} className="w-full h-auto object-contain" />
             </div>
           ))}
         </div>
