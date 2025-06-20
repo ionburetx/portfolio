@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from 'react-router-dom'
 
 const socialLinks = [
   {
@@ -28,6 +29,8 @@ const socialLinks = [
 const HamburgerMenu = ({ isOpen, onClose }) => {
   const { t } = useTranslation();
   const menuRef = useRef(null)
+const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -36,22 +39,28 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
         menuRef.current &&
         !menuRef.current.contains(event.target)
       ) {
-        onClose()
+        onClose();
       }
-    }
-    document.addEventListener('mousedown', handleClickOutside)
+    };
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [isOpen, onClose])
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen, onClose]);
 
   const handleCategoryClick = (id) => {
-    const el = document.getElementById(id)
+  if (location.pathname === '/home') {
+    // Si ya estás en Home, solo haces scroll
+    const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' })
+      el.scrollIntoView({ behavior: 'smooth' });
     }
-    onClose()
+  } else {
+    // Si estás en otra página, navega a /home con hash para que cargue Home y luego puedas hacer scroll
+    navigate(`/home#${id}`);
   }
+  onClose();
+};
 
   return (
     <div
