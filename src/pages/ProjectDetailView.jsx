@@ -6,7 +6,7 @@ import projectComponents from '../ProjectDetails';
 
 
 // Array de proyectos para la navegación
-const PROJECTS = ['dra', '7metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip'];
+const PROJECTS = ['dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip'];
 
 const ProjectDetailView = () => {
   const navigate = useNavigate();

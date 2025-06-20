@@ -129,7 +129,7 @@ const IdeCorCat = () => {
             <button
               type="button"
               aria-label="Más info sobre 7 Metropolis"
-              onClick={() => handleProjectClick('7metropolis')}
+              onClick={() => handleProjectClick('metropolis')}
               className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition self-start border border-white"
             >
               +

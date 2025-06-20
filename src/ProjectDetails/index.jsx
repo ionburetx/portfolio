@@ -1,12 +1,12 @@
 import Dra from './dra';
+import Metropolis from './metropolis';
 // Cuando crees más proyectos, los importas aquí
 // import Kresala from './kresala';
-// import Metropolis from './7metropolis';
 
 const projectComponents = {
   dra: Dra,
   // kresala: Kresala,
-  // '7metropolis': Metropolis,
+  metropolis: Metropolis,
 };
 
 export default projectComponents;
