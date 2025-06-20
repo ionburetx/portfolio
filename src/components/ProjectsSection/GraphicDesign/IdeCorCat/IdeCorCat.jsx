@@ -117,7 +117,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('7metropolis')}>
             <img
-              src="src/assets/ideCor/7Metropolis/7m.jpg"
+              src="src/assets/ideCor/metropolis/7m.jpg"
               alt="7 Metropolis"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />

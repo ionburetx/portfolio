@@ -44,7 +44,7 @@ const ProjectsSection = () => {
   }, [])
 
   return (
-    <section id="projects" className="w-full min-h-screen px-0 mb-32">
+    <section id="trabajos" className="w-full min-h-screen px-0 mb-32">
       <SectionHeader title="Proyectos" />
 
       {/* Diseño Gráfico */}

@@ -54,7 +54,7 @@ export const AboutSection = ({ onScrollToNext }) => {
 
   return (
     <section
-      id="about"
+      id="sobre-mi"
       className="relative w-full min-h-screen flex flex-col justify-start items-center overflow-visible px-4 md:px-8 lg:px-20 pt-20 pb-16"
     >
       {/* Encabezado */}
