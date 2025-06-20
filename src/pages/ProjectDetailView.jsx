@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import FlechaSimple from '../components/FlechaSimple';
+import projectComponents from '../ProjectDetails';
+
 
 // Array de proyectos para la navegación
 const PROJECTS = ['dra', '7metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip'];
@@ -41,8 +43,12 @@ const ProjectDetailView = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen overflow-x-hidden bg-[url('/generalAssets/fondoBienvenida.png')] bg-cover bg-center">
-      <div className="min-h-screen w-full bg-black/50">
+  <div className="relative min-h-screen w-screen overflow-x-hidden">
+  {/* Fondo con blur mediante ::before */}
+  <div className="absolute inset-0 bg-[url('/generalAssets/fondoBio.png')] bg-cover bg-center bg-fixed blur-sm z-0" />
+
+  {/* Capa de contenido con fondo negro semitransparente */}
+  <div className="relative min-h-screen w-full bg-black/50 z-10">
         {/* Header sticky */}
         <div className="sticky top-0 z-50">
           <Header />
@@ -86,13 +92,17 @@ const ProjectDetailView = () => {
         </div>
 
         {/* Project Content - Full width */}
-        <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {/* Project content will be dynamically loaded based on projectId */}
-          </div>
+        <div className="w-full px-4 py-10">
+  {projectComponents[projectId] ? (
+    React.createElement(projectComponents[projectId])
+  ) : (
+    <p className="text-white text-center text-lg">
+      Este proyecto aún no tiene contenido definido.
+    </p>
+  )}
+</div>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -101,7 +101,6 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">DRA!</h3>
-            <p className="text-base mb-3">Diseñador Gráfico</p>
             <p className="text-lg">1.</p>
             <button
               type="button"
@@ -126,7 +125,6 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">7METRÓPOLIS</h3>
-            <p className="text-base mb-3">Diseñador Gráfico</p>
             <p className="text-lg">2.</p>
             <button
               type="button"
@@ -157,7 +155,6 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">KRESALA</h3>
-            <p className="text-base mb-3">Consultor</p>
             <p className="text-lg">3.</p>
             <button
               type="button"
@@ -174,7 +171,6 @@ const IdeCorCat = () => {
         <div className="flex flex-row lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">CONSTONE</h3>
-            <p className="text-base mb-3">Director Creativo</p>
             <p className="text-lg">4.</p>
             <button
               type="button"
@@ -213,7 +209,6 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">CÓDIGO</h3>
-            <p className="text-base mb-3">Diseñador Gráfico</p>
             <p className="text-lg">5.</p>
             <button
               type="button"
@@ -238,7 +233,6 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">ALQUIMIA TRIP</h3>
-            <p className="text-base mb-3">Diseñador Gráfico</p>
             <p className="text-lg">6.</p>
             <button
               type="button"
