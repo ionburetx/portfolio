@@ -89,6 +89,11 @@ h1 {
   display: none; /* Chrome, Safari */
 }
 
+#sobre-mi {
+  scroll-margin-top: 80px; /* Ajusta 80px según la altura de tu header */
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

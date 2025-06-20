@@ -58,6 +58,12 @@ const Home = () => {
 
       <Header />
 
+      <section id="sobre-mi" style={{
+    position: 'relative',
+    zIndex: 20
+  }}>
+</section>
+
       {/* Contenido principal con padding top para no quedar debajo del header */}
      <main className="relative z-10 text-white pt-20 md:pt-24">
         {/* 👉 Pasamos la función de scroll como prop */}
