@@ -45,7 +45,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="trabajos" className="w-full min-h-screen px-0 mb-32">
-      <SectionHeader title="Proyectos" />
+      <SectionHeader titleKey="projects" />
 
       {/* Diseño Gráfico */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
