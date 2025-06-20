@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Header from '../components/Header'
+import { parsePhotoIndex } from '../utils/photoUtils'  // Import arriba del todo
 
 const PhotoViewer = () => {
   const { category, photoIndex } = useParams()
@@ -12,10 +13,7 @@ const PhotoViewer = () => {
     .filter(([path]) => path.includes(`/fotografia/${category}/`))
     .map(([, mod]) => mod.default)
 
-  const currentIndex = (() => {
-    const parsed = parseInt(photoIndex, 10)
-    return isNaN(parsed) || parsed < 0 ? 0 : parsed
-  })()
+  const currentIndex = parsePhotoIndex(photoIndex)
 
   useEffect(() => {
     if (currentIndex >= 0 && currentIndex < images.length) {
@@ -87,23 +85,23 @@ const PhotoViewer = () => {
       </button>
 
       <div
-  id="scroll-container"
-  className="flex-1 overflow-y-auto"
-  style={{
-    height: 'calc(100vh - 60px)',
-    scrollBehavior: 'smooth',
-    paddingTop: 0,
-    scrollbarWidth: 'none',      // Firefox
-    msOverflowStyle: 'none',     // IE y Edge
-  }}
->
-  <style>
-    {`
-      #scroll-container::-webkit-scrollbar {
-        display: none;
-      }
-    `}
-  </style>
+        id="scroll-container"
+        className="flex-1 overflow-y-auto"
+        style={{
+          height: 'calc(100vh - 60px)',
+          scrollBehavior: 'smooth',
+          paddingTop: 0,
+          scrollbarWidth: 'none',      // Firefox
+          msOverflowStyle: 'none',     // IE y Edge
+        }}
+      >
+        <style>
+          {`
+            #scroll-container::-webkit-scrollbar {
+              display: none;
+            }
+          `}
+        </style>
         <div className="flex flex-col items-center py-8 gap-8">
           {images.map((imageSrc, index) => (
             <div
