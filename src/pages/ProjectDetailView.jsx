@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import FlechaSimple from '../components/FlechaSimple';
 import projectComponents from '../ProjectDetails';
-
 
 // Array de proyectos para la navegación
 const PROJECTS = ['dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip'];
@@ -12,17 +11,18 @@ const ProjectDetailView = () => {
   const navigate = useNavigate();
   const { projectId } = useParams();
 
+  // 🔝 Al montar, forzar scroll arriba
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const currentIndex = PROJECTS.indexOf(projectId);
 
   const handleClose = () => {
-    // Asegurarnos de que lastScrollPosition existe antes de navegar
     const lastScrollPosition = localStorage.getItem('lastScrollPosition');
     if (!lastScrollPosition) {
-      // Si por alguna razón no tenemos la posición guardada, al menos iremos a la sección de proyectos
-      localStorage.setItem('lastScrollPosition', '1000'); // Valor aproximado para llegar a la sección de proyectos
+      localStorage.setItem('lastScrollPosition', '1000');
     }
-    
-    // Usar replace para evitar que el usuario pueda volver al detalle con el botón de atrás
     navigate('/home', { replace: true });
   };
 
@@ -43,21 +43,20 @@ const ProjectDetailView = () => {
   };
 
   return (
-  <div className="relative min-h-screen w-screen overflow-x-hidden">
-  {/* Fondo con blur mediante ::before */}
-  <div className="absolute inset-0 bg-[url('/generalAssets/fondoBio.png')] bg-cover bg-center bg-fixed blur-sm z-0" />
+    <div className="relative min-h-screen w-screen overflow-x-hidden">
+      {/* Fondo con blur mediante ::before */}
+      <div className="absolute inset-0 bg-[url('/generalAssets/fondoBio.png')] bg-cover bg-center bg-fixed blur-sm z-0" />
 
-  {/* Capa de contenido con fondo negro semitransparente */}
-  <div className="relative min-h-screen w-full bg-black/50 z-10">
+      {/* Capa de contenido con fondo negro semitransparente */}
+      <div className="relative min-h-screen w-full bg-black/50 z-10">
         {/* Header sticky */}
         <div className="sticky top-0 z-50">
           <Header />
         </div>
 
-        {/* Navigation Bar sticky - Centrado en el viewport */}
+        {/* Navigation Bar sticky */}
         <div className="sticky top-16 z-40 w-full">
           <div className="w-full flex justify-center px-4 py-4 relative">
-            {/* Contenedor central con las flechas y el título */}
             <div className="flex items-center gap-6">
               <button
                 onClick={handlePrevious}
@@ -66,11 +65,11 @@ const ProjectDetailView = () => {
               >
                 <FlechaSimple direction="left" />
               </button>
-              
+
               <h1 className="text-white text-3xl font-bold uppercase">
                 {projectId}
               </h1>
-              
+
               <button
                 onClick={handleNext}
                 className="text-white hover:text-tomato transition-colors bg-transparent"
@@ -80,10 +79,9 @@ const ProjectDetailView = () => {
               </button>
             </div>
 
-            {/* Botón de cerrar posicionado absolutamente */}
             <button
               onClick={handleClose}
-              className="text-white text-4xl hover:text-tomato transition-colors bg-transparent absolute right-4"
+              className="text-white text-4xl hover:text-tomato transition-colors bg-transparent absolute right-4 z-60"
               aria-label="Close project view"
             >
               ×
@@ -91,18 +89,18 @@ const ProjectDetailView = () => {
           </div>
         </div>
 
-        {/* Project Content - Full width */}
+        {/* Project Content */}
         <div className="w-full px-4 py-10">
-  {projectComponents[projectId] ? (
-    React.createElement(projectComponents[projectId])
-  ) : (
-    <p className="text-white text-center text-lg">
-      Este proyecto aún no tiene contenido definido.
-    </p>
-  )}
-</div>
+          {projectComponents[projectId] ? (
+            React.createElement(projectComponents[projectId])
+          ) : (
+            <p className="text-white text-center text-lg">
+              Este proyecto aún no tiene contenido definido.
+            </p>
+          )}
         </div>
       </div>
+    </div>
   );
 };
 

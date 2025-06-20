@@ -78,7 +78,7 @@ const PhotoViewer = () => {
       <button
         onClick={() => navigate(-1)}
         aria-label="Cerrar visor"
-        className="absolute top-24 right-4 text-white text-4xl hover:text-[#FF5733] focus:outline-none z-50 transition-colors duration-200"
+        className="absolute top-24 right-4 text-white text-4xl hover:text-[#FF5733] focus:outline-none z-40 transition-colors duration-200"
         style={{ background: 'none', border: 'none' }}
       >
         ✕
