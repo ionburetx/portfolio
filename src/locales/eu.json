@@ -6,118 +6,143 @@
     "descubre": "ETA EZAGUTU GEHIAGO"
   },
   "HomePage": {
-      "HEADER": {
-        "about": "NIRI BURUZ",
-        "projects": "LANAK",
-        "cv": "CV",
-        "contact": "KONTAKTUA"
-      },
-      "SectionHeader": {
-        "about": "NIRI BURUZ",
-        "projects": "LANAK",
-        "cv": "CV",
-        "contact": "KONTAKTUA"
-      },
-      "AboutMe": {
+    "HEADER": {
+      "about": "NIRI BURUZ",
+      "projects": "LANAK",
+      "cv": "CV",
+      "contact": "KONTAKTUA"
+    },
+    "SectionHeader": {
+      "about": "NIRI BURUZ",
+      "projects": "LANAK",
+      "cv": "CV",
+      "contact": "KONTAKTUA"
+    },
+    "AboutMe": {
       "ion": "ion",
       "hey": "EPA",
       "im": "Naiz",
       "text": "Mundu artistikoko adar guztiengatik sentitzen dut pasioa. Diseinu grafikoa, frontend garapena eta argazkigintza dira nire esparruak. Nire lanak ikusi nahi al dituzu?"
     },
-      "CV": {
-        "RightColumn": {
-          "name": "Ion",
-          "surname": "Burgoa Etxaburu",
-          "profession":"Diseinatzaile Grafikoa / FrontEnd Programatzailea ",
-          "indicator": {
-            "aboutMe": "Niri buruz",
-            "studies": "Ikasketak",
-            "experience": "Lan esperientzia"
-        },
-          "download": "Deskargatu Nire CV"
-        },
-        "LeftColumn": {
-          "ABOUT ME": "Diseinu munduan oinarri sendo eta frontend garapenaren inguruko gero eta interes eta ezagutza handiagoarekin konbinatutako diseinatzaile grafikoa naiz. Nire diseinatzeko esperientziari esker, ikuspegi sortzailea landu dut eta teknologia gakoekin (HTML, CSS eta JavaScript) bateratuz, diziplina anitzeko profila lortu dut. Honi esker, interfaze bisual erakargarri eta funtzionalak sortzeko balio berezia eman diezaioket edozein lan talderi",
-          "STUDIES": "IKASKETAK",
-          "studies": [
-      {
-        "title": "Sorkuntza eta Diseinuan Gradua",
-        "where": "EHU",
-        "when": "2009-2013"
+    "ProjectsSection": {
+      "graphicdesign": {
+        "title": "Diseinu Grafikoa",
+        "subcategories": {
+          "illustration": "Ilustrazioa",
+          "branding": "Identitate Korporatiboa",
+          "others": "Bestelakoak"
+        }
       },
-      {
-        "title": "Diseinu Grafikoa, Sormen Argazkilaritza eta 2.0 Sareak Masterra",
-        "where": "MASS MEDIA",
-        "when": "2013-2014"
-      },
-         {
-        "title": "Fabrikazio Mekanikoko Piezen Diseinu eta Sorkuntza Ikastaroa",
-        "where": "LEARTIKER",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Irakasleen Prestakuntza Masterra",
-        "where": "VIU",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Web ingurumenaren garapena eta programazioa (FrontEnd) BootCamp",
-        "where": "PEÑASCAL F5",
-        "when": "2025"
+      "webdevelopment": "Web Garapena",
+      "photography": {
+        "title": "Argazkigintza",
+        "animal": "Animaliak",
+        "calle": "Kalea",
+        "producto": "Produktuak",
+        "retratos": "Erretratuak",
+        "naturaleza": "Natura",
+        "arquitectura": "Arkitektura",
+        "estilo-de-vida": "Bizi estiloa",
+        "paisaje": "Paisaia"
       }
-    ],
-          "EXPERIENCE": "LAN ESPERIENTZIA",
-          "experience":[
-            {
-              "title": "Diseinatzaile Grafikoa",
-              "where": "7Metrópolis (Colombia)",
-              "when": "2015",
-              "content": "Adobe Pack tresnen maisutasuna diseinu bisual erakargarri eta eraginkorrak sortzeko.."
-            },
-            {
-              "title": "Diseinatzaile grafiko eta argazkilaria",
-              "where": "DRA! (España)",
-              "when": "2017-18",
-              "content": "- Kanpainen Sorkuntza\n- Merkataritza elektronikorako kalitate handiko irudiak sortzeko esperientzia.\n- Photoshop eta Lightroom irudiak editatzeko softwarearen erabilera irudiak hobetzeko eta optimizatzeko.\n- Erabiltzaileen interakzioaren azterketa eta plataforma digitaletan eduki bisualen optimizazioa."
-            },
-            {
-              "title": "Diseinatzaile Grafikoa",
-              "where": "Quick Digital (España)",
-              "when": "2018",
-              "content": "- Ikaskuntza elektronikoko plataformetarako interfaze bisualen diseinua, erabiltzaile-esperientzia erakargarriak eta erabiltzeko errazak sortzera bideratuta.\n- Diseinu grafikoaren printzipioen aplikazioa marka-identitatearekin bat datozen interfaz bisual eraginkorrak sortzeko plataforma digitaletan.\n- Diziplina anitzeko taldeekin (garatzaileak, hezitzaileak, eduki-diseinatzaileak) lankidetzan aritzea ikaskuntza elektronikoko plataforma eraginkorrak eta erakargarriak sortzeko."
-            },
-            {
-              "title": "Diseinatzaile Grafikoa",
-              "where": "Alquimia Trip (Chile)",
-              "when": "2022-23",
-              "content": "- Markaren garapena eta diseinua\n- Bezeroen beharren analisian esperientzia.\n- Lan hibridoan esperientzia"
-            },
-            {
-              "title": "Arte Irakaslea",
-              "where": "Pinot & Picasso (Australia)",
-              "when": "2020-23",
-              "content": "- EKontzeptuak irakasten eta azaltzen esperientzia.\n- Lankidetza-ingurune bat sustatzea.\n- Sormen-arazoak konpontzea eta irakaskuntza ikaskuntza-estilo desberdinetara egokitzea.\n- Sormen-proiektuak antolatzea eta kudeatzea, eta horrek plangintza, koordinazioa eta epeak betetzea dakar."
-            },
-            {
-              "title": "Diseinatzaile Grafikoa",
-              "when": "2015",
-              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
-            }
-          ]
-        }
+    },
+    "CV": {
+      "RightColumn": {
+        "name": "Ion",
+        "surname": "Burgoa Etxaburu",
+        "profession": "Diseinatzaile Grafikoa / FrontEnd Programatzailea ",
+        "indicator": {
+          "aboutMe": "Niri buruz",
+          "studies": "Ikasketak",
+          "experience": "Lan esperientzia"
+        },
+        "download": "Deskargatu Nire CV"
       },
-      "Contact": {
-        "headline": "Bidali mezu bat!", 
-        "subline":  "Galderarik edo iradokizunik baduzu, edo kaixo esan nahi duzu besterik gabe? AURRERA!",
-        "form": {
-          "nameLabel": "Izena",
-          "namePlaceholder": "Zure izena",
-          "emailLabel": "Helbide elektronikoa",
-          "emailPlaceholder": "Zure emaila",
-          "messageLabel": "Mezua",
-          "messagePlaceholder": "Zure mezua",
-          "sendButton": "BIDALI"
-        }
+      "LeftColumn": {
+        "ABOUT ME": "Diseinu munduan oinarri sendo eta frontend garapenaren inguruko gero eta interes eta ezagutza handiagoarekin konbinatutako diseinatzaile grafikoa naiz. Nire diseinatzeko esperientziari esker, ikuspegi sortzailea landu dut eta teknologia gakoekin (HTML, CSS eta JavaScript) bateratuz, diziplina anitzeko profila lortu dut. Honi esker, interfaze bisual erakargarri eta funtzionalak sortzeko balio berezia eman diezaioket edozein lan talderi",
+        "STUDIES": "IKASKETAK",
+        "studies": [
+          {
+            "title": "Sorkuntza eta Diseinuan Gradua",
+            "where": "EHU",
+            "when": "2009-2013"
+          },
+          {
+            "title": "Diseinu Grafikoa, Sormen Argazkilaritza eta 2.0 Sareak Masterra",
+            "where": "MASS MEDIA",
+            "when": "2013-2014"
+          },
+          {
+            "title": "Fabrikazio Mekanikoko Piezen Diseinu eta Sorkuntza Ikastaroa",
+            "where": "LEARTIKER",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Irakasleen Prestakuntza Masterra",
+            "where": "VIU",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Web ingurumenaren garapena eta programazioa (FrontEnd) BootCamp",
+            "where": "PEÑASCAL F5",
+            "when": "2025"
+          }
+        ],
+        "EXPERIENCE": "LAN ESPERIENTZIA",
+        "experience": [
+           {
+             "title": "Diseinatzaile Grafikoa",
+            "where": "7Metrópolis (Colombia)",
+            "when": "2015",
+            "content": "- Markaren nortasun bisualaren garapen integrala hutsetik abiatuta: logotipoa, tipografia eta estilo grafiko koherentea.\n- Adobe paketearen erabilera profesionala (Illustrator, Photoshop eta InDesign).\n- Sare sozialetarako eduki bisualaren sorrera, marka-identitatearekin bat datorren estetika koherentea mantenduz."
+          },
+          {
+            "title": "Diseinatzaile grafiko eta argazkilaria",
+            "where": "DRA! (España)",
+            "when": "2017-18",
+            "content": "- Kanpainen sorkuntza.\n- Erabiltzaileen interakzioaren azterketa eta eduki bisualaren optimizazioa plataforma digitaletan.\n - Kalitate handiko irudien sorrera esperientzia, merkataritza elektronikora bideratua.\n- Photoshop eta Lightroom bezalako irudi-edizio softwareen erabilera, irudiak hobetzeko eta optimizatzeko."
+          },
+          {
+            "title": "Diseinatzaile Grafikoa",
+            "where": "Quick Digital (España)",
+            "when": "2018",
+            "content": "- E-learning plataformetarako interfazeen diseinu bisuala, erabiltzailearentzako esperientzia erakargarri eta erabilerrazak sortzera bideratuta.\n- Diseinu grafiko lanak, marka-identitatearekin koherenteak diren eta eraginkortasun bisuala duten interfazeak sortzeko plataforma digitaletan.\n- Diziplina anitzeko taldeen lankidetza (pedagogoak, diseinatzaileak), e-learning plataforma erakargarri eta eraginkorrak sortzeko."
+          },
+          {
+            "title": "Diseinatzaile Grafikoa",
+            "where": "Alquimia Trip (Chile)",
+            "when": "2022-23",
+            "content": "- Markaren garapena eta diseinua\n- Bezeroen beharren analisian esperientzia.\n- Lan hibridoan esperientzia"
+          },
+          {
+            "title": "Arte Irakaslea",
+            "where": "Pinot & Picasso (Australia)",
+            "when": "2020-23",
+            "content": "- Kontzeptuak irakasteko eta azaltzeko esperientzia.\n- Lankidetzazko lan-giroa sustatzea.\n- Sormen arazoak konpontzea eta irakaskuntza ikasketa estilo desberdinetara egokitzea.\n- Proiektu sortzaileen antolaketa eta kudeaketa: plangintza, koordinazioa eta epeen betetzea barne."
+          },
+          {
+            "title": "Ilustratzailea",
+            "where": "Think Poteito (BCN)",
+            "when": "2014",
+            "content": "- Enpresekin lankidetza zuzena, haien nortasun bisuala eta estilo grafikoa definitzeko, behar eta marka-helburuetara egokituta.\n- Bezeroekin aurretiaz egindako briefing eta bileretan oinarritutako ilustrazio pertsonalizatuen garapena.\n- Material promozionalaren diseinua eta ekoizpena, hala nola flyer-ak eta Think Poteitorako banner digitalak."
+          }
+        ]
+      }
+    },
+    "Contact": {
+      "headline": "Bidali mezu bat!",
+      "subline": "Galderarik edo iradokizunik baduzu, edo kaixo esan nahi duzu besterik gabe? AURRERA!",
+      "form": {
+        "nameLabel": "Izena",
+        "namePlaceholder": "Zure izena",
+        "emailLabel": "Helbide elektronikoa",
+        "emailPlaceholder": "Zure emaila",
+        "messageLabel": "Mezua",
+        "messagePlaceholder": "Zure mezua",
+        "sendButton": "BIDALI"
       }
     }
-  }
+  }  
+}
+
+

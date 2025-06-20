@@ -3,8 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import SectionHeader from '../SectionHeader'
 import PhotographyCard from './Photography/PhotographyCard'
 import GraphicDesignCat from './GraphicDesign/GraphicDesignCat'
+import { useTranslation } from "react-i18next";
 
 const ProjectsSection = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate()
 
   // Importar todas las imágenes de fotografía
@@ -12,14 +14,14 @@ const ProjectsSection = () => {
 
   // Categorías en orden fijo
   const categories = [
-    { slug: 'animal', title: 'Animal' },
-    { slug: 'arquitectura', title: 'Arquitectura' },
-    { slug: 'calle', title: 'Calle' },
-    { slug: 'estilo-de-vida', title: 'Estilo de vida' },
-    { slug: 'naturaleza', title: 'Naturaleza' },
-    { slug: 'paisaje', title: 'Paisaje' },
-    { slug: 'producto', title: 'Producto' },
-    { slug: 'retratos', title: 'Retratos' }
+    { slug: 'animal' },
+    { slug: 'arquitectura'},
+    { slug: 'calle'},
+    { slug: 'estilo-de-vida'},
+    { slug: 'naturaleza'},
+    { slug: 'paisaje'},
+    { slug: 'producto'},
+    { slug: 'retratos'},
   ]
 
   // Obtener primera imagen para la card
@@ -49,20 +51,20 @@ const ProjectsSection = () => {
 
       {/* Diseño Gráfico */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
-        Diseño Gráfico
+        {t("HomePage.ProjectsSection.graphicdesign.title")}
       </h2>
       <GraphicDesignCat />
 
       {/* Desarrollo Web */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
-        Desarrollo Web
+        {t("HomePage.ProjectsSection.webdevelopment")}
       </h2>
 
       {/* Aquí podrías incluir tarjetas o contenido más adelante */}
 
       {/* Categoría Fotografía */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-12 tracking-wider">
-        Fotografía
+        {t("HomePage.ProjectsSection.photography.title")}
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
@@ -74,7 +76,7 @@ const ProjectsSection = () => {
           >
             <PhotographyCard
               image={getFirstImage(slug)}
-              title={title}
+              title={t(`HomePage.ProjectsSection.photography.${slug}`)}
               categorySlug={slug}
             />
           </div>

@@ -24,6 +24,28 @@
       "im": "Soy",
       "text": "Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?"
     },
+    "ProjectsSection": {
+      "graphicdesign": {
+        "title": "Diseño Gráfico",
+        "subcategories": {
+          "illustration": "Ilustración",
+          "branding": "Identidad Corporativa",
+          "others": "Otros"
+        }
+      },
+      "webdevelopment": "Desarrollo Web",
+      "photography": {
+        "title": "Fotografía",
+        "animal": "Animales",
+        "calle": "Calle",
+        "producto": "Producto",
+        "retratos": "Retratos",
+        "naturaleza": "Naturaleza",
+        "arquitectura": "Arquitectura",
+        "estilo-de-vida": "Estilo de Vida",
+        "paisaje": "Paisaje"
+      }
+    },
     "CV": {
       "RightColumn": {
         "name": "Ion",
@@ -72,13 +94,13 @@
             "title": "Diseñador Gráfico",
             "where": "7Metrópolis (Colombia)",
             "when": "2015",
-            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+            "content": "- Desarrollo integral de la identidad visual de la marca desde cero: logo, tipografía y estilo gráfico coherente.\n- Uso avanzado del paquete Adobe (illustrator, photoshop e indesign).\n- Creación de contenido visual para redes sociales, manteniendo una estética consistente y alineada con la identidad de marca."
           },
           {
             "title": "Diseñador Gráfico y Fotógrafo",
             "where": "DRA! (España)",
             "when": "2017-18",
-            "content": "- Creación de campañas\n- Experiencia en creación de imágenes de alta calidad para comercio electrónico.\n- Uso de software de edición de imágenes Photoshop y Lightroom para la mejora y optimización de imágenes.\n- Análisis de la interacción de los usuarios y la optimización de contenido visual en plataformas digitales."
+            "content": "- Creación de campañas.\n- Análisis de la interacción de los usuarios y la optimización de contenido visual en plataformas digitales.\n- Experiencia en la creación de imágenes de alta calidad para comercio electrónico.\n- Uso de software de edición de imágenes Photoshop y Lightroom para la mejora y optimización de imágenes."
           },
           {
             "title": "Diseñador Gráfico",
@@ -99,9 +121,10 @@
             "content": "- Experiencia en la enseñanza y explicación de conceptos.\n- Fomentar un ambiente de trabajo colaborativo.\n- Resolver problemas creativos y adaptar enseñanzas a varios estilos de aprendizaje.\n- Organización y gestión de proyectos creativos, lo que implica planificación, coordinación y cumplimiento de plazos."
           },
           {
-            "title": "Diseñador Gráfico",
-            "when": "2015",
-            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+            "title": "Ilustrador",
+            "where": "Think Poteito (BCN)",
+            "when": "2014",
+            "content": "- Direct collaboration with companies to understand their brand, style, and visual identity, successfully defining the graphic style according to their needs.\n-Development of custom illustrations based on client briefings and pre-project meetings.\n- Design and production of promotional materials, such as flyers and digital banners for Think Poteito."
           }
         ]
       }

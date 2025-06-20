@@ -1,18 +1,13 @@
 import SectionHeader from "../SectionHeader";
 import Acordeon from "./Acordeon";
-import CVes from "../../locales/es.json";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-
-// ... importaciones iguales ...
-
 const CV = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-const studies = t("HomePage.CV.LeftColumn.studies", { returnObjects: true });
-const experience = t("HomePage.CV.LeftColumn.experience", { returnObjects: true });
-
+  const studies = t("HomePage.CV.LeftColumn.studies", { returnObjects: true });
+  const experience = t("HomePage.CV.LeftColumn.experience", { returnObjects: true });
 
   const scrollRef = useRef(null);
   const sobreMiRef = useRef(null);
@@ -53,6 +48,24 @@ const experience = t("HomePage.CV.LeftColumn.experience", { returnObjects: true 
       if (el) el.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Función para descargar el CV según el idioma actual
+  const handleDownload = () => {
+    let cvFile = "/generalAssets/CVesp.pdf"; // Español por defecto
+
+    if (i18n.language === "en") {
+      cvFile = "/generalAssets/CVeng.pdf";
+    } else if (i18n.language === "eu") {
+      cvFile = "/generalAssets/CVeus.pdf";
+    }
+
+    const link = document.createElement("a");
+    link.href = cvFile;
+    link.download = `CV-${i18n.language}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="cv" className="w-full min-h-screen px-6 py-16 text-white">
@@ -97,30 +110,29 @@ const experience = t("HomePage.CV.LeftColumn.experience", { returnObjects: true 
 
           {/* Botón de descarga */}
           <div>
-            <a
-              href="/generalAssets/CVdescarga.pdf"
-              download
-              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 border border-white bg-white/10 rounded-md hover:text-tomato transition w-fit max-w-[90%]"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"
-                />
-              </svg>
-              <span className="uppercase text-xs sm:text-sm font-semibold">
-                {t("HomePage.CV.RightColumn.download")}
-              </span>
-            </a>
-          </div>
+  <button
+    onClick={handleDownload}
+    className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 border border-white bg-white/10 rounded-md hover:text-tomato transition w-fit max-w-[90%]"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"
+      />
+    </svg>
+    <span className="uppercase text-xs sm:text-sm font-semibold">
+      {t("HomePage.CV.RightColumn.download")}
+    </span>
+  </button>
+</div>
         </div>
 
         {/* Columna derecha con scroll y contenido */}

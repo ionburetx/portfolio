@@ -4,120 +4,143 @@
     "click": "CLICK ",
     "aquí": "HERE",
     "descubre": "AND DISCOVER MORE"
-},
+  },
   "HomePage": {
-      "HEADER": {
-        "about": "ABOUT ME",
-        "projects": "WORKS",
-        "cv": "CV",
-        "contact": "CONTACT"
-      },
-      "SectionHeader": {
-        "about": "ABOUT ME",
-        "projects": "WORKS",
-        "cv": "CV",
-        "contact": "CONTACT"
-      },
-      "AboutMe": {
+    "HEADER": {
+      "about": "ABOUT ME",
+      "projects": "WORKS",
+      "cv": "CV",
+      "contact": "CONTACT"
+    },
+    "SectionHeader": {
+      "about": "ABOUT ME",
+      "projects": "WORKS",
+      "cv": "CV",
+      "contact": "CONTACT"
+    },
+    "AboutMe": {
       "ion": "ion",
       "hey": "HEY",
       "im": "I´m",
       "text": "A passionate individual in the artistic sector across all its branches. I am dedicated to graphic design, frontend development, and photography. Do you want to see some of my work?"
     },
-      "CV": {
-        "RightColumn": {
-          "name": "Ion",
-          "surname": "Burgoa Etxaburu",
-          "profession":"Graphic Designer / FrontEnd Developer",
-          "indicator": {
-            "aboutMe": "About me",
-            "studies": "Studies",
-            "experience": "Experience"
-        },
-          "download": "Download My CV"
-        },
-        "LeftColumn": {
-          "ABOUT ME": "A graphic designer with a solid foundation, combined with a growing interest and knowledge of front-end development. Thanks to my design experience, I have a creative approach, which, combined with key technologies (HTML, CSS, and JavaScript), I achieve a multidisciplinary profile, contributing unique value to the team in creating attractive and functional visual interfaces.",
-          "STUDIES": "STUDIES",
-          "studies": [
-      {
-        "title": "Bachelor's Degree in Creation and Design",
-        "where": "EHU",
-        "when": "2009-2013"
-      },
-      {
-        "title": "Master's Degree in Graphic Design, Creative Photography and Social Media 2.0",
-        "where": "MASS MEDIA",
-        "when": "2013-2014"
-      },
-         {
-        "title": "Course on Design and Creation of Machining Parts",
-        "where": "LEARTIKER",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Master's Degree in Teacher Training",
-        "where": "VIU",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Front-End Web Development and Programming Bootcamp",
-        "where": "PEÑASCAL F5",
-        "when": "2025"
-      }
-    ],
-          "EXPERIENCE": "EXPERIENCE",
-          "experience":[
-            {
-              "title": "Graphic Designer",
-              "where": "7Metrópolis (Colombia)",
-              "when": "2015",
-              "content": "Mastery of Adobe Suite tools for creating attractive and effective visual designs."
-            },
-            {
-              "title": "Graphic Designer & Photographer",
-              "where": "DRA! (Spain)",
-              "when": "2017-18",
-              "content": "- Campaign Creation\n- Experience creating high-quality images for e-commerce.\n- Use of Photoshop and Lightroom image editing software to enhance and optimize images.\n- Analysis of user interaction and optimization of visual content on digital platforms."
-            },
-            {
-              "title": "Graphic Designer",
-              "where": "Quick Digital (Spain)",
-              "when": "2018",
-              "content": "- Design of visual interfaces for e-learning platforms, focusing on creating engaging and easy-to-use user experiences.\n- Application of graphic design principles to create efficient visual interfaces consistent with brand identity on digital platforms.\n- Work in collaboration with multidisciplinary teams (developers, educators, content designers) to create effective and engaging e-learning platforms."
-            },
-            {
-              "title": "Graphic Designer",
-              "where": "Alquimia Trip (Chile)",
-              "when": "2022-23",
-              "content": "- Brand development and design.\n- Experience in customer needs analysis.\n- Experience in hybrid work"
-            },
-            {
-              "title": "Art Instructor",
-              "where": "Pinot & Picasso (Australia)",
-              "when": "2020-23",
-              "content": "- Experience teaching and explaining concepts.\n- Fostering a collaborative work environment.\n- Solving creative problems and adapting teaching to various learning styles.\n- Organizing and managing creative projects, which involves planning, coordination, and meeting deadlines."
-            },
-            {
-              "title": "Graphic Designer",
-              "when": "2015",
-              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
-            }
-         ]
-       }
-      },
-      "Contact": {
-        "headline": "Send me a message!",
-        "subline": "Do you have a question or suggestion, or just want to say hello? GO AHEAD! ",
-        "form": {
-          "nameLabel": "Name",
-          "namePlaceholder": "Your name",
-          "emailLabel": "Email",
-          "emailPlaceholder": "Your email",
-          "messageLabel": "Message",
-          "messagePlaceholder": "Your message",
-          "sendButton": "SHOOT"
+    "ProjectsSection": {
+      "graphicdesign": {
+        "title": "Graphic Design",
+        "subcategories": {
+          "illustration": "Illustration",
+          "branding": "Branding",
+          "others": "Others"
         }
+      },
+      "webdevelopment": "Web Development",
+      "photography": {
+        "title": "Photography",
+        "animal": "Animals",
+        "calle": "Street",
+        "producto": "Product",
+        "retratos": "Portrait",
+        "naturaleza": "Nature",
+        "arquitectura": "Architecture",
+        "estilo-de-vida": "Lifestyle",
+        "paisaje": "Landscape"
+      }
+    },
+    "CV": {
+      "RightColumn": {
+        "name": "Ion",
+        "surname": "Burgoa Etxaburu",
+        "profession": "Graphic Designer / FrontEnd Developer",
+        "indicator": {
+          "aboutMe": "About me",
+          "studies": "Studies",
+          "experience": "Experience"
+        },
+        "download": "Download My CV"
+      },
+      "LeftColumn": {
+        "ABOUT ME": "A graphic designer with a solid foundation, combined with a growing interest and knowledge of front-end development. Thanks to my design experience, I have a creative approach, which, combined with key technologies (HTML, CSS, and JavaScript), I achieve a multidisciplinary profile, contributing unique value to the team in creating attractive and functional visual interfaces.",
+        "STUDIES": "STUDIES",
+        "studies": [
+          {
+            "title": "Bachelor's Degree in Creation and Design",
+            "where": "EHU",
+            "when": "2009-2013"
+          },
+          {
+            "title": "Master's Degree in Graphic Design, Creative Photography and Social Media 2.0",
+            "where": "MASS MEDIA",
+            "when": "2013-2014"
+          },
+          {
+            "title": "Course on Design and Creation of Machining Parts",
+            "where": "LEARTIKER",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Master's Degree in Teacher Training",
+            "where": "VIU",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Front-End Web Development and Programming Bootcamp",
+            "where": "PEÑASCAL F5",
+            "when": "2025"
+          }
+        ],
+        "EXPERIENCE": "EXPERIENCE",
+        "experience": [
+          {
+            "title": "Graphic Designer",
+            "where": "7Metrópolis (Colombia)",
+            "when": "2015",
+            "content": "- Comprehensive development of brand visual identity from scratch: logo, typography, and a consistent graphic style.\n- Advanced use of the Adobe suite (Illustrator, Photoshop, and InDesign).\n- Creation of visual content for social media, maintaining a consistent aesthetic aligned with brand identity."
+          },
+          {
+            "title": "Graphic Designer & Photographer",
+            "where": "DRA! (Spain)",
+            "when": "2017-18",
+            "content": "- Campaign creation.\n- User interaction analysis and visual content optimization for digital platforms.\n- Experience in producing high-quality images for e-commerce.\n- Proficient in image editing software such as Photoshop and Lightroom for enhancement and optimization."
+          },
+          {
+            "title": "Graphic Designer",
+            "where": "Quick Digital (Spain)",
+            "when": "2018",
+            "content": "- Design of visual interfaces for e-learning platforms, focusing on creating engaging and user-friendly experiences.\n- Application of graphic design principles to develop efficient visual interfaces aligned with brand identity across digital platforms.\n- Collaboration with multidisciplinary teams (developers, educators, content designers) to build effective and appealing e-learning platforms."
+          },
+          {
+            "title": "Graphic Designer",
+            "where": "Alquimia Trip (Chile)",
+            "when": "2022-23",
+            "content": "- Brand development and design.\n- Experience in customer needs analysis.\n- Experience in hybrid work"
+          },
+          {
+            "title": "Art Instructor",
+            "where": "Pinot & Picasso (Australia)",
+            "when": "2020-23",
+            "content": "- Experience in teaching and explaining concepts.\n- Promote a collaborative working environment.\n- Solve creative problems and adapt instruction to various learning styles.\n- Organization and management of creative projects, including planning, coordination, and meeting deadlines."
+          },
+          {
+            "title": "Illustrator",
+            "where": "Think Poteito (BCN)",
+            "when": "2014",
+            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+          }
+        ]
+      }
+    },
+    "Contact": {
+      "headline": "Send me a message!",
+      "subline": "Do you have a question or suggestion, or just want to say hello? GO AHEAD! ",
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "Your name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Your email",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Your message",
+        "sendButton": "SHOOT"
       }
     }
   }
+}

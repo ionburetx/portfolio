@@ -2,6 +2,7 @@
 import React from 'react'
 
 const PhotographyCard = ({ image, title }) => {
+  
   return (
     <div className="photography-card relative w-full aspect-square cursor-pointer overflow-hidden group">
   <img
