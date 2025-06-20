@@ -54,10 +54,10 @@ const Dra = () => {
 
       {/* Sección Logo Niños */}
       <div className="flex flex-row gap-6 w-full">
-        <div className="w-[70%]">
-          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">LOGO ADULTOS</h2>
+        <div className="w-[70%] text-right">
+          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">LOGO NIÑOS</h2>
           <p className="text-base md:text-lg">
-            Creé un logo sobrio y minimalista que sirviera para unir todos los producto que vendian en las tiendas. De este modo, consiguiendo que el branding de la empresa unificara todos los productos que vendian.
+            Creé un logo divertido y colorido que capturara la atención de los más pequeños, utilizando formas y tipografías amigables.
           </p>
         </div>
         <div className="w-[30%] flex flex-col gap-4">
@@ -143,40 +143,28 @@ const Dra = () => {
   </div>
 </div>
 
-      {/* Campañas Estacionales */}
-      <div className="w-full">
-        <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">CAMPAÑAS ESTACIONALES</h2>
-        <p className="text-base md:text-lg mb-6">
-          Banners, emailings y flyers para promociones  de (navidad, rebajas, por cada cambio de temporada etc.).
-        </p>
-        <div className="flex flex-col gap-4">
-          <img
-            src={images['definitibu nagusi 2.jpg']}
-            alt="Rectangular 1"
-            className="w-full h-40 object-cover"
-          />
-          <img
-            src={images['definitibu txiki.jpg']}
-            alt="Rectangular 2"
-            className="w-full h-60 object-cover"
-          />
-          <img
-            src={images['dra!paris.jpg']}
-            alt="Rectangular 3"
-            className="w-full h-48 object-cover"
-          />
-          <img
-            src={images['facebokprest.jpg']}
-            alt="Rectangular 4"
-            className="w-full h-52 object-cover"
-          />
-          <img
-            src={images['facebokprest2.jpg']}
-            alt="Rectangular 5"
-            className="w-full h-44 object-cover"
-          />
-        </div>
-      </div>
+     <div className="w-full">
+  <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">CAMPAÑAS ESTACIONALES</h2>
+  <p className="text-base md:text-lg mb-6">
+    Banners, emailings y flyers para promociones de (navidad, rebajas, por cada cambio de temporada etc.).
+  </p>
+  <div className="flex flex-col gap-4">
+    {[
+      'definitibu nagusi 2.jpg',
+      'definitibu txiki.jpg',
+      'dra!paris.jpg',
+      'facebokprest.jpg',
+      'facebokprest2.jpg',
+    ].map((name, index) => (
+      <img
+        key={index}
+        src={images[name]}
+        alt={`Imagen ${index + 1}`}
+        className="w-full object-contain"
+      />
+    ))}
+  </div>
+</div>
 
       {/* Foto y Redes */}
       <div className="w-full">
