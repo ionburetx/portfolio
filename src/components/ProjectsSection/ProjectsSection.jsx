@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import SectionHeader from '../SectionHeader'
 import PhotographyCard from './Photography/PhotographyCard'
 import GraphicDesignCat from './GraphicDesign/GraphicDesignCat'
+import WebDevelopmentCat from "./WebDevelopmentCat/WebDevelopmentCat";
 import { useTranslation } from "react-i18next";
 
 const ProjectsSection = () => {
@@ -59,8 +60,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
         {t("HomePage.ProjectsSection.webdevelopment")}
       </h2>
-
-      {/* Aquí podrías incluir tarjetas o contenido más adelante */}
+      <WebDevelopmentCat />
 
       {/* Categoría Fotografía */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-12 tracking-wider">
