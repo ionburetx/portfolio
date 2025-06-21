@@ -29,7 +29,59 @@
         "title": "Diseinu Grafikoa",
         "subcategories": {
           "illustration": "Ilustrazioa",
-          "branding": "Identitate Korporatiboa",
+          "branding": {
+            "title": "Identitate Korporatiboa",
+            "projects": {
+              "7metropolis": {
+                "title": "7Metropolis",
+                "intro": "Izaera solidariozko enpresa gazte bat. Euskal eta Kataluniako ardoak inportatzen zituen, eta salmenta bakoitzeko zati bat Kolonbiako eremuak birlandatu eta berrurbanizatzeko bideratzen zuen. 7Metrolopis enpresaren marka, Ben Wilson-en Metropolis liburuan inspiratuta dago, (zibilizazio handiak, mapa nautikoak, antzinako merkataritza eta hirien bilakaera) gogora ekarriz. Dena arretaz pentsatua izan zen sendotasuna, ondarea eta gizarte-konpromisoa transmititzeko. Logotik hasi eta aplikazio txikienetara, pieza bakoitza nortasun propioa duen unibertso grafiko baten parte da. Pieza bakoitzak ardoaren zaporea ez ezik, proiektuaren konpromiso soziala komunikatzea ezinbestekoa zen. Esperientzia aparta, non diseinuak produktuak saltzeaz gain, etorkizuna hobetzen laguntzen zuen.",
+                "logocola": "LOGO KOLABORATIBOA",
+                "logocolaDesc": "Logotipoaren aldaerak diseinatu nituen 7Metropolisekin batera lan egiten zuten jatetxe eta banatzaileen identitateek integratzeko. Erronka handia  izan zen estilo desberdinak bateratzea marka bakoitzaren esentzia galdu gabe. Konposizio malgu eta orekatuak aukeratu ziren, 7Metropolisen estetika klasikoa eta kolaboratzaileen elementu adierazgarriak uztartuz.",
+                "tarjetas": "TXARTELAK",
+                "tarjetasDesc": "Bisita-txartelak eta paper-sortako beste elementu batzuk bandera ezberdinekin edo ikurriñarekin fusionatuz diseinatu ziren, koloreen arteko jokoak erabiliz (anaitasuna eta lankidetza irudikatzeko asmoz).",
+                "etiquetas": "ETIKETAK",
+                "etiquetasDesc": "Ardo-etiketek produktuen jatorri europarra 7Metropolisen narrazio zaharrarekin uztartzen dute. Testuradun ilustrazioak, letra serif eleganteak eta mapa edo armarri historikoak gogora ekartzen dituzten konposizioak erabili ziren.",
+                "menu": "MENUA ETA EDALONTZI-AZPIKOAK",
+                "menuDesc": "Ardoaren zentzumen-esperientzia osatzeko diseinatu ziren. Estilo editorial garbi batekin eta ukitu grafiko zaharrekin, markaren unibertsoarekin koherentzia eta sofistikazioa transmititzeko helburua alde batera utzi gabe.",
+                "final": "Lan guzti hau Adobe paketearekin egin zen (Illustrator, Photoshop, InDesign eta Lightroom). Estetikaz gain, elementu bakoitzaren intentzioa zaintzen ahalegindu giñen. Esperientzia ahaztezina izan zen, non diseinua beste hizkuntza bat bezala bihurtu zen, eta marka, istorio bisual bat."
+              },
+              "dra": {
+                "title": "DRA!",
+                "intro": "Hasiera baten praktikak egiteko sartu nintzen enpresan, haien irudi korporatiboaren berrikuspen oso bat gidatzeko helburuarekin. Moda-osagarrietan eta haur-produktuetan espezializatutako denda izanik, bi lerro horiek bereizi behar zituen, nortasun bisual bereziekin eta markaren esentzia galdu gabe. Aldi berean, enpresaren irudiari bira bat ematea bilatzen zen. Horretarako, taldean lan egin behar izan genuen, haien behar eta helburu nagusiak ulertzeko.",
+                "logo": "LOGOEN DISEINUA",
+                "para": "Enpresaren publikoaren ikerketarekin hasi nintzen (helduak vs. haurrak), marka bakar baten azpian bi logotipo desberdin sortuz. Izena mantentzea beharrezkoa zenez, estetika egokitu genuen segmentu bakoitzerako.",
+                "adulto": "HELDUEN LOGOA",
+                "adultoDesc": "Logo sobrio eta minimalista bat sortu nuen, dendetan saltzen zituzten produktu guztiak bateratzeko baliagarria izan zedin. Horrela, enpresaren branding-a produktu guztien artean bateratzea lortu genuen.",
+                "nino": "HAURREN LOGOA",
+                "ninoDesc": "Logo dibertigarri eta koloretsu bat sortu nuen, txikienen arreta erakartzeko. Forma organikoak eta kolore biziak dituen paleta bat erabiliz.",
+                "como": "Haur-dendak kanpotik identifikatzeko kartel bat jarri nahi zutenez, bi aukera desberdin diseinatu nizkien. Lehen diseinua egurrezko listoi koloretsuz osatutako panela, bertan logoaren bertsio inprimatuarekin, eta bestea koloretako azulejuz egindako collage bat.",
+                "merchandising": "MERCHANDISING KORPORATIBOA",
+                "merchandisingDesc": "Oihalezko poltsak, bezero-txartelak eta packaging-a diseinatu nituen nortasun berriarekin.",
+                "flyers": "FLYERRAK",
+                "flyersDesc": "Promozio eta ekitaldi berezietarako flyer-en diseinu lanak.",
+                "campanas": "KANPAINA ESTAZIONALAK",
+                "campanasDesc": "Gabonetako, denboraldiz kanpoko beherapenen eta udaberri/udazken etorreren promozioetarako banner-ak, emailing-ak eta flyer-ak sortu nituen.",
+                "foto": "ARGAZKILATZA ETA SARE SOZIALAK",
+                "fotoDesc": "Amaitzeko, produktuen argazkiak ere egin nituen webgunerako eta sare sozialetarako, markaren identitatea sarean indartuz."
+              },
+              "constone": {
+                "title": "Constone",
+                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
+              },
+              "codigo": {
+                "title": "Código",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              },
+              "alquimia": {
+                "title": "Alquimia Trip",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              },
+              "kresala": {
+                "title": "Kresala",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              }
+            }
+          },
           "others": "Bestelakoak"
         }
       },

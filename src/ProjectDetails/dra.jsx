@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 const imageModules = import.meta.glob('/src/assets/ideCor/Dra/**/*.{png,jpg,jpeg}', { eager: true });
 
@@ -11,21 +12,22 @@ const images = Object.fromEntries(
 );
 
 const Dra = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col text-white px-4 py-8 gap-12">
 
       {/* Texto introductorio */}
       <p className="w-full text-white text-base md:text-lg">
-        Me incorporé a la empresa durante mis prácticas para liderar un rediseño integral de su imagen corporativa. La tienda, especializada en accesorios de moda y productos infantiles, necesitaba diferenciar ambas líneas con identidades visuales únicas, manteniendo la esencia de la marca. Al mismo tiempo dándole una vuelta a la imagen de la empresa. Pare ello, tuvimos que trabajar en equipo para entender sus necesidades y objetivos finales. 
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.intro")} 
       </p>
 
       {/* Sección Diseño de Logotipos (solo visible en mobile/tablet) */}
       <div className="flex flex-col gap-12 lg:hidden">
         {/* Diseño de logotipos */}
         <div className="w-full">
-          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">DISEÑO DE LOGOTIPOS</h2>
+          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.logo")}</h2>
           <p className="text-base md:text-lg">
-            Para ello, empecé con la investigación de público objetivo de la empresa (adultos vs. niños), creando dos logotipos diferenciados bajo una misma marca, conservando su nombre pero renovando su estética para cada segmento.
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.para")}
           </p>
         </div>
 
@@ -40,9 +42,9 @@ const Dra = () => {
             </div>
           </div>
           <div className="w-[70%]">
-            <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">LOGO ADULTOS</h2>
+            <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.adulto")}</h2>
             <p className="text-base md:text-lg">
-              Creé un logo sobrio y minimalista que sirviera para unir todos los productos que vendían en las tiendas. De este modo, consiguiendo que el branding de la empresa unificara todos los productos que vendían.
+              {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.adultoDesc")}
             </p>
           </div>
         </div>
@@ -50,9 +52,9 @@ const Dra = () => {
         {/* Logo niños */}
         <div className="flex flex-row gap-6 w-full">
           <div className="w-[70%] text-right">
-            <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">LOGO NIÑOS</h2>
+            <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.nino")}</h2>
             <p className="text-base md:text-lg">
-              Creé un logo divertido y colorido que capturara la atención de los más pequeños, utilizando formas orgánicas y una paleta de colores vibrantes.
+              {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.ninoDesc")}
             </p>
           </div>
           <div className="w-[30%] flex flex-col gap-4">
@@ -69,19 +71,19 @@ const Dra = () => {
       {/* Sección Diseño de Logotipos (solo visible en desktop) */}
 <div className="hidden lg:flex w-full gap-8">
   <div className="w-[30%] flex flex-col gap-6">
-    <h2 className="text-2xl font-bold uppercase">DISEÑO DE LOGOTIPOS</h2>
+    <h2 className="text-2xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.logo")}</h2>
     <p className="text-lg">
-      Para ello, empecé con la investigación de público objetivo de la empresa (adultos vs. niños), creando dos logotipos diferenciados bajo una misma marca, conservando su nombre pero renovando su estética para cada segmento.
+      {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.para")}
     </p>
 
-    <h2 className="text-2xl font-bold uppercase">LOGO ADULTOS</h2>
+    <h2 className="text-2xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.adulto")}</h2>
     <p className="text-lg">
-      Creé un logo sobrio y minimalista que sirviera para unir todos los productos que vendían en las tiendas. De este modo, consiguiendo que el branding de la empresa unificara todos los productos que vendían.
+      {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.adultoDesc")}
     </p>
 
-    <h2 className="text-2xl font-bold uppercase">LOGO NIÑOS</h2>
+    <h2 className="text-2xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.nino")}</h2>
     <p className="text-lg">
-      Creé un logo divertido y colorido que capturara la atención de los más pequeños, utilizando formas orgánicas y una paleta de colores vibrantes.
+      {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.ninoDesc")}
     </p>
   </div>
 
@@ -103,7 +105,7 @@ const Dra = () => {
 
 {/* Texto siguiente y dos imágenes */}
 <p className="w-full text-base md:text-lg">
-  Como querían también poner un rótulo fuera de los comercios infantiles que tenían, les diseñé 2 opciones diferentes. Uno era de listones de madera de diferentes colores con el logo versionado impreso en él, y el otro era un collage de azulejos de colores.
+  {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.como")}
 </p>
 
 <div className="flex flex-row gap-4 w-full">
@@ -128,9 +130,9 @@ const Dra = () => {
       <div className="w-full flex flex-col lg:flex-row gap-8">
         {/* Merchandising */}
         <div className="lg:w-1/2">
-          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">MERCHANDISING CORPORATIVO</h2>
+          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.merchandising")}</h2>
           <p className="text-base md:text-lg mb-6">
-            Diseño de bolsas de tela, tarjetas de cliente y packaging (bolsas de papel) con la nueva identidad.
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.merchandisingDesc")}
           </p>
           <div className="grid grid-cols-2 gap-4">
             {['tarjeti3.png', 'tarjeti2.png', 'tarjetizb.png', 'tarjetiber.png'].map((name) => (
@@ -143,9 +145,9 @@ const Dra = () => {
 
         {/* Flyers */}
         <div className="lg:w-1/2">
-          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">FLYERS</h2>
+          <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.flyers")}</h2>
           <p className="text-base md:text-lg mb-6">
-            Diseño de flyers para promociones y eventos especiales.
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.flyersDesc")}
           </p>
           <div className="grid grid-cols-2 gap-4">
             {[
@@ -164,9 +166,9 @@ const Dra = () => {
 
       {/* Campañas estacionales */}
       <div className="w-full">
-        <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">CAMPAÑAS ESTACIONALES</h2>
+        <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.campanas")}</h2>
         <p className="text-base md:text-lg mb-6">
-          Banners, emailings y flyers para promociones  de (navidad, rebajas, por cada cambio de temporada etc.).
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.campanasDesc")}
         </p>
         <div className="flex flex-col gap-4">
           {[
@@ -183,9 +185,9 @@ const Dra = () => {
 
       {/* Fotografía y redes */}
       <div className="w-full">
-        <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">FOTOGRAFÍA DE PRODUCTO Y REDES SOCIALES</h2>
+        <h2 className="text-xl md:text-2xl font-bold uppercase mb-4">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.foto")}</h2>
         <p className="text-base md:text-lg">
-          Por último mencionar que también me dediqué a la fotografía de producto para su web y las redes sociales, mejorando la cohesión visual.
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.fotoDesc")}
         </p>
       </div>
     </div>

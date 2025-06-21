@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 const imageModules = import.meta.glob('/src/assets/ideCor/metropolis/**/*.{png,jpg,jpeg}', { eager: true });
 
@@ -11,16 +12,13 @@ const images = Object.fromEntries(
 );
 
 const metropolis = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col text-white px-4 py-8 gap-12">
 
       {/* 1. Texto inicial - ancho completo */}
       <p className="text-base md:text-lg w-full">
-        Una joven empresa con alma solidaria. Importa vinos vascos y catalanes, destinando parte de cada venta a reforestar y reurbanizar zonas olvidadas de Colombia.
-Inspirada en el libro Metropolis de Ben Wilson, la marca evoca las grandes civilizaciones, los mapas náuticos, el comercio ancestral y la evolución urbana. Todo fue cuidadosamente pensado para transmitir solidez, legado y compromiso social.
-Desde el logo hasta las aplicaciones más pequeñas, cada pieza forma parte de un universo gráfico con personalidad propia.
-Cada pieza debía comunicar tanto el sabor del vino como el compromiso social del proyecto. 
-Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a sembrar futuro.
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.intro")}
       </p>
 
       <div className="w-full h-40 overflow-hidden mb-6 sm:h-52 md:h-64">
@@ -36,10 +34,9 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
   
   {/* Texto: 100% en mobile, 50% en tablet */}
   <div className="w-full sm:w-1/2">
-    <h2 className="text-xl font-bold uppercase mb-2">LOGO COLABORATIVO</h2>
+    <h2 className="text-xl font-bold uppercase mb-2">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.logocola")}</h2>
     <p className="text-base">
-      Diseñé variantes del logotipo para integrar las identidades de 7Metropolis con las de los restaurantes y distribuidores con los que trabajaban.
-      El reto fue fusionar estilos sin perder la esencia de cada marca. Se optó por composiciones flexibles y equilibradas, manteniendo la estética clásica de 7Metropolis con elementos representativos del socio colaborador.
+      {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.logocolaDesc")}
     </p>
   </div>
 
@@ -67,9 +64,9 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
       {/* 5. Tarjetas: texto alineado derecha + imagen a la izquierda */}
       <div className="flex flex-col sm:flex-row-reverse w-full gap-4 items-start">
         <div className="w-full sm:w-1/2 text-right">
-          <h2 className="text-xl font-bold uppercase mb-2">TARJETAS</h2>
+          <h2 className="text-xl font-bold uppercase mb-2">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.tarjetas")}</h2>
           <p className="text-base">
-            Las tarjetas de presentación y otros elementos de papelería fueron diseñados fusionando la marca corporativa con distintas banderas o ikurriña, haciendo un  juego de colores (representando de una forma la hermandad y colaboración).
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.tarjetasDesc")}
           </p>
         </div>
         <div className="w-full sm:w-1/2 flex justify-center">
@@ -80,9 +77,9 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
       {/* 6. Etiquetas: texto a la izquierda + imagen a la derecha */}
       <div className="flex flex-col sm:flex-row w-full gap-4 items-start">
         <div className="w-full sm:w-1/2">
-          <h2 className="text-xl font-bold uppercase mb-2">ETIQUETAS</h2>
+          <h2 className="text-xl font-bold uppercase mb-2">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.etiquetas")}</h2>
           <p className="text-base">
-            Las etiquetas de vino fusionan el origen europeo de los productos con la narrativa antigua de 7Metropolis. Se usaron ilustraciones con textura, serifas elegantes y composiciones que evocan mapas o escudos históricos.
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.etiquetasDesc")}
           </p>
         </div>
         <div className="w-full sm:w-1/2 flex justify-center">
@@ -97,9 +94,9 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
 
       {/* 8. MENÚ Y POSAVASOS */}
       <div className="w-full">
-        <h2 className="text-xl font-bold uppercase mb-2">MENÚ Y POSAVASOS</h2>
+        <h2 className="text-xl font-bold uppercase mb-2">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.menu")}</h2>
         <p className="text-base mb-4">
-          Diseñados para complementar la experiencia sensorial del vino. Con un estilo editorial limpio y toques gráficos antiguos, para transmitir sofisticación y coherencia con el universo de marca.
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.menuDesc")}
         </p>
 
         {/* Primera fila: 2 imágenes (50% cada una) */}
@@ -132,8 +129,7 @@ Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a s
 
       {/* 10. Texto final full-width */}
       <p className="text-base md:text-lg w-full">
-        Todo este trabajo fue realizado usando el paquete Adobe (Illustrator, Photoshop, InDesign y Lightroom), cuidando no solo la estética, sino también la intención de cada elemento.
-Fue una experiencia donde el diseño se convirtió en lenguaje, y la marca, en historia visual.
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.final")}
       </p>
 
     </div>
