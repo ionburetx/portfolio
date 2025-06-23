@@ -42,7 +42,7 @@ const Header = ({ className = '' }) => {
         {/* Contenido del header */}
         <div className="flex items-center justify-between px-6 py-4">
           <img
-            src="/generalAssets/logo.png"
+            src="./generalAssets/logo.png"
             alt="Logo"
             className={`h-10 cursor-pointer ${isSpinning ? 'spin-animation' : ''}`}
             onClick={handleLogoClick}

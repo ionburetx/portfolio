@@ -51,12 +51,12 @@ const CV = () => {
 
   // Función para descargar el CV según el idioma actual
   const handleDownload = () => {
-    let cvFile = "/generalAssets/CVesp.pdf"; // Español por defecto
+    let cvFile = "./generalAssets/CVesp.pdf"; // Español por defecto
 
     if (i18n.language === "en") {
-      cvFile = "/generalAssets/CVeng.pdf";
+      cvFile = "./generalAssets/CVeng.pdf";
     } else if (i18n.language === "eu") {
-      cvFile = "/generalAssets/CVeus.pdf";
+      cvFile = "./generalAssets/CVeus.pdf";
     }
 
     const link = document.createElement("a");
