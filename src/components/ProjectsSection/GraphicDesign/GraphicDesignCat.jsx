@@ -9,7 +9,7 @@ const GraphicDesignCat = () => {
   return (
     <div className="pl-6 md:pl-20">
       {/* Ilustración */}
-      <div className="mb-4">
+      <div>
         <h3 className="text-white text-2xl md:text-4xl font-bold tracking-wide uppercase mb-6">
           {t("HomePage.ProjectsSection.graphicdesign.subcategories.illustration")}
         </h3>
@@ -19,7 +19,7 @@ const GraphicDesignCat = () => {
       {/* Identidad Corporativa */}
       <div className="-ml-6 md:-ml-20 mb-4">
         <div className="pl-6 md:pl-20">
-          <h3 className="text-white text-2xl md:text-4xl font-bold tracking-wide uppercase mb-6">
+          <h3 className="text-white text-2xl md:text-4xl font-bold tracking-wide uppercase mb-6 mt-[390px] md:mt-[390px] lg:mt-[390px]">
             {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.title")}
           </h3>
         </div>

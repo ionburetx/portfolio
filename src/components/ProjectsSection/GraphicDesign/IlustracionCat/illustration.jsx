@@ -1,16 +1,24 @@
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import ilustracion1 from "../../../../assets/ilustracion/ilustracion1.png";
 
 const Illustration = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [animate, setAnimate] = useState(false);
+  const imgRef = useRef(null);
+  const [imgHeight, setImgHeight] = useState(0);
 
   useEffect(() => {
     if (inView) {
       setAnimate(true);
     }
   }, [inView]);
+
+  useEffect(() => {
+    if (imgRef.current) {
+      setImgHeight(imgRef.current.offsetHeight);
+    }
+  }, [animate]);
 
   return (
     <>
@@ -68,7 +76,6 @@ const Illustration = () => {
 
           .illustration-container {
             width: 100%;
-            min-height: 300vh;
             position: relative;
           }
 
@@ -84,23 +91,27 @@ const Illustration = () => {
 
       <div
         ref={ref}
-        className="illustration-container"
+        className="illustration-container flex flex-col items-start justify-start p-0 m-0"
+        style={{ minHeight: "unset", height: "auto" }}
       >
-        {/* Versión para móviles y tablets */}
         <img
+          ref={imgRef}
           src={ilustracion1}
           alt="Ilustración"
           className={`${
             animate ? "animate-slide" : "translate-x-[100vw]"
-          } block lg:hidden scale-[20] sm:scale-[8] md:scale-[9] origin-top-left pointer-events-none select-none`}
+          } scale-[20] sm:scale-[8] md:scale-[9] lg:scale-[4] origin-top-left pointer-events-none select-none mb-0`}
+          style={{ display: "block" }}
+          onLoad={() =>
+            setImgHeight(
+              imgRef.current ? imgRef.current.offsetHeight : 0
+            )
+          }
         />
-        {/* Versión para desktop */}
-        <img
-          src={ilustracion1}
-          alt="Ilustración"
-          className={`${
-            animate ? "animate-slide" : "translate-x-[100vw]"
-          } hidden lg:block scale-[4] origin-top-left pointer-events-none select-none`}
+        {/* Spacer below the image, only if height is measured */}
+        <div
+          style={{ height: imgHeight, width: "100%" }}
+          aria-hidden="true"
         />
       </div>
     </>
