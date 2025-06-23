@@ -11,13 +11,14 @@ const Header = ({ className = '' }) => {
 
   const handleNavClick = (id) => {
     if (location.pathname === '/home' || location.pathname === '/') {
-      // Si estamos en home, hacemos scroll
       const el = document.getElementById(id)
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        const y = el.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     } else {
-      // Si no, navegamos a home con hash para que el efecto scroll se haga luego
       navigate(`/home#${id}`)
     }
     setIsOpen(false)

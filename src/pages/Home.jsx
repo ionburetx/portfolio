@@ -10,7 +10,13 @@ const Home = () => {
   const location = useLocation()
 
   const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById('trabajos');
+    if (el) {
+      const header = document.querySelector('header');
+      const headerHeight = header ? header.offsetHeight : 0;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerHeight - 8; // 8px extra margen
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 
   useEffect(() => {
