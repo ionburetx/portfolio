@@ -1,6 +1,6 @@
 # 🧠 Portfolio
 
-Bienvenido/a a mi proyecto final para la BootCamp de Desarrollo FrontEnd. Este portfolio profesional está diseñado como una web responsive, accesible y visualmente atractiva, desarrollada con React y Vite. El portfolio muestra claramente mi trayectoria profesional, mediante trabajos realizados y mi CV, y permite contactar conmigo mediante el formulario que he añadido al final.
+Bienvenido/a a mi proyecto final para la BootCamp de Desarrollo FrontEnd. Este portfolio está diseñado como una web responsive, accesible y visualmente atractiva, desarrollada con React y Vite. El portfolio muestra claramente mi trayectoria profesional, mediante trabajos realizados y mi CV, y permite contactar conmigo mediante el formulario que he añadido al final.
 
 ---
 
@@ -90,7 +90,8 @@ PORTFOLIO
 ## 🌐 Web publicada
 Puedes ver el portfolio en línea en el siguiente enlace:
 
-🔗 Ver sitio web en producción??????????????????????????????????????????????????????????????????
+🔗 Ver sitio web en producción:
+https://ionburetx.github.io/portfolio/
 
 ---
 
@@ -107,7 +108,7 @@ Puedes ver el portfolio en línea en el siguiente enlace:
 
 ✅ Trello (para gestión de tareas y requisitos)
 
-🌐 GitHub Actions (para despliegue)??????????????????????????????????????????????????????????
+🌐 GitHub Actions (para despliegue)
 
 ---
 
@@ -115,4 +116,4 @@ Puedes ver el portfolio en línea en el siguiente enlace:
 ¿Quieres saber más sobre mí o trabajar juntos?
 
 📧 Puedes escribirme a: [ionburgoa1@gmail.com]
-🌐 O visita mi portfolio: https://tusitio.netlify.app????????????????????????????????????????????
+🌐 O visita mi portfolio: https://ionburetx.github.io/portfolio/
