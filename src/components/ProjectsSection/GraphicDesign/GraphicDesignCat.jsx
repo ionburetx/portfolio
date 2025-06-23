@@ -20,7 +20,7 @@ const GraphicDesignCat = () => {
       <div className="-ml-6 md:-ml-20 mb-4">
         <div className="pl-6 md:pl-20">
           <h3 className="text-white text-2xl md:text-4xl font-bold tracking-wide uppercase mb-6">
-            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding")}
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.title")}
           </h3>
         </div>
         <IdeCorCat />
