@@ -2,6 +2,11 @@ import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+// Importar imágenes de OtrosCat
+import brokisImg from '@/assets/otros/brokis/trptico argi2 trasero.jpg';
+import cascosImg from '@/assets/otros/cascos/Packaging cascos 3D.jpg';
+import tripticoImg from '@/assets/otros/tripticos/triptico la salle.jpg';
+
 const OtrosCat = () => {
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
@@ -85,7 +90,7 @@ const OtrosCat = () => {
         <div className="flex flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('brokis')}>
             <img
-              src="src/assets/otros/brokis/trptico argi2 trasero.jpg"
+              src={brokisImg}
               alt="Brokis"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -109,7 +114,7 @@ const OtrosCat = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('cascos')}>
             <img
-              src="src/assets/otros/cascos/Packaging cascos 3D.jpg"
+              src={cascosImg}
               alt="Cascos"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -136,10 +141,10 @@ const OtrosCat = () => {
         className={`flex flex-col lg:flex-row gap-0 ${getAnimationClass('slide-from-left', inView2, 'row2')}`}
       >          {/* Card 3 */}
           <div className="flex flex-row lg:flex-row-reverse w-full lg:w-1/2">
-            <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('tripticos')}>
+            <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('triptico')}>
               <img
-                src="src/assets/otros/tripticos/triptico la salle.jpg"
-                alt="Trípticos"
+                src={tripticoImg}
+                alt="Tríptico La Salle"
                 className="w-full h-full object-cover hover:opacity-90 transition-opacity"
               />
             </div>
@@ -150,7 +155,7 @@ const OtrosCat = () => {
               <button
                 type="button"
                 aria-label="Más info sobre Trípticos"
-                onClick={() => handleProjectClick('tripticos')}
+                onClick={() => handleProjectClick('triptico')}
                 className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
               >
                 +

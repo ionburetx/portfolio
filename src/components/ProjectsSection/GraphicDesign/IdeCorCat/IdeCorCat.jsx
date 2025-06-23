@@ -3,6 +3,14 @@ import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+// Importar imágenes de identidad corporativa (IdeCorCat)
+import draImg from '@/assets/ideCor/Dra/DRA!.jpg';
+import metropolisImg from '@/assets/ideCor/metropolis/7m.jpg';
+import kresalaImg from '@/assets/ideCor/Kresala/kresala.jpg';
+import constoneImg from '@/assets/ideCor/Constone/constone.jpg';
+import codigoImg from '@/assets/ideCor/Codigo/codigo.jpg';
+import alquimiaImg from '@/assets/ideCor/alquimia/alquimia.jpg';
+
 const IdeCorCat = () => {
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
@@ -93,7 +101,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('dra')}>
             <img
-              src="src/assets/ideCor/Dra/DRA!.jpg"
+              src={draImg}
               alt="DRA!"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -117,7 +125,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('7metropolis')}>
             <img
-              src="src/assets/ideCor/metropolis/7m.jpg"
+              src={metropolisImg}
               alt="7 Metropolis"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -147,7 +155,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row lg:flex-row-reverse w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('kresala')}>
             <img
-              src="src/assets/ideCor/Kresala/kresala.jpg"
+              src={kresalaImg}
               alt="Kresala"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -184,7 +192,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('constone')}>
             <img
-              src="src/assets/ideCor/Constone/constone.jpg"
+              src={constoneImg}
               alt="Constone"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -201,7 +209,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('codigo')}>
             <img
-              src="src/assets/ideCor/Codigo/codigo.jpg"
+              src={codigoImg}
               alt="Código"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -225,7 +233,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('alquimiatrip')}>
             <img
-              src="src/assets/ideCor/alquimia/alquimia.jpg"
+              src={alquimiaImg}
               alt="Alquimia Trip"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />

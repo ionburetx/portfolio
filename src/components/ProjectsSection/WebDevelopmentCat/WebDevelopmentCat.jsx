@@ -2,6 +2,12 @@ import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+// Importar imágenes de desarrollo web
+import naliImg from '@/assets/desweb/nalion/nali.jpg';
+import zapaImg from '@/assets/desweb/zapateria/zapa.jpg';
+import ionImg from '@/assets/desweb/portfolio/ion.jpg';
+import pwImg from '@/assets/desweb/playwrong/pw.jpg';
+
 const WebDevelopment = () => {
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
@@ -74,7 +80,7 @@ const WebDevelopment = () => {
         <div className="flex flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('nalion')}>
             <img
-              src="src/assets/desweb/nalion/nali.jpg"
+              src={naliImg}
               alt="Nalion"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
@@ -97,8 +103,8 @@ const WebDevelopment = () => {
         <div className="flex flex-row-reverse lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('zapateria')}>
             <img
-              src="src/assets/desweb/zapateria/zapa.jpg"
-              alt="La Rulla"
+              src={zapaImg}
+              alt="Zapatería"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
           </div>
@@ -126,8 +132,8 @@ const WebDevelopment = () => {
         <div className="flex flex-row lg:flex-row-reverse w-full lg:w-1/2">
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('portfolio')}>
             <img
-              src="src/assets/desweb/portfolio/ion.jpg"
-              alt="Portfolio"
+              src={ionImg}
+              alt="Portfolio Ion"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
           </div>
@@ -161,8 +167,8 @@ const WebDevelopment = () => {
           </div>
           <div className="w-1/2 cursor-pointer aspect-square" onClick={() => handleProjectClick('playwrong')}>
             <img
-              src="src/assets/desweb/playwrong/pw.jpg"
-              alt="Playwrong"
+              src={pwImg}
+              alt="PlayWrong"
               className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             />
           </div>
