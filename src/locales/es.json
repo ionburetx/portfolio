@@ -24,6 +24,80 @@
       "im": "Soy",
       "text": "Un apasionado del sector artístico en cada una de sus ramas. Me dedico al diseño gráfico, desarrollo frontend y la fotografía. ¿Quieres ver alguno de mis trabajos?"
     },
+    "ProjectsSection": {
+      "graphicdesign": {
+        "title": "Diseño Gráfico",
+        "subcategories": {
+          "illustration": "Ilustración",
+          "branding": {
+            "title": "Identidad Corporativa",
+            "projects": {
+              "7metropolis": {
+                "title": "7Metropolis",
+                "intro": "Una joven empresa con alma solidaria. Importa vinos vascos y catalanes, destinando parte de cada venta a reforestar y reurbanizar zonas olvidadas de Colombia. Inspirada en el libro Metropolis de Ben Wilson, la marca evoca las grandes civilizaciones, los mapas náuticos, el comercio ancestral y la evolución urbana. Todo fue cuidadosamente pensado para transmitir solidez, legado y compromiso social. Desde el logo hasta las aplicaciones más pequeñas, cada pieza forma parte de un universo gráfico con personalidad propia. Cada pieza debía comunicar tanto el sabor del vino como el compromiso social del proyecto. Una experiencia donde el diseño no solo vendía productos, sino que ayudaba a sembrar futuro.",
+                "logocola": "LOGO COLABORATIVO",
+                "logocolaDesc": "Diseñé variantes del logotipo para integrar las identidades de 7Metropolis con las de los restaurantes y distribuidores con los que trabajaban. El reto fue fusionar estilos sin perder la esencia de cada marca. Se optó por composiciones flexibles y equilibradas, manteniendo la estética clásica de 7Metropolis con elementos representativos del socio colaborador.",
+                "tarjetas": "TARJETAS",
+                "tarjetasDesc": "Las tarjetas de presentación y otros elementos de papelería fueron diseñados fusionando la marca corporativa con distintas banderas o ikurriña, haciendo un juego de colores (representando de una forma la hermandad y colaboración).",
+                "etiquetas": "ETIQUETAS",
+                "etiquetasDesc": "Las etiquetas de vino fusionan el origen europeo de los productos con la narrativa antigua de 7Metropolis. Se usaron ilustraciones con textura, serifas elegantes y composiciones que evocan mapas o escudos históricos.",
+                "menu": "MENÚ Y POSAVASOS",
+                "menuDesc": "Diseñados para complementar la experiencia sensorial del vino. Con un estilo editorial limpio y toques gráficos antiguos, para transmitir sofisticación y coherencia con el universo de marca.",
+                "final": "Todo este trabajo fue realizado usando el paquete Adobe (Illustrator, Photoshop, InDesign y Lightroom), cuidando no solo la estética, sino también la intención de cada elemento. Fue una experiencia donde el diseño se convirtió en lenguaje, y la marca, en historia visual."
+              },
+              "dra": {
+                "title": "DRA!",
+                "intro": "Me incorporé a la empresa durante mis prácticas para liderar un rediseño integral de su imagen corporativa. La tienda, especializada en accesorios de moda y productos infantiles, necesitaba diferenciar ambas líneas con identidades visuales únicas, manteniendo la esencia de la marca. Al mismo tiempo dándole una vuelta a la imagen de la empresa. Pare ello, tuvimos que trabajar en equipo para entender sus necesidades y objetivos finales.",
+                "logo": "DISEÑO DE LOGOTIPOS",
+                "para": "Para ello, empecé con la investigación de público objetivo de la empresa (adultos vs. niños), creando dos logotipos diferenciados bajo una misma marca, conservando su nombre pero renovando su estética para cada segmento.",
+                "adulto": "LOGO ADULTOS",
+                "adultoDesc": "Creé un logo sobrio y minimalista que sirviera para unir todos los productos que vendían en las tiendas. De este modo, consiguiendo que el branding de la empresa unificara todos los productos que vendían.",
+                "nino": "LOGO NIÑOS",
+                "ninoDesc": "Creé un logo divertido y colorido que capturara la atención de los más pequeños, utilizando formas orgánicas y una paleta de colores vibrantes.",
+                "como": "Como querían también poner un rótulo fuera de los comercios infantiles que tenían, les diseñé 2 opciones diferentes. Uno era de listones de madera de diferentes colores con el logo versionado impreso en él, y el otro era un collage de azulejos de colores.",
+                "merchandising": "MERCHANDISING CORPORATIVO",
+                "merchandisingDesc": "Diseño de bolsas de tela, tarjetas de cliente y packaging (bolsas de papel) con la nueva identidad.",
+                "flyers": "FLYERS",
+                "flyersDesc": "Diseño de flyers para promociones y eventos especiales.",
+                "campanas": "CAMPAÑAS ESTACIONALES",
+                "campanasDesc": "Banners, emailings y flyers para promociones de (navidad, rebajas, por cada cambio de temporada etc.).",
+                "foto": "FOTOGRAFÍA DE PRODUCTO Y REDES SOCIALES",
+                "fotoDesc": "Por último mencionar que también me dediqué a la fotografía de producto para su web y las redes sociales, mejorando la cohesión visual."
+              },
+              "constone": {
+                "title": "Constone",
+                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
+              },
+              "codigo": {
+                "title": "Código",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              },
+              "alquimia": {
+                "title": "Alquimia Trip",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              },
+              "kresala": {
+                "title": "Kresala",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              }
+            }
+          },
+          "others": "Others"
+        }
+      },
+      "webdevelopment": "Desarrollo Web",
+      "photography": {
+        "title": "Fotografía",
+        "animal": "Animales",
+        "calle": "Calle",
+        "producto": "Producto",
+        "retratos": "Retratos",
+        "naturaleza": "Naturaleza",
+        "arquitectura": "Arquitectura",
+        "estilo-de-vida": "Estilo de Vida",
+        "paisaje": "Paisaje"
+      }
+    },
     "CV": {
       "RightColumn": {
         "name": "Ion",
@@ -72,13 +146,13 @@
             "title": "Diseñador Gráfico",
             "where": "7Metrópolis (Colombia)",
             "when": "2015",
-            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+            "content": "- Desarrollo integral de la identidad visual de la marca desde cero: logo, tipografía y estilo gráfico coherente.\n- Uso avanzado del paquete Adobe (illustrator, photoshop e indesign).\n- Creación de contenido visual para redes sociales, manteniendo una estética consistente y alineada con la identidad de marca."
           },
           {
             "title": "Diseñador Gráfico y Fotógrafo",
             "where": "DRA! (España)",
             "when": "2017-18",
-            "content": "- Creación de campañas\n- Experiencia en creación de imágenes de alta calidad para comercio electrónico.\n- Uso de software de edición de imágenes Photoshop y Lightroom para la mejora y optimización de imágenes.\n- Análisis de la interacción de los usuarios y la optimización de contenido visual en plataformas digitales."
+            "content": "- Creación de campañas.\n- Análisis de la interacción de los usuarios y la optimización de contenido visual en plataformas digitales.\n- Experiencia en la creación de imágenes de alta calidad para comercio electrónico.\n- Uso de software de edición de imágenes Photoshop y Lightroom para la mejora y optimización de imágenes."
           },
           {
             "title": "Diseñador Gráfico",
@@ -99,9 +173,10 @@
             "content": "- Experiencia en la enseñanza y explicación de conceptos.\n- Fomentar un ambiente de trabajo colaborativo.\n- Resolver problemas creativos y adaptar enseñanzas a varios estilos de aprendizaje.\n- Organización y gestión de proyectos creativos, lo que implica planificación, coordinación y cumplimiento de plazos."
           },
           {
-            "title": "Diseñador Gráfico",
-            "when": "2015",
-            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+            "title": "Ilustrador",
+            "where": "Think Poteito (BCN)",
+            "when": "2014",
+            "content": "- Direct collaboration with companies to understand their brand, style, and visual identity, successfully defining the graphic style according to their needs.\n-Development of custom illustrations based on client briefings and pre-project meetings.\n- Design and production of promotional materials, such as flyers and digital banners for Think Poteito."
           }
         ]
       }

@@ -4,120 +4,195 @@
     "click": "CLICK ",
     "aquí": "HERE",
     "descubre": "AND DISCOVER MORE"
-},
+  },
   "HomePage": {
-      "HEADER": {
-        "about": "ABOUT ME",
-        "projects": "WORKS",
-        "cv": "CV",
-        "contact": "CONTACT"
-      },
-      "SectionHeader": {
-        "about": "ABOUT ME",
-        "projects": "WORKS",
-        "cv": "CV",
-        "contact": "CONTACT"
-      },
-      "AboutMe": {
+    "HEADER": {
+      "about": "ABOUT ME",
+      "projects": "WORKS",
+      "cv": "CV",
+      "contact": "CONTACT"
+    },
+    "SectionHeader": {
+      "about": "ABOUT ME",
+      "projects": "WORKS",
+      "cv": "CV",
+      "contact": "CONTACT"
+    },
+    "AboutMe": {
       "ion": "ion",
       "hey": "HEY",
       "im": "I´m",
       "text": "A passionate individual in the artistic sector across all its branches. I am dedicated to graphic design, frontend development, and photography. Do you want to see some of my work?"
     },
-      "CV": {
-        "RightColumn": {
-          "name": "Ion",
-          "surname": "Burgoa Etxaburu",
-          "profession":"Graphic Designer / FrontEnd Developer",
-          "indicator": {
-            "aboutMe": "About me",
-            "studies": "Studies",
-            "experience": "Experience"
-        },
-          "download": "Download My CV"
-        },
-        "LeftColumn": {
-          "ABOUT ME": "A graphic designer with a solid foundation, combined with a growing interest and knowledge of front-end development. Thanks to my design experience, I have a creative approach, which, combined with key technologies (HTML, CSS, and JavaScript), I achieve a multidisciplinary profile, contributing unique value to the team in creating attractive and functional visual interfaces.",
-          "STUDIES": "STUDIES",
-          "studies": [
-      {
-        "title": "Bachelor's Degree in Creation and Design",
-        "where": "EHU",
-        "when": "2009-2013"
-      },
-      {
-        "title": "Master's Degree in Graphic Design, Creative Photography and Social Media 2.0",
-        "where": "MASS MEDIA",
-        "when": "2013-2014"
-      },
-         {
-        "title": "Course on Design and Creation of Machining Parts",
-        "where": "LEARTIKER",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Master's Degree in Teacher Training",
-        "where": "VIU",
-        "when": "2016-2017"
-      },
-         {
-        "title": "Front-End Web Development and Programming Bootcamp",
-        "where": "PEÑASCAL F5",
-        "when": "2025"
-      }
-    ],
-          "EXPERIENCE": "EXPERIENCE",
-          "experience":[
-            {
-              "title": "Graphic Designer",
-              "where": "7Metrópolis (Colombia)",
-              "when": "2015",
-              "content": "Mastery of Adobe Suite tools for creating attractive and effective visual designs."
-            },
-            {
-              "title": "Graphic Designer & Photographer",
-              "where": "DRA! (Spain)",
-              "when": "2017-18",
-              "content": "- Campaign Creation\n- Experience creating high-quality images for e-commerce.\n- Use of Photoshop and Lightroom image editing software to enhance and optimize images.\n- Analysis of user interaction and optimization of visual content on digital platforms."
-            },
-            {
-              "title": "Graphic Designer",
-              "where": "Quick Digital (Spain)",
-              "when": "2018",
-              "content": "- Design of visual interfaces for e-learning platforms, focusing on creating engaging and easy-to-use user experiences.\n- Application of graphic design principles to create efficient visual interfaces consistent with brand identity on digital platforms.\n- Work in collaboration with multidisciplinary teams (developers, educators, content designers) to create effective and engaging e-learning platforms."
-            },
-            {
-              "title": "Graphic Designer",
-              "where": "Alquimia Trip (Chile)",
-              "when": "2022-23",
-              "content": "- Brand development and design.\n- Experience in customer needs analysis.\n- Experience in hybrid work"
-            },
-            {
-              "title": "Art Instructor",
-              "where": "Pinot & Picasso (Australia)",
-              "when": "2020-23",
-              "content": "- Experience teaching and explaining concepts.\n- Fostering a collaborative work environment.\n- Solving creative problems and adapting teaching to various learning styles.\n- Organizing and managing creative projects, which involves planning, coordination, and meeting deadlines."
-            },
-            {
-              "title": "Graphic Designer",
-              "when": "2015",
-              "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+    "ProjectsSection": {
+      "graphicdesign": {
+        "title": "Graphic Design",
+        "subcategories": {
+          "illustration": "Illustration",
+          "branding": {
+            "title": "Branding",
+            "projects": {
+              "7metropolis": {
+                "title": "7Metropolis",
+                "intro": "A young company with a philanthropic soul. It imports Basque and Catalan wines, allocating part of each sale to reforest and reurbanize neglected areas of Colombia. Inspired by the book Metropolis by Ben Wilson, the brand evokes great civilizations, nautical maps, ancient trade, and urban evolution. Everything was carefully designed to convey strength, legacy, and social commitment. From the logo to the smallest applications, each piece is part of a graphic universe with its own personality. Each element had to express both the flavor of the wine and the project’s social commitment. An experience where design not only sold products but helped sow the seeds of the future.",
+                "logocola": "COLLABORATIVE LOGO",
+                "logocolaDesc": "I designed logo variations to integrate the identities of 7Metropolis with those of the restaurants and distributors they collaborated with. The challenge was to merge styles without losing the essence of each brand. Flexible and balanced compositions were chosen, maintaining 7Metropolis's classic aesthetic while incorporating representative elements of the collaborating partner.",
+                "tarjetas": "CARDS",
+                "tarjetasDesc": "The business cards and other stationery items were designed by blending the corporate brand with different flags or the ikurriña, creating a color interplay that symbolized fraternity and collaboration.",
+                "etiquetas": "LABELS",
+                "etiquetasDesc": "The wine labels combine the European origin of the products with 7Metropolis’s ancient narrative. Textured illustrations, elegant serifs, and compositions evoking maps or historical crests were used.",
+                "menu": "MENU & COASTERS",
+                "menuDesc": "Designed to complement the sensory experience of the wine. Featuring a clean editorial style with vintage graphic touches, the goal was to convey sophistication and consistency with the brand universe.",
+                "final": "All this work was carried out using the Adobe suite (Illustrator, Photoshop, InDesign, and Lightroom), paying attention not only to aesthetics but also to the intention behind each element. It was an experience where design became language, and the brand, a visual story."
+              },
+              "dra": {
+                "title": "DRA!",
+                "intro": "I joined the company during my internship to lead a comprehensive redesign of their corporate identity. The store, specializing in fashion accessories and children’s products, needed to differentiate both lines with unique visual identities while maintaining the brand’s essence. At the same time, we aimed to refresh the company's overall image. To achieve this, we worked as a team to understand their needs and final goals.",
+                "logo": "LOGO DESIGN",
+                "para": "I began by researching the company’s target audience (adults vs. children), creating two distinct logos under a single brand. The name was preserved, but the aesthetic was renewed for each segment.",
+                "adulto": "ADULT LOGO",
+                "adultoDesc": "I designed a sober and minimalist logo to unify all the products sold in the store, helping to establish consistent branding across the entire product line.",
+                "nino": "CHILDREN’S LOGO",
+                "ninoDesc": "I created a fun and colorful logo to catch the attention of children, using organic shapes and a vibrant color palette.",
+                "como": "Since they also wanted to install signage outside their children's stores, I designed two different options. One made of multicolored wooden slats with the adapted logo printed on it. Another featuring a colorful tile collage.",
+                "merchandising": "CORPORATE MERCHANDISING",
+                "merchandisingDesc": "Design of fabric bags, customer cards, and packaging (paper bags) with the new identity.",
+                "flyers": "FLYERS",
+                "flyersDesc": "Flyer design for promotions and special events.",
+                "campanas": "SEASONAL CAMPAIGNS",
+                "campanasDesc": "Banners, emailings, and flyers for seasonal promotions (Christmas, sales, each season change, etc.).",
+                "foto": "PRODUCT PHOTOGRAPHY AND SOCIAL MEDIA",
+                "fotoDesc": "Lastly, I was also in charge of product photography for their website and social media, improving visual cohesion across all platforms."
+              },
+              "constone": {
+                "title": "Constone",
+                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
+              },
+              "codigo": {
+                "title": "Código",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              },
+              "alquimia": {
+                "title": "Alquimia Trip",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              },
+              "kresala": {
+                "title": "Kresala",
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+              }
             }
-         ]
-       }
-      },
-      "Contact": {
-        "headline": "Send me a message!",
-        "subline": "Do you have a question or suggestion, or just want to say hello? GO AHEAD! ",
-        "form": {
-          "nameLabel": "Name",
-          "namePlaceholder": "Your name",
-          "emailLabel": "Email",
-          "emailPlaceholder": "Your email",
-          "messageLabel": "Message",
-          "messagePlaceholder": "Your message",
-          "sendButton": "SHOOT"
+          },
+          "others": "Others"
         }
+      },
+      "webdevelopment": "Web Development",
+      "photography": {
+        "title": "Photography",
+        "animal": "Animals",
+        "calle": "Street",
+        "producto": "Product",
+        "retratos": "Portrait",
+        "naturaleza": "Nature",
+        "arquitectura": "Architecture",
+        "estilo-de-vida": "Lifestyle",
+        "paisaje": "Landscape"
+      }
+    },
+    "CV": {
+      "RightColumn": {
+        "name": "Ion",
+        "surname": "Burgoa Etxaburu",
+        "profession": "Graphic Designer / FrontEnd Developer",
+        "indicator": {
+          "aboutMe": "About me",
+          "studies": "Studies",
+          "experience": "Experience"
+        },
+        "download": "Download My CV"
+      },
+      "LeftColumn": {
+        "ABOUT ME": "A graphic designer with a solid foundation, combined with a growing interest and knowledge of front-end development. Thanks to my design experience, I have a creative approach, which, combined with key technologies (HTML, CSS, and JavaScript), I achieve a multidisciplinary profile, contributing unique value to the team in creating attractive and functional visual interfaces.",
+        "STUDIES": "STUDIES",
+        "studies": [
+          {
+            "title": "Bachelor's Degree in Creation and Design",
+            "where": "EHU",
+            "when": "2009-2013"
+          },
+          {
+            "title": "Master's Degree in Graphic Design, Creative Photography and Social Media 2.0",
+            "where": "MASS MEDIA",
+            "when": "2013-2014"
+          },
+          {
+            "title": "Course on Design and Creation of Machining Parts",
+            "where": "LEARTIKER",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Master's Degree in Teacher Training",
+            "where": "VIU",
+            "when": "2016-2017"
+          },
+          {
+            "title": "Front-End Web Development and Programming Bootcamp",
+            "where": "PEÑASCAL F5",
+            "when": "2025"
+          }
+        ],
+        "EXPERIENCE": "EXPERIENCE",
+        "experience": [
+          {
+            "title": "Graphic Designer",
+            "where": "7Metrópolis (Colombia)",
+            "when": "2015",
+            "content": "- Comprehensive development of brand visual identity from scratch: logo, typography, and a consistent graphic style.\n- Advanced use of the Adobe suite (Illustrator, Photoshop, and InDesign).\n- Creation of visual content for social media, maintaining a consistent aesthetic aligned with brand identity."
+          },
+          {
+            "title": "Graphic Designer & Photographer",
+            "where": "DRA! (Spain)",
+            "when": "2017-18",
+            "content": "- Campaign creation.\n- User interaction analysis and visual content optimization for digital platforms.\n- Experience in producing high-quality images for e-commerce.\n- Proficient in image editing software such as Photoshop and Lightroom for enhancement and optimization."
+          },
+          {
+            "title": "Graphic Designer",
+            "where": "Quick Digital (Spain)",
+            "when": "2018",
+            "content": "- Design of visual interfaces for e-learning platforms, focusing on creating engaging and user-friendly experiences.\n- Application of graphic design principles to develop efficient visual interfaces aligned with brand identity across digital platforms.\n- Collaboration with multidisciplinary teams (developers, educators, content designers) to build effective and appealing e-learning platforms."
+          },
+          {
+            "title": "Graphic Designer",
+            "where": "Alquimia Trip (Chile)",
+            "when": "2022-23",
+            "content": "- Brand development and design.\n- Experience in customer needs analysis.\n- Experience in hybrid work"
+          },
+          {
+            "title": "Art Instructor",
+            "where": "Pinot & Picasso (Australia)",
+            "when": "2020-23",
+            "content": "- Experience in teaching and explaining concepts.\n- Promote a collaborative working environment.\n- Solve creative problems and adapt instruction to various learning styles.\n- Organization and management of creative projects, including planning, coordination, and meeting deadlines."
+          },
+          {
+            "title": "Illustrator",
+            "where": "Think Poteito (BCN)",
+            "when": "2014",
+            "content": "Dominio de herramientas del Pack Adobe para la creación de diseños visuales atractivos y efectivos."
+          }
+        ]
+      }
+    },
+    "Contact": {
+      "headline": "Send me a message!",
+      "subline": "Do you have a question or suggestion, or just want to say hello? GO AHEAD! ",
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "Your name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Your email",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Your message",
+        "sendButton": "SHOOT"
       }
     }
   }
+}
