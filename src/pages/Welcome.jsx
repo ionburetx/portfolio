@@ -3,7 +3,8 @@ import TransitionOverlay from '../components/TransitionOverlay'
 import { TRANSITION_DURATION } from '../utils/Constants'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom' // 👈 AÑADIDO
-
+import fondoBienvenida from '@/assets/generalAssets/fondoBienvenida.png'
+import Logo from '@/assets/generalAssets/logo.png' 
 const Welcome = () => {
   const [showOverlay, setShowOverlay] = useState(true)
   const { t } = useTranslation()
@@ -20,14 +21,13 @@ const Welcome = () => {
   return (
     <div className="relative w-screen h-screen overflow-hidden">
       <img
-        src="src/assets/generalAssets/fondoBienvenida.png"
+        src={fondoBienvenida}
         alt="Fondo"
         className="absolute inset-0 w-full h-full object-cover object-bottom object-right z-0"
       />
 
       <img 
-        src="src/assets/generalAssets/logo.png"
-        alt="Logo"
+        src={Logo}
         className="absolute top-4 left-4 h-10 z-10"
       />
 
