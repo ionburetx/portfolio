@@ -9,6 +9,7 @@ const Illustration = () => {
   const [imgHeight, setImgHeight] = useState(0);
 
   useEffect(() => {
+    console.log("In view:", inView);
     if (inView) {
       setAnimate(true);
     }
@@ -27,10 +28,10 @@ const Illustration = () => {
           /* Móviles (por defecto) */
           @keyframes slideIn {
             0% {
-              transform: translateX(100vw) scale(20);
+              transform: translateX(100vw) scale(10);
             }
             100% {
-              transform: translateX(calc(-2000% + 100vw)) scale(20);
+              transform: translateX(calc(-1000% + 100vw)) scale(10);
             }
           }
 
@@ -98,9 +99,7 @@ const Illustration = () => {
           ref={imgRef}
           src={ilustracion1}
           alt="Ilustración"
-          className={`${
-            animate ? "animate-slide" : "translate-x-[100vw]"
-          } scale-[20] sm:scale-[8] md:scale-[9] lg:scale-[4] origin-top-left pointer-events-none select-none mb-0`}
+          className={`${animate ? "animate-slide" : "translate-x-[100vw]"} scale-[12] sm:scale-[8] md:scale-[9] lg:scale-[4] origin-top-left pointer-events-none select-none mb-0`}
           style={{ display: "block" }}
           onLoad={() =>
             setImgHeight(
