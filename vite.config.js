@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url'
 export default defineConfig({
   plugins: [react()],
   //base: '/porfolio/',
-  base: '/',
+  base: './',
   test: {
     globals: true,
     environment: 'jsdom',
