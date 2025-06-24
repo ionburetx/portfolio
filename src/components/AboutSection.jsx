@@ -1,3 +1,4 @@
+
 export const AboutSection = ({ onScrollToNext }) => {
   const { t } = useTranslation();
   const controls = useAnimation();
@@ -197,7 +198,7 @@ export const AboutSection = ({ onScrollToNext }) => {
           className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-0 lg:mb-0"
         >
           <img
-            src="../../generalAssets/fotobio.png"
+            src="src/assets/generalAssets/fotobio.png"
             alt="My Illustration"
             className="
               pointer-events-none 

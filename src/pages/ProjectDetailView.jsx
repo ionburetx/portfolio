@@ -45,7 +45,7 @@ const ProjectDetailView = () => {
   return (
     <div className="relative min-h-screen w-screen overflow-x-hidden">
       {/* Fondo con blur mediante ::before */}
-      <div className="absolute inset-0 bg-[url('/generalAssets/fondoBio.png')] bg-cover bg-center bg-fixed blur-sm z-0" />
+      <div className="absolute inset-0 bg-[url('src/assets/generalAssets/fondoBio.png')] bg-cover bg-center bg-fixed blur-sm z-0" />
 
       {/* Capa de contenido con fondo negro semitransparente */}
       <div className="relative min-h-screen w-full bg-black/50 z-10">
