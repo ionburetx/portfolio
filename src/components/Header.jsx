@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NavBar from './Menu/NavBar'
 import HamburgerMenu from './Menu/HamburgerMenu'
 import { useNavigate, useLocation } from 'react-router-dom'
-import Logo from '@/assets/generalAssets/logo.png' 
+import Logo    from '@/assets/generalAssets/logo.png' 
 
 const Header = ({ className = '' }) => {
   const [isOpen, setIsOpen] = useState(false)
