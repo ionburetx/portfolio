@@ -78,11 +78,47 @@
               },
               "kresala": {
                 "title": "Kresala",
-                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+                "intro": "What began as a personal drawing for a tattoo has ended up becoming the inspiration to shape my own brand. A project that emerges organically, from the personal realm, but expands toward the collective by deeply connecting with the history, aesthetics, and identity symbols of the Basque Country.",
+                "marca": "THE BRAND",
+                "marcaDesc": "The conceptual core of the project revolves around a symbol loaded with history: the oak tree—more specifically, the Tree of Gernika. Located at the Assembly House of Gernika, this tree not only represents the strength and resilience of the Basque people but has also been, for centuries, the place where lords swore to uphold the Basque legal codes (fueros). Over time, it has become an emblem of freedom, cultural identity, and connection to the land. This symbolic dimension is what I chose to transfer to the brand's visual identity: strong, rooted, with solid values and deeply anchored in the collective memory.",
+                "partir": "From this starting point, I began developing a visual language based on culturally rich elements: Basque landscapes, traditional objects, decorative motifs from local architecture, rural scenes, traditional clothing, elements of Basque mythology, and any visual resource that authentically represents Basque heritage. The design process begins with iconographic, historical, and emotional research, allowing the creation of unique compositions that blend tradition with a contemporary graphic approach. The production techniques I propose—such as woodcut printing and artisanal screen printing—add even more identity and authenticity to the final result.",
+                "logo": "LOGO",
+                "logoDesc": "One of the key elements in constructing the brand's visual world is the original drawing of a half-leaf, representing the clothing and accessories line. This image is designed to be complemented by a second half, symbolizing the jewelry line. When both parts come together, they create a cohesive total look where the textile and object universes merge in a harmonious and meaningful way. The shape of the cut is inspired by a key silhouette, referencing the Eskilantxarri rock on Saturraran beach—adding a symbolic layer connected to the territory, natural memory, and the opening of new possibilities.",
+                "abarca": "The project comprises two main product lines: clothing and jewelry. The garments will include t-shirts, sweatshirts, tote bags, caps, scarves, and more—crafted with sustainable materials and a color palette aligned with the brand’s values: whites, blacks, earthy tones, greens, yellows, and oranges, directly inspired by the colors of nature. The jewelry line, on the other hand, takes a more sculptural and symbolic direction, using materials such as silver, wood, or polymer clay, always open to experimentation with new textures, techniques, or mediums.",
+                "merchandising": "MERCHANDISING",
+                "merchandisingDesc": "From the beginning, I envisioned the brand through an eco-friendly and sustainable lens. This is reflected in the use of responsible materials, not only in the products themselves but also throughout the branding ecosystem: tags made of recycled cardboard and natural twine, reusable fabric bags, plastic-free cards, and packaging designed to minimize environmental impact.",
+                "nombre": "NAME",
+                "nombreDesc": "KRESALA is the name of this brand—a word in Basque that means saltpetre in English. The choice was no coincidence: kresala is a word with strong phonetic presence and identity, directly evoking one of the project’s main sources of inspiration—the Basque coast. It is along that coast—in its landscapes, villages, textures, and sounds—that much of this proposal’s essence resides. Places filled with memory and emotion, where the sea salt doesn’t just cling to the skin, but also permeates the air, the sense of smell, and even hearing, blending with the sound of the sea. In this way, KRESALA is more than just a name—it’s a sensory experience that engages nearly all the senses: touch and sight when handling and viewing the garments, the smell of salt, the sound of the waves... All with the purpose of transporting the customer to those places of the Basque territory through graphic design applied to clothing and jewelry.",
+                "ilus": "ILUSTRATIONS",
+                "ilusDesc": "The project is currently in an advanced stage of design and conceptual development. I’ve created the entire visual identity, graphic system, and corporate materials. The images shown in this portfolio—featuring clothing and jewelry—are high-fidelity sketches meant to visually represent the final proposal. Although the project has not yet been commercially launched, the direction is clear: to create a brand with purpose, rooted in its culture, committed to its environment, and conceived with design as a tool for conveying values."
               }
             }
           },
-          "others": "Others"
+          "others": {
+            "title": "OTHERS",
+            "projects": {
+              "brokis": {
+                "title": "BROKIS",
+                "intro": "In this project, I designed a fold-out brochure for a small shop specializing in lamps, including pendant models, floor lamps, and other styles. The client provided the images and texts, and my responsibility was to structure and organize that content to achieve a design that was attractive, clear, and functional.",
+                "planta": "TOP VIEW IMAGE",
+                "plantaDesc": "I worked on the strategic distribution of images and information, carefully managing the visual hierarchy and consistency throughout the brochure to ensure a smooth reading flow and effective communication. I used professional design tools to balance aesthetics with practicality, aiming for a brochure that would reflect the shop’s identity and support the customer's purchasing decision.",
+                "d": "3D",
+                "dDesc": "This project allowed me to deepen my skills in managing visual and textual content for promotional materials, as well as to understand the importance of strong structural design in enhancing product presentation within a compact and accessible format."
+              },
+              "tripticos": {
+                "title": "TRÍPTICOS",
+                "intro": "In this project, I designed several promotional brochures for different schools that were beginning their pre-enrollment period. The content—including texts, images, and logos—was provided by the institutions; my main task was to organize and structure this information effectively in order to achieve an attractive and functional design.",
+                "utilizando": "Using graphic design tools, I focused on distributing the content in a clear and hierarchical way, ensuring that each key message had proper visibility and that the overall layout maintained a visual flow that made reading easier. I aimed to strike a balance between aesthetics and practicality, so that the brochures would not only catch attention but also clearly communicate the essential information to prospective students and their families.",
+                "este": "This project allowed me to refine my skills in organizing complex content and creating graphic pieces that meet specific communication goals. Additionally, it helped me better understand the importance of adapting design to different audiences and the relevance of visual consistency in strengthening each school's identity."
+              },
+              "cascos": {
+                "title": "TRITON",
+                "intro": "In this project, my goal was to design the packaging for a pair of headphones based on pre-established content, which included the logo, texts, and provided images. My main challenge was to structure and strategically distribute these elements so that the design would flow harmoniously across all sides of the packaging, ensuring clear and appealing communication.",
+                "planta": "TOP VIEW",
+                "plantaDesc": "I used Adobe InDesign to carefully organize each visual and textual component, aiming for a balance between aesthetics and functionality. I paid special attention to visual hierarchy, readability, and coherence across the different faces of the packaging, ensuring that the design looked consistent and attractive from any angle. Then, using Adobe Photoshop, I created a mockup to present a realistic view of the packaging, showing how the final product would look in a real-world setting.",
+                "d": "3D",
+                "dDesc": "This project allowed me to develop key skills in managing graphic and textual content within a limited space, as well as in creating comprehensive designs that combine form and function. Additionally, it helped me understand the importance of strong visual structure to enhance the user experience and the product’s perception at the point of sale."
+              }
         }
       },
       "webdevelopment": "Web Development",

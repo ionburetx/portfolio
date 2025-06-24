@@ -78,11 +78,47 @@
               },
               "kresala": {
                 "title": "Kresala",
-                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+                "intro": "Lo que comenzó como un dibujo personal para un tatuaje ha terminado convirtiéndose en la inspiración para dar forma a mi propia marca. Un proyecto que nace de forma orgánica, desde lo personal, pero que se expande hacia lo colectivo al conectar profundamente con la historia, la estética y los símbolos identitarios del País Vasco.",
+                "marca": "LA MARCA",
+                "marcaDesc": "El eje conceptual del proyecto gira en torno a un símbolo cargado de historia: el roble, y más concretamente el Árbol de Gernika. Este árbol, situado en la Casa de Juntas de Gernika, no solo representa la fuerza y la resistencia del pueblo vasco, sino que también ha sido durante siglos el lugar donde los señores juraban respetar los fueros vascos. A lo largo del tiempo, se ha transformado en un emblema de libertad, identidad cultural y conexión con la tierra. Esta dimensión simbólica es la que decidí trasladar a la identidad visual de la marca: fuerte, arraigada, con valores sólidos y profundamente enraizada en la memoria colectiva.",
+                "partir": "A partir de este punto de partida, comencé a desarrollar una línea estética basada en elementos visuales de gran valor cultural: paisajes del País Vasco, objetos tradicionales, motivos decorativos de la arquitectura local, escenas rurales, vestimenta popular, elementos de la mitología vasca, y cualquier recurso visual que represente con autenticidad la herencia vasca. El proceso de diseño parte de una investigación iconográfica, histórica y emocional que permite crear composiciones únicas, que combinan tradición con un enfoque gráfico contemporáneo. Las técnicas de producción que planteo —como la xilografía o la serigrafía artesanal— aportan aún más identidad y autenticidad al resultado final.",
+                "logo": "LOGO",
+                "logoDesc": "Uno de los elementos clave en la construcción del imaginario visual de la marca es el dibujo original de una media hoja, que representa la parte de ropa y accesorios. Esta imagen está pensada para complementarse con una segunda mitad, que simboliza la línea de bisutería. Al unirse ambas partes, se genera un total look coherente, donde ambos universos —el textil y el objeto— se fusionan de manera armónica y significativa. El corte de esa hoja toma como referencia la forma de una llave, inspirada en la roca Eskilantxarri de la playa de Saturraran, lo cual añade una capa simbólica adicional relacionada con el territorio, la memoria natural y la apertura de nuevas posibilidades.",
+                "abarca": "El proyecto abarca dos líneas principales de producto: ropa y bisutería. Las prendas incluirán camisetas, sudaderas, totebags, biseras, pañuelos y más, trabajadas con materiales sostenibles y una paleta cromática coherente con los valores de la marca: blancos, negros y tonos terrosos, verdes, amarillos o anaranjados, inspirados directamente en los colores de la naturaleza. La línea de bisutería, en cambio, toma una dirección más escultórica y simbólica, usando materiales como plata, madera o fimo, abiertos siempre a la experimentación con nuevas texturas, técnicas o soportes.",
+                "merchandising": "MERCHANDISING",
+                "merchandisingDesc": "Desde el inicio, concebí la marca bajo una lógica eco-friendly y sostenible. Esto se traduce en el uso de materiales responsables tanto en los productos como en todo el ecosistema de branding: etiquetas hechas en cartón reciclado y cuerda natural, bolsas de tela reutilizables, tarjetas sin plástico, y packaging diseñado para reducir el impacto ambiental.",
+                "nombre": "NOMBRE",
+                "nombreDesc": "KRESALA es el nombre de esta marca, una palabra en euskera que significa salitre en castellano. Su elección no fue casual: kresala es una palabra que resuena con fuerza fonética, con identidad, y que evoca de forma directa una de las fuentes principales de inspiración del proyecto: la costa vasca. Es en esa costa —en sus paisajes, en sus pueblos, en sus texturas y sonidos— donde se encuentra gran parte de la esencia de esta propuesta. Lugares cargados de memoria y sensaciones, donde el salitre impregna no solo la piel, sino también el aire, el olfato e incluso el oído, al mezclarse con el rumor del mar. De esta manera, KRESALA no es solo un nombre, sino una experiencia sensorial que engloba casi todos los sentidos: el tacto y la vista al tocar y ver las prendas, el olor del salitre, el sonido de las olas... Todo ello con el objetivo de transportar al cliente a esos lugares del territorio vasco a través del diseño gráfico aplicado a la ropa y la bisutería.",
+                "ilus": "ILUSTRACIONES",
+                "ilusDesc": "Actualmente, el proyecto se encuentra en su fase de diseño y conceptualización avanzada. He desarrollado toda la identidad visual, el sistema gráfico y el material corporativo. Las imágenes que se muestran en este portfolio —de ropa y bisutería— corresponden a bocetos de alta fidelidad, pensados como una representación visual aproximada de la propuesta final. Aunque el proyecto aún no se ha lanzado comercialmente, la dirección está clara: crear una marca con propósito, arraigada a su cultura, comprometida con el entorno, y pensada desde el diseño como herramienta de transmisión de valores."
               }
             }
           },
-          "others": "Otros"
+          "others": {
+            "title": "OTROS",
+            "projects": {
+              "brokis": {
+                "title": "BROKIS",
+                "intro": "En este proyecto, diseñé un folleto desplegable para un pequeño comercio especializado en lámparas, incluyendo modelos colgantes, de pie y otros estilos. El cliente me proporcionó las imágenes y textos, y mi responsabilidad fue estructurar y organizar ese contenido para lograr un diseño atractivo, claro y funcional.",
+                "planta": "IMAGEN DE PLANTA",
+                "plantaDesc": "Trabajé en la distribución estratégica de las imágenes y la información, cuidando la jerarquía visual y la coherencia en todo el folleto para que el recorrido del lector fuera fluido y la comunicación efectiva. Utilicé herramientas de diseño profesional para equilibrar la estética con la practicidad, buscando que el folleto reflejara la identidad del comercio y facilitara la decisión de compra del cliente.",
+                "d": "3D",
+                "dDesc": "Este proyecto me permitió profundizar en el manejo de contenido visual y textual para piezas promocionales, así como en la importancia de un buen diseño estructural para potenciar la presentación de productos en un formato compacto y accesible."
+              },
+              "tripticos": {
+                "title": "TRÍPTICOS",
+                "intro": "En este proyecto, diseñé varios trípticos promocionales para distintos colegios que estaban iniciando su período de prematrículas. El contenido, incluyendo textos, imágenes y logotipos, fue proporcionado por las instituciones; mi tarea principal fue organizar y estructurar esta información de manera efectiva para lograr un diseño atractivo y funcional.",
+                "utilizando": "Utilizando herramientas de diseño gráfico, me enfoqué en distribuir el contenido de forma clara y jerárquica, asegurando que cada mensaje clave tuviera la visibilidad adecuada y que el diseño mantuviera una fluidez visual que facilitara la lectura. Busqué un equilibrio entre la estética y la practicidad, para que los trípticos no solo captaran la atención sino que también comunicaran claramente la información esencial para los futuros estudiantes y sus familias.",
+                "este": "Este trabajo me permitió afinar mis habilidades en la organización de contenido complejo y en la creación de piezas gráficas que cumplen con objetivos comunicacionales específicos. Además, entendí mejor la importancia de adaptar el diseño a diferentes públicos y la relevancia de la coherencia visual para fortalecer la identidad de cada colegio."
+              },
+              "cascos": {
+                "title": "TRITON",
+                "intro": "En este proyecto, mi objetivo fue diseñar el packaging para una caja de auriculares a partir de un contenido preestablecido, que incluía el logo, textos e imágenes proporcionados. Mi desafío principal fue estructurar y distribuir estos elementos de manera estratégica para que el diseño fluyera armónicamente en todas las caras del empaque, garantizando una comunicación clara y atractiva.",
+                "planta": "IMAGEN DE PLANTA",
+                "plantaDesc": "Utilicé Adobe InDesign para organizar cuidadosamente cada componente visual y textual, buscando un equilibrio entre estética y funcionalidad. Presté especial atención a la jerarquía visual, la legibilidad y la coherencia entre las diferentes caras del packaging, asegurando que el diseño resultara uniforme y atractivo desde cualquier ángulo. Luego, en Adobe Photoshop realicé un montaje para presentar una vista realista del packaging, mostrando cómo se vería el producto final en un entorno real.",
+                "d": "3D",
+                "dDesc": "Este trabajo me permitió desarrollar habilidades clave en la gestión de contenido gráfico y textual dentro de un espacio limitado, así como en la creación de diseños integrales que combinan forma y función. Además, comprendí la importancia de una buena estructura visual para mejorar la experiencia del usuario y la percepción del producto en el punto de venta."
+              }
         }
       },
       "webdevelopment": "Desarrollo Web",

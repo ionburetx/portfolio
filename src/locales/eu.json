@@ -78,11 +78,47 @@
               },
               "kresala": {
                 "title": "Kresala",
-                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+                "intro": "Tatuaje pertsonal baterako marrazki gisa sortu zen irudia, azkenean nire marka propioa sortzeko inspirazio bihurtu zen. Proiektu hau modu organikoan sortu zen, pertsonaletik abiatuta, baina kolektibora zabaltzen da, Euskal Herriko (historia, estetika eta nortasun sinboloekin) lotura sakona ezarriz.",
+                "marca": "MARKA",
+                "marcaDesc": "Proiektuaren ardatz kontzeptuala historiaz beteriko sinbolo baten inguruan egituratzen da: haritza, zehazki Gernikako Arbola. Gernikako Batzar Etxean kokatua, zuhaitz honek euskal herriaren indarra eta iraunkortasuna errepresentatzen ditu. Denborarekin, (askatasun, nortasun kultural eta lurrarekin dagoen) loturaren ikur bilakatu da. Dimentsio sinboliko hori da markaren nortasun bisualera ekarri nahi izan dudana: sendoa, sustraitua, balore handi eta memoria kolektiboan sakon errotua.",
+                "partir": "Abiapuntu horretatik, balio kultural handiko elementu bisualetan oinarritutako estetika lerro bat garatzen hasi nintzen: Euskal Herriko paisaiak, objektu tradizionalak, arkitektura lokaleko apaindura motiboak, landa-eszenak, herri jantziak, euskal mitologiako elementuak eta euskal ondarea modu autentikoan ordezkatzen duten edozein baliabide bisual. Diseinu prozesua ikerketa ikonografiko, historiko eta emozional baten bidez hasten da, eta horrek konposizio bereziak sortzea ahalbidetzen du, tradizioa ikuspegi grafiko garaikide batekin uztartuz. Erabiliko diren ekoizpen teknikek—xilografia eta serigrafia artisaua, esaterako—are gehiago indartzen dute emaitzaren identitatea eta benetakotasuna.",
+                "logo": "LOGOA",
+                "logoDesc": "Haritzaren erdi hosto baten irudia, zeinek jantzi eta osagarrien lerroa irudikatzen duen. Irudi hau osatzeko bigarren erdi bat aurreikusi da, bitxigintzako lerroa irudikatzen duena. Bi zatiak batzean, look oso bat sortzea lortzen da, non ehungintzaren eta objektuaren unibertsoak modu harmoniko eta esanguratsuan fusionatzen diren. Hostoaren mozketak itxura berezi bat du: giltza baten forman oinarritzen da, Saturrarango Eskilantxarri haitzaren siluetatik inspiratua. Horrek beste sinbolo-geruza bat gehitzen dio irudiari, lurraldeari, natura-memoriari eta aukera berrien irekitzearekin lotuta.",
+                "abarca": "Proiektuak bi produktu-lerro nagusi hartzen ditu: arropa eta bitxigintza. Arropen artean: kamisetak, jertseak, tote poltsak, biserak, zapiak eta gehiago egongo dira. Guztiak material jasangarriekin landuak eta markaren balioekin bat datorren kolore-paleta batekin: zuria, beltza eta lurreko tonuak, (berdeak, horiak edo laranja) koloreak, naturaren koloreetan zuzenean inspiratuak. Bitxigintzako lerroak, berriz, norabide eskultorikoagoa eta sinbolikoagoa hartzen du, material gisa (zilarra, egurra edo fimoa)erabiliz, beti prest esperimentazio berriak egiteko testura, teknika edo euskarrietan.",
+                "merchandising": "MERCHANDISING",
+                "merchandisingDesc": "Hasieratik, marka ikuspegi jasangarri eta ingurumenarekiko arduratsutik sortu dut. Horrek esan nahi du erabili diren material guztiek erantzukizunez hautatuak izan direla, bai produktuen kasuan, bai branding-ekosistemaren osagaietan ere: kartoizko etiketak, soka naturalarekin lotuak, berrerabil daitezkeen oihalezko poltsak, plastikorik gabeko txartelak eta ingurumenean ahalik eta eragin txikiena izateko diseinatutako packaging-a.",
+                "nombre": "IZENA",
+                "nombreDesc": "KRESALA gaztelaniaz “salitre”. Hautaketa ez zen kasualitatea izan: kresala hitzak indar fonetiko handia du, nortasunarekin lotzen da eta zuzenean gogorarazten du proiektuaren inspirazio nagusietako bat: Euskal Kostaldea. Itsasertzean—bere paisaietan, herrietan, testuretan eta soinuetan—aurkitzen da proposamen honen esentziaren parte handi bat. Oroimen eta sentsazioz betetako tokiak dira, non kresala ez den bakarrik azalean geratzen, baizik eta airean, usaimenean eta entzumenan ere sartzen da, itsasoaren hotsarekin nahastuta. Horrela, KRESALA ez da izen hutsa: zentzumen esperientzia bat da, ia zentzumen guztiak hartzen dituena: ukimena eta ikusmena jantziak ikusi eta ukitzean, kresalaren usaina, olatuen soinua… Guztia bezeroa lurraldeko leku horietara eramateko helburuarekin, diseinu grafikoaren bidez, arropa eta bitxien bidez.",
+                "ilus": "ILUSTRAZIOAK",
+                "ilusDesc": "Gaur egun, proiektua diseinu eta kontzeptualizazio fase aurreratuan dago. Garatuta dago marka osoaren nortasun bisuala, sistema grafikoa eta material korporatiboa. Portfolio honetan erakusten diren irudiak—arropa eta bitxiei dagozkienak—zirriborroak dira, proposamenaren azken emaitza gutxi gora behera bisualki irudikatzeko sortuak. Proiektua oraindik merkaturatu ez bada ere, norabidea argi dago: helburuarekin sortutako marka bat izatea, bere kulturari lotua, ingurumenarekin konprometitua eta diseinua balioak transmititzeko tresna gisa ulertzen duena."
               }
             }
           },
-          "others": "Bestelakoak"
+          "others": {
+            "title": "BESTEAK",
+            "projects": {
+              "brokis": {
+                "title": "BROKIS",
+                "intro": "Proiektu honetan, tolesturiko liburuxka bat diseinatu nuen lanparatan espezializatutako saltoki txiki baterako, zintzilik dauden modeluak, zutikakoak eta beste hainbat estilo barne. Bezeroak irudiak eta testuak eman zizkidan, eta nire ardura izan zen eduki hori egituratu eta antolatzea diseinu erakargarri, argi eta funtzional bat lortzeko.",
+                "planta": "GOIKO IKUSPEGIA",
+                "plantaDesc": "Irudien eta informazioaren banaketa estrategikoan lan egin nuen, hierarkia bisuala eta koherentzia zainduz liburuxka osoan zehar, irakurlearen ibilbidea arina izan zedin eta komunikazioa eraginkorra. Diseinu-tresna profesionalak erabili nituen estetikaren eta praktikotasunaren arteko oreka bilatzeko, liburuxkak saltokiaren nortasuna islatzea eta bezeroaren erosketa-erabakia erraztea helburu hartuta.",
+                "d": "3D",
+                "dDesc": "Proiektu honek aukera eman zidan eduki bisual eta testuala kudeatzeko trebetasunak sakontzeko material promozionaletan, eta baita diseinu egituratu on baten garrantzia ulertzeko, produktuen aurkezpena formatu tinko eta eskuragarri batean indartzeko."
+              },
+              "tripticos": {
+                "title": "TRÍPTICOS",
+                "intro": "Proiektu honetan, hainbat eskolatarako triptiko promozionalak diseinatu nituen, aurrematrikula-epea hasten ari zirenean. Edukia —testuak, irudiak eta logotipoak barne— ikastetxeek beraiek eman zuten; nire lan nagusia informazio hori modu eraginkorrean antolatzea eta egituratzea izan zen, diseinu erakargarri eta funtzional bat lortzeko helburuarekin.",
+                "utilizando": "Diseinu grafikorako tresnak erabiliz, edukia modu argian eta hierarkikoki banatzea izan zen nire helburua, mezu gako bakoitzak beharrezko ikusgarritasuna izan zezan eta irakurketa erraztuko zuen estruktura bisuala mantenduz. Estetikaren eta praktikotasunaren arteko oreka bilatu nuen, triptikoek arreta erakartzeaz gain informazio funtsezkoa argi komunikatzeko gai izan zitezen, bai etorkizuneko ikasleentzat, bai beren familientzat.",
+                "este": "Lan honek aukera eman zidan eduki konplexua antolatzeko trebetasunak fintzeko, eta helburu komunikatibo zehatzak betetzen dituzten pieza grafikoak sortzeko. Gainera, hobeto ulertu nuen diseinua publiko ezberdinetara egokitzearen garrantzia, eta ikusizko koherentziak ikastetxe bakoitzaren identitatea sendotzeko duen eragina."
+              },
+              "cascos": {
+                "title": "TRITON",
+                "intro": "Proiektu honetan, nire helburua aurikular-kutxa baten packaging-a diseinatzea izan zen. Aurrez ezarritako eduki batetik abiatuta (logoa, testuak eta irudiak). Nire erronka nagusia elementu horiek estrategikoki egituratu eta banatzea izan zen, diseinua kutxaren alde guztietan harmoniaz ikusi zedin, komunikazio argi eta erakargarri bat bermatuz.",
+                "planta": "GOIKO IKUSPEGIA",
+                "plantaDesc": "Adobe InDesign erabili nuen osagai bisual eta testual bakoitza arretaz antolatzeko, estetika eta funtzionaltasunaren arteko oreka bilatuz. Arreta berezia jarri nion hierarkia bisualari, irakurgarritasunari eta packaging-aren alde desberdinen arteko koherentziari, diseinua edozein angelutatik uniformea eta erakargarria izan zedin. Gero, Adobe Photoshop-en muntaketa bat egin nuen packaging-aren ikuspegi erreala aurkezteko, produktuak benetako ingurune batean izango lukeen itxura erakutsiz.",
+                "d": "3D",
+                "dDesc": "Lan honek aukera eman zidan espazio mugatu batean eduki bisual eta testuala kudeatzeko gaitasun garrantzitsuak garatzeko, baita forma eta funtzioa uztartzen dituzten diseinu integralak sortzeko ere. Horrez gain, ulertu nuen egitura bisual on batek zenbateko garrantzia duen erabiltzailearen esperientzia hobetzeko eta produktua salmenta-puntuan modu eraginkorrean aurkezteko."
+              }
         }
       },
       "webdevelopment": "Web Garapena",
