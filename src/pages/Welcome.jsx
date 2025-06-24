@@ -20,13 +20,13 @@ const Welcome = () => {
   return (
     <div className="relative w-screen h-screen overflow-hidden">
       <img
-        src="./generalAssets/fondoBienvenida.png"
+        src="../generalAssets/fondoBienvenida.png"
         alt="Fondo"
         className="absolute inset-0 w-full h-full object-cover object-bottom object-right z-0"
       />
 
       <img 
-        src="./generalAssets/logo.png"
+        src="../generalAssets/logo.png"
         alt="Logo"
         className="absolute top-4 left-4 h-10 z-10"
       />

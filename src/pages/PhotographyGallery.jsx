@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import FlechaSimple from '../components/FlechaSimple'
 import Masonry from 'react-masonry-css'
-import Header from '../components/Header'  // IMPORTAMOS Header
+import Header from '../components/Header'
 
 const PhotographyGallery = () => {
   const { category } = useParams()

@@ -54,7 +54,7 @@ const Home = () => {
     <div className="relative w-screen min-h-screen overflow-auto">
       {/* Fondo que cubre todo el viewport */}
       <img
-        src="./generalAssets/fondoBio.png"
+        src="../generalAssets/fondoBio.png"
         alt="Fondo Home"
         className="fixed top-0 left-0 w-screen h-screen object-cover object-right z-0"
       />

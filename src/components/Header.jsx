@@ -3,6 +3,7 @@ import NavBar from './Menu/NavBar'
 import HamburgerMenu from './Menu/HamburgerMenu'
 import { useNavigate, useLocation } from 'react-router-dom'
 
+
 const Header = ({ className = '' }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isSpinning, setIsSpinning] = useState(false)
@@ -43,7 +44,7 @@ const Header = ({ className = '' }) => {
         {/* Contenido del header */}
         <div className="flex items-center justify-between px-6 py-4">
           <img
-            src="./generalAssets/logo.png"
+            src="../../generalAssets/logo.png"
             alt="Logo"
             className={`h-10 cursor-pointer ${isSpinning ? 'spin-animation' : ''}`}
             onClick={handleLogoClick}

@@ -5,14 +5,14 @@ const LanguageScreen = () => {
     <div className="relative w-screen h-screen overflow-hidden">
       {/* Imagen de fondo */}
       <img
-        src="./generalAssets/fondoBienvenida.png"
+        src="../generalAssets/fondoBienvenida.png"
         alt="Fondo"
         className="absolute inset-0 w-full h-full object-cover object-bottom object-right z-0"
 />
 
       {/* Capa con recortes (imagen negra con eu/es/en) */}
       <img
-        src="./generalAssets/idiomas.png"
+        src="../generalAssets/idiomas.png"
         alt="Idioma Mask"
         className="absolute inset-0 w-full h-full object-cover opacity-60 z-10"
 />

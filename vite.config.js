@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',
+  //base: '/porfolio/',
+  base: '/',
   test: {
     globals: true,
     environment: 'jsdom',
