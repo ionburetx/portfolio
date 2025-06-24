@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import FlechaSimple from '../components/FlechaSimple';
 import projectComponents from '../ProjectDetails';
+import fondoBio from '@/assets/generalAssets/fondoBio.png'
 
 // Array de proyectos para la navegación
 const PROJECTS = ['dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip'];

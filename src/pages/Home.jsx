@@ -5,6 +5,7 @@ import ContactSection from "../components/ContactSection/ContactSection";
 import CV from "../components/CVSection/CV";
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
 import AboutSection from "../components/AboutSection/AboutSection";
+import fondoBio from '@/assets/generalAssets/fondoBio.png'
 
 const Home = () => {
   const location = useLocation()
@@ -54,7 +55,7 @@ const Home = () => {
     <div className="relative w-screen min-h-screen overflow-auto">
       {/* Fondo que cubre todo el viewport */}
       <img
-        src="src/assets/generalAssets/fondoBio.png"
+        src={fondoBio}
         alt="Fondo Home"
         className="fixed top-0 left-0 w-screen h-screen object-cover object-right z-0"
       />

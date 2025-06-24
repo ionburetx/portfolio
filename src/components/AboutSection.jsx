@@ -1,3 +1,4 @@
+import fotobio from '@/assets/generalAssets/fotobio.png'
 
 export const AboutSection = ({ onScrollToNext }) => {
   const { t } = useTranslation();
@@ -198,7 +199,7 @@ export const AboutSection = ({ onScrollToNext }) => {
           className="w-full lg:w-auto h-auto flex justify-center lg:justify-end mb-0 lg:mb-0"
         >
           <img
-            src="src/assets/generalAssets/fotobio.png"
+            src={fotobio}
             alt="My Illustration"
             className="
               pointer-events-none 
