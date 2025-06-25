@@ -11,6 +11,11 @@ const ContactForm = () => {
     e.preventDefault();
     setSending(true);
 
+    // DEBUG: imprimir las variables de entorno justo antes de enviar el formulario
+  console.log('DEBUG: Service ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+  console.log('DEBUG: Template ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+  console.log('DEBUG: Public Key:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
     sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
