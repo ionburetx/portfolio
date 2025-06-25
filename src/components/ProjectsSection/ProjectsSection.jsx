@@ -58,7 +58,7 @@ const ProjectsSection = () => {
 
       {/* Desarrollo Web */}
       <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
-        {t("HomePage.ProjectsSection.webdevelopment")}
+        {t("HomePage.ProjectsSection.webdevelopment.title")}
       </h2>
       <WebDevelopmentCat />
 
