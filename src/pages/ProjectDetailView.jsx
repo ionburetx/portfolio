@@ -6,7 +6,7 @@ import projectComponents from '../ProjectDetails';
 import fondoBio from '@/assets/generalAssets/fondoBio.png'
 
 // Array de proyectos para la navegación
-const PROJECTS = ['dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip'];
+const PROJECTS = ['dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip', 'brokis', 'triton', 'triptico', 'larulla', 'nalion', 'playwrong', 'portfolio'];
 
 const ProjectDetailView = () => {
   const navigate = useNavigate();
