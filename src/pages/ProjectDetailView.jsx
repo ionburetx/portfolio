@@ -18,7 +18,7 @@ const ProjectDetailView = () => {
   }, []);
 
   const currentIndex = PROJECTS.indexOf(projectId);
-
+console.log('Current project index:', currentIndex);
   const handleClose = () => {
     const lastScrollPosition = localStorage.getItem('lastScrollPosition');
     if (!lastScrollPosition) {

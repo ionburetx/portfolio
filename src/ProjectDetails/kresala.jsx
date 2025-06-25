@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-const imageModules = import.meta.glob('/src/assets/ideCor/kresala/**/*.{png,jpg,jpeg}', { eager: true });
+const imageModules = import.meta.glob('/src/assets/ideCor/Kresala/**/*.{png,jpg,jpeg}', { eager: true });
 
 const images = Object.fromEntries(
   Object.entries(imageModules).map(([path, mod]) => {
@@ -23,50 +23,58 @@ const Kresala = () => {
       </p>
 
       {/* 2. Título: LA MARCA */}
-      <h2 className="text-xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.lamarcaTitle")}</h2>
+      <h2 className="text-xl font-bold uppercase">
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.marca")}
+      </h2>
 
-      {/* 3. Imagen izquierda (25%) + texto derecha (75%) */}
-      <div className="flex flex-col sm:flex-row w-full gap-6 items-start">
-        <div className="w-full sm:w-1/4">
-          <img src={images['tatto.jpg']} alt="Marca imagen" className="w-full object-contain" />
-        </div>
-        <div className="w-full sm:w-3/4">
-          <p className="text-base">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.lamarcaDesc")}</p>
-        </div>
+      {/* 3. Imagen izquierda + texto fluido */}
+      <div className="w-full overflow-hidden">
+        <img
+          src={images['tatto.jpg']}
+          alt="Marca imagen"
+          className="float-left w-[25%] mr-4 mb-4 object-contain"
+        />
+        <p className="text-base">
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.marcaDesc")}
+        </p>
       </div>
+      <div className="clear-both"></div>
 
       {/* 4. Texto debajo full-width */}
       <p className="text-base md:text-lg w-full">
-        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.lamarcaExtra")}
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.partir")}
       </p>
 
       {/* 5. Título: LOGO */}
-      <h2 className="text-xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logoTitle")}</h2>
+      <h2 className="text-xl font-bold uppercase">
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logo")}
+      </h2>
 
-      {/* 6. Texto (65%) izquierda + 2 imágenes (una abajo de otra) derecha */}
-      <div className="flex flex-col sm:flex-row w-full gap-6 items-start">
-        <div className="w-full sm:w-[65%]">
-          <p className="text-base">
-            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logoDesc")}
-          </p>
-        </div>
-        <div className="w-full sm:w-[35%] flex flex-col gap-4">
+      {/* 6. Texto fluido + imágenes verticales */}
+      <div className="w-full overflow-hidden">
+        <div className="float-left w-[35%] mr-4 mb-4 flex flex-col gap-4">
           <img src={images['kresala2.jpg']} alt="Logo Variante 1" className="w-full object-contain" />
           <img src={images['kresala1.jpg']} alt="Logo Variante 2" className="w-full object-contain" />
         </div>
+        <p className="text-base">
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logoDesc")}
+        </p>
       </div>
+      <div className="clear-both"></div>
 
       {/* 7. Texto debajo full-width */}
       <p className="text-base md:text-lg w-full">
-        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logoExtra")}
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.abarca")}
       </p>
 
       {/* 8. Título: MERCHANDISING */}
-      <h2 className="text-xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.merchTitle")}</h2>
+      <h2 className="text-xl font-bold uppercase">
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.merchandising")}
+      </h2>
 
       {/* 9. Texto full-width */}
       <p className="text-base md:text-lg w-full">
-        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.merchDesc")}
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.merchandisingDesc")}
       </p>
 
       {/* 10. Imagen full-width */}
@@ -75,7 +83,9 @@ const Kresala = () => {
       </div>
 
       {/* 11. Título: NOMBRE */}
-      <h2 className="text-xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.nombreTitle")}</h2>
+      <h2 className="text-xl font-bold uppercase">
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.nombre")}
+      </h2>
 
       {/* 12. Texto full-width */}
       <p className="text-base md:text-lg w-full">
@@ -83,11 +93,13 @@ const Kresala = () => {
       </p>
 
       {/* 13. Título: ILUSTRACIONES */}
-      <h2 className="text-xl font-bold uppercase">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilustracionesTitle")}</h2>
+      <h2 className="text-xl font-bold uppercase">
+        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilus")}
+      </h2>
 
-      {/* 14. Izquierda: imágenes 1 + 1 + (2 lado a lado) | Derecha: texto */}
-      <div className="flex flex-col sm:flex-row w-full gap-6">
-        <div className="w-full sm:w-1/2 flex flex-col gap-4">
+      {/* 14. Ilustraciones izquierda + texto fluido derecha */}
+      <div className="w-full overflow-hidden">
+        <div className="float-left w-[50%] mr-4 mb-4 flex flex-col gap-4">
           <img src={images['kresalabisu.jpg']} alt="Ilustración 1" className="w-full object-contain" />
           <img src={images['kresala1.png']} alt="Ilustración 2" className="w-full object-contain" />
           <div className="flex flex-row gap-4">
@@ -95,12 +107,11 @@ const Kresala = () => {
             <img src={images['kresala20.png']} alt="Ilustración 4" className="w-1/2 object-contain" />
           </div>
         </div>
-        <div className="w-full sm:w-1/2">
-          <p className="text-base">
-            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilustracionesDesc")}
-          </p>
-        </div>
+        <p className="text-base">
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilusDesc")}
+        </p>
       </div>
+      <div className="clear-both"></div>
 
     </div>
   );
