@@ -25,6 +25,14 @@ jobs:
         with:
           node-version: '20'  # Puedes ajustar la versión si lo necesitas
 
+      - name: Mostrar clave pública (debug temporal)
+        env:
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+        run: |
+          echo "La clave pública es: $VITE_EMAILJS_PUBLIC_KEY"
+        
+
+
       - name: Install dependencies
         run: npm ci
 
@@ -32,11 +40,12 @@ jobs:
         run: npm run test
 
       - name: Build with Vite
-        run: npm run build
+        
         env:
              VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
              VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
              VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
+        run: npm run build
 
 
       - name: Setup Pages
