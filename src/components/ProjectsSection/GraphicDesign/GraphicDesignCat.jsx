@@ -31,7 +31,7 @@ const GraphicDesignCat = () => {
       <div className="-ml-6 md:-ml-20">
         <div className="pl-6 md:pl-20">
           <h3 className="text-white text-2xl md:text-4xl font-bold tracking-wide uppercase mt-24 mb-6">
-            {t("HomePage.ProjectsSection.graphicdesign.subcategories.others")}
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.others.title")}
           </h3>
         </div>
         <OtrosCat />
