@@ -27,7 +27,7 @@ const Kresala = () => {
         {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.marca")}
       </h2>
 
-      {/* 3. Imagen izquierda + texto fluido */}
+      {/* 3. Imagen izquierda + texto fluido + texto partir a la derecha solo en tablet */}
       <div className="w-full overflow-hidden">
         <img
           src={images['tatto.jpg']}
@@ -37,35 +37,38 @@ const Kresala = () => {
         <p className="text-base">
           {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.marcaDesc")}
         </p>
-      </div>
-      <div className="clear-both"></div>
 
-      {/* 4. Texto debajo full-width */}
-      <p className="text-base md:text-lg w-full">
-        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.partir")}
-      </p>
+        {/* Texto partir: mobile debajo, tablet a la derecha */}
+        <p className="text-base md:absolute md:top-[calc(100%+1rem)]md:mt-0 md:float-none md:clear-none md:block md:relative md:pl-0">
+          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.partir")}
+        </p>
+      </div>
+      <div className="clear-both md:clear-none"></div>
 
       {/* 5. Título: LOGO */}
       <h2 className="text-xl font-bold uppercase">
         {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logo")}
       </h2>
 
-      {/* 6. Texto fluido + imágenes verticales */}
-      <div className="w-full overflow-hidden">
-        <div className="float-left w-[35%] mr-4 mb-4 flex flex-col gap-4">
-          <img src={images['kresala2.jpg']} alt="Logo Variante 1" className="w-full object-contain" />
-          <img src={images['kresala1.jpg']} alt="Logo Variante 2" className="w-full object-contain" />
-        </div>
-        <p className="text-base">
-          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logoDesc")}
-        </p>
-      </div>
-      <div className="clear-both"></div>
+      {/* 6. Texto logoDesc arriba + abarca abajo en lado izquierdo y dos imágenes a la derecha (solo en tablets) */}
+      <div className="w-full md:flex md:gap-6">
 
-      {/* 7. Texto debajo full-width */}
-      <p className="text-base md:text-lg w-full">
-        {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.abarca")}
-      </p>
+        {/* Texto lado izquierdo */}
+        <div className="md:w-[65%]">
+          <p className="text-base">
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.logoDesc")}
+          </p>
+          <p className="text-base mt-4">
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.abarca")}
+          </p>
+        </div>
+
+        {/* Imágenes a la derecha */}
+        <div className="md:w-[35%] flex flex-col gap-4 mt-6 md:mt-0">
+          <img src={images['kresala1.jpg']} alt="Logo Variante 2" className="w-full object-contain" />
+          <img src={images['kresala2.jpg']} alt="Logo Variante 1" className="w-full object-contain" />
+        </div>
+      </div>
 
       {/* 8. Título: MERCHANDISING */}
       <h2 className="text-xl font-bold uppercase">
@@ -97,24 +100,38 @@ const Kresala = () => {
         {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilus")}
       </h2>
 
-      {/* 14. Ilustraciones izquierda + texto fluido derecha */}
-      <div className="w-full overflow-hidden">
-        <div className="float-left w-[50%] mr-4 mb-4 flex flex-col gap-4">
+      {/* 14. Ilustraciones con últimos dos al lado derecho de kresala1.png, alineados abajo */}
+      <div className="w-full md:flex md:gap-6">
+
+        {/* Izquierda: 2 imágenes arriba y las otras 2 al lado derecho de la segunda */}
+        <div className="md:w-1/2 flex flex-col gap-4">
+
           <img src={images['kresalabisu.jpg']} alt="Ilustración 1" className="w-full object-contain" />
-          <img src={images['kresala1.png']} alt="Ilustración 2" className="w-full object-contain" />
-          <div className="flex flex-row gap-4">
-            <img src={images['kresala8.png']} alt="Ilustración 3" className="w-1/2 object-contain" />
-            <img src={images['kresala20.png']} alt="Ilustración 4" className="w-1/2 object-contain" />
+          
+          {/* Contenedor para la segunda imagen y las dos últimas al lado */}
+          <div className="flex md:flex-row md:items-end gap-4">
+
+            <img src={images['kresala1.png']} alt="Ilustración 2" className="md:w-1/2 w-full object-contain" />
+
+            <div className="md:w-1/2 flex gap-4">
+              <img src={images['kresala8.png']} alt="Ilustración 3" className="w-1/2 object-contain" />
+              <img src={images['kresala20.png']} alt="Ilustración 4" className="w-1/2 object-contain" />
+            </div>
+
           </div>
         </div>
-        <p className="text-base">
-          {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilusDesc")}
-        </p>
+
+        {/* Derecha: texto */}
+        <div className="md:w-1/2">
+          <p className="text-base">
+            {t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.ilusDesc")}
+          </p>
+        </div>
       </div>
-      <div className="clear-both"></div>
 
     </div>
   );
 };
 
 export default Kresala;
+
