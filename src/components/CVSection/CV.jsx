@@ -2,6 +2,9 @@ import SectionHeader from "../SectionHeader";
 import Acordeon from "./Acordeon";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import CVesp from "../../assets/generalAssets/CVesp.pdf";
+import CVeng from "../../assets/generalAssets/CVeng.pdf";
+import CVeus from "../../assets/generalAssets/CVeus.pdf";
 
 const CV = () => {
   const { t, i18n } = useTranslation();
@@ -51,12 +54,12 @@ const CV = () => {
 
   // Función para descargar el CV según el idioma actual
   const handleDownload = () => {
-    let cvFile = "src/assets/generalAssets/CVesp.pdf"; // Español por defecto
+    let cvFile = CVesp; // Español por defecto
 
     if (i18n.language === "en") {
-      cvFile = "src/assets/generalAssets/CVeng.pdf";
+      cvFile = CVeng;
     } else if (i18n.language === "eu") {
-      cvFile = "src/assets/generalAssets/CVeus.pdf";
+      cvFile = CVeus;
     }
 
     const link = document.createElement("a");
