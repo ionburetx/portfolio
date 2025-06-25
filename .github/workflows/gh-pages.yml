@@ -20,6 +20,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Paso para debug de la clave pública - mostrarla en logs (¡cuidado con la visibilidad!)
+      - name: Debug public key
+        env:
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+        run: |
+          echo "Clave pública: $VITE_EMAILJS_PUBLIC_KEY"
+
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
