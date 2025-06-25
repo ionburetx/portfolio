@@ -12,13 +12,10 @@ const ContactForm = () => {
     setSending(true);
 
     sendForm(
-      // import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      // import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      // e.target,
-      // import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      VITE_EMAILJS_SERVICE_ID=service_s7id6vq,
-      VITE_EMAILJS_TEMPLATE_ID=template_90v4wzb,
-      VITE_EMAILJS_PUBLIC_KEY="-93qECVyr1U_x-3TG"
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
       .then(async () => {
         setSending(false);
