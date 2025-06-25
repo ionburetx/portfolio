@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Importar imágenes de OtrosCat
 import brokisImg from '@/assets/otros/brokis/triptico2.jpg';
@@ -8,6 +9,7 @@ import cascosImg from '@/assets/otros/cascos/Packagingd.jpg';
 import tripticoImg from '@/assets/otros/tripticos/triptico2.jpg';
 
 const OtrosCat = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
     const saved = sessionStorage.getItem('otrosAnimations');
@@ -98,7 +100,7 @@ const OtrosCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">BROKIS</h3>
-            <p className="text-lg">1.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.brokis.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Brokis"
@@ -122,7 +124,7 @@ const OtrosCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">TRITON</h3>
-            <p className="text-lg">2.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.cascos.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Cascos"
@@ -151,7 +153,7 @@ const OtrosCat = () => {
 
             <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
               <h3 className="text-2xl font-semibold mb-3">TRÍPTICOS</h3>
-              <p className="text-lg">3.</p>
+              <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.tripticos.descri")}</p>
               <button
                 type="button"
                 aria-label="Más info sobre Trípticos"

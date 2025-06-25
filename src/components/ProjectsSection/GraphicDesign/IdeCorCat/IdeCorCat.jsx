@@ -2,6 +2,7 @@ import Card from "./Card";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Importar imágenes de identidad corporativa (IdeCorCat)
 import draImg from '@/assets/ideCor/Dra/DRA!.jpg';
@@ -12,6 +13,7 @@ import codigoImg from '@/assets/ideCor/Codigo/codigo.jpg';
 import alquimiaImg from '@/assets/ideCor/alquimia/alquimia.jpg';
 
 const IdeCorCat = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
     // Intentar recuperar el estado de las animaciones de sessionStorage
@@ -109,7 +111,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">DRA!</h3>
-            <p className="text-lg">1.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.dra.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre DRA!"
@@ -133,7 +135,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">7METRÓPOLIS</h3>
-            <p className="text-lg">2.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.7metropolis.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre 7 Metropolis"
@@ -163,7 +165,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">KRESALA</h3>
-            <p className="text-lg">3.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.kresala.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Kresala"
@@ -179,7 +181,7 @@ const IdeCorCat = () => {
         <div className="flex flex-row lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">CONSTONE</h3>
-            <p className="text-lg">4.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.constone.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Constone"
@@ -217,7 +219,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">CÓDIGO</h3>
-            <p className="text-lg">5.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.codigo.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre CÓDIGO"
@@ -241,7 +243,7 @@ const IdeCorCat = () => {
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">ALQUIMIA TRIP</h3>
-            <p className="text-lg">6.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.graphicdesign.subcategories.branding.projects.alquimia.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Alquimia Trip"

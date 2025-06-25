@@ -34,6 +34,7 @@
             "projects": {
               "7metropolis": {
                 "title": "7Metropolis",
+                "descri": "Enpresaren nortasun korporatibo osoaren sorrera",
                 "intro": "Izaera solidariozko enpresa gazte bat. Euskal eta Kataluniako ardoak inportatzen zituen, eta salmenta bakoitzeko zati bat Kolonbiako eremuak birlandatu eta berrurbanizatzeko bideratzen zuen. 7Metrolopis enpresaren marka, Ben Wilson-en Metropolis liburuan inspiratuta dago, (zibilizazio handiak, mapa nautikoak, antzinako merkataritza eta hirien bilakaera) gogora ekarriz. Dena arretaz pentsatua izan zen sendotasuna, ondarea eta gizarte-konpromisoa transmititzeko. Logotik hasi eta aplikazio txikienetara, pieza bakoitza nortasun propioa duen unibertso grafiko baten parte da. Pieza bakoitzak ardoaren zaporea ez ezik, proiektuaren konpromiso soziala komunikatzea ezinbestekoa zen. Esperientzia aparta, non diseinuak produktuak saltzeaz gain, etorkizuna hobetzen laguntzen zuen.",
                 "logocola": "LOGO KOLABORATIBOA",
                 "logocolaDesc": "Logotipoaren aldaerak diseinatu nituen 7Metropolisekin batera lan egiten zuten jatetxe eta banatzaileen identitateek integratzeko. Erronka handia  izan zen estilo desberdinak bateratzea marka bakoitzaren esentzia galdu gabe. Konposizio malgu eta orekatuak aukeratu ziren, 7Metropolisen estetika klasikoa eta kolaboratzaileen elementu adierazgarriak uztartuz.",
@@ -47,6 +48,7 @@
               },
               "dra": {
                 "title": "DRA!",
+                "descri": "Rebrandina, argazki katalogoa eta ilustrazioa",
                 "intro": "Hasiera baten praktikak egiteko sartu nintzen enpresan, haien irudi korporatiboaren berrikuspen oso bat gidatzeko helburuarekin. Moda-osagarrietan eta haur-produktuetan espezializatutako denda izanik, bi lerro horiek bereizi behar zituen, nortasun bisual bereziekin eta markaren esentzia galdu gabe. Aldi berean, enpresaren irudiari bira bat ematea bilatzen zen. Horretarako, taldean lan egin behar izan genuen, haien behar eta helburu nagusiak ulertzeko.",
                 "logo": "LOGOEN DISEINUA",
                 "para": "Enpresaren publikoaren ikerketarekin hasi nintzen (helduak vs. haurrak), marka bakar baten azpian bi logotipo desberdin sortuz. Izena mantentzea beharrezkoa zenez, estetika egokitu genuen segmentu bakoitzerako.",
@@ -66,18 +68,22 @@
               },
               "constone": {
                 "title": "Constone",
+                "descri": "Logotipoaren eta merkataritza-produktuen sorrera",
                 "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
               },
               "codigo": {
                 "title": "Código",
+                "descri": "Logotipoaren eta merkataritza-produktuen sorrera",
                 "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
               },
               "alquimia": {
                 "title": "Alquimia Trip",
+                "descri": "Helburu-publikoaren analisia, markaren sorrera eta sareak",
                 "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
               },
               "kresala": {
                 "title": "Kresala",
+                "descri": "Nire proiektu pertsonalaren sorrera oinarrietatik bertatik",
                 "intro": "Tatuaje pertsonal baterako marrazki gisa sortu zen irudia, azkenean nire marka propioa sortzeko inspirazio bihurtu zen. Proiektu hau modu organikoan sortu zen, pertsonaletik abiatuta, baina kolektibora zabaltzen da, Euskal Herriko (historia, estetika eta nortasun sinboloekin) lotura sakona ezarriz.",
                 "marca": "MARKA",
                 "marcaDesc": "Proiektuaren ardatz kontzeptuala historiaz beteriko sinbolo baten inguruan egituratzen da: haritza, zehazki Gernikako Arbola. Gernikako Batzar Etxean kokatua, zuhaitz honek euskal herriaren indarra eta iraunkortasuna errepresentatzen ditu. Denborarekin, (askatasun, nortasun kultural eta lurrarekin dagoen) loturaren ikur bilakatu da. Dimentsio sinboliko hori da markaren nortasun bisualera ekarri nahi izan dudana: sendoa, sustraitua, balore handi eta memoria kolektiboan sakon errotua.",
@@ -99,6 +105,7 @@
             "projects": {
               "brokis": {
                 "title": "BROKIS",
+                "descri": "Argindar-enpresa baterako eskuorrien diseinua",
                 "intro": "Proiektu honetan, tolesturiko liburuxka bat diseinatu nuen lanparatan espezializatutako saltoki txiki baterako, zintzilik dauden modeluak, zutikakoak eta beste hainbat estilo barne. Bezeroak irudiak eta testuak eman zizkidan, eta nire ardura izan zen eduki hori egituratu eta antolatzea diseinu erakargarri, argi eta funtzional bat lortzeko.",
                 "planta": "GOIKO IKUSPEGIA",
                 "plantaDesc": "Irudien eta informazioaren banaketa estrategikoan lan egin nuen, hierarkia bisuala eta koherentzia zainduz liburuxka osoan zehar, irakurlearen ibilbidea arina izan zedin eta komunikazioa eraginkorra. Diseinu-tresna profesionalak erabili nituen estetikaren eta praktikotasunaren arteko oreka bilatzeko, liburuxkak saltokiaren nortasuna islatzea eta bezeroaren erosketa-erabakia erraztea helburu hartuta.",
@@ -107,12 +114,14 @@
               },
               "tripticos": {
                 "title": "TRÍPTICOS",
+                "descri": "Eskola-eskuorrientzako edukien birbanaketa eta diseinua",
                 "intro": "Proiektu honetan, hainbat eskolatarako triptiko promozionalak diseinatu nituen, aurrematrikula-epea hasten ari zirenean. Edukia —testuak, irudiak eta logotipoak barne— ikastetxeek beraiek eman zuten; nire lan nagusia informazio hori modu eraginkorrean antolatzea eta egituratzea izan zen, diseinu erakargarri eta funtzional bat lortzeko helburuarekin.",
                 "utilizando": "Diseinu grafikorako tresnak erabiliz, edukia modu argian eta hierarkikoki banatzea izan zen nire helburua, mezu gako bakoitzak beharrezko ikusgarritasuna izan zezan eta irakurketa erraztuko zuen estruktura bisuala mantenduz. Estetikaren eta praktikotasunaren arteko oreka bilatu nuen, triptikoek arreta erakartzeaz gain informazio funtsezkoa argi komunikatzeko gai izan zitezen, bai etorkizuneko ikasleentzat, bai beren familientzat.",
                 "este": "Lan honek aukera eman zidan eduki konplexua antolatzeko trebetasunak fintzeko, eta helburu komunikatibo zehatzak betetzen dituzten pieza grafikoak sortzeko. Gainera, hobeto ulertu nuen diseinua publiko ezberdinetara egokitzearen garrantzia, eta ikusizko koherentziak ikastetxe bakoitzaren identitatea sendotzeko duen eragina."
               },
               "cascos": {
                 "title": "TRITON",
+                "descri": "Entzungailuen packaging diseinua",
                 "intro": "Proiektu honetan, nire helburua aurikular-kutxa baten packaging-a diseinatzea izan zen. Aurrez ezarritako eduki batetik abiatuta (logoa, testuak eta irudiak). Nire erronka nagusia elementu horiek estrategikoki egituratu eta banatzea izan zen, diseinua kutxaren alde guztietan harmoniaz ikusi zedin, komunikazio argi eta erakargarri bat bermatuz.",
                 "planta": "GOIKO IKUSPEGIA",
                 "plantaDesc": "Adobe InDesign erabili nuen osagai bisual eta testual bakoitza arretaz antolatzeko, estetika eta funtzionaltasunaren arteko oreka bilatuz. Arreta berezia jarri nion hierarkia bisualari, irakurgarritasunari eta packaging-aren alde desberdinen arteko koherentziari, diseinua edozein angelutatik uniformea eta erakargarria izan zedin. Gero, Adobe Photoshop-en muntaketa bat egin nuen packaging-aren ikuspegi erreala aurkezteko, produktuak benetako ingurune batean izango lukeen itxura erakutsiz.",
@@ -123,7 +132,27 @@
           }
         }
       },
-      "webdevelopment": "Web Garapena",
+      "webdevelopment": {
+        "title": "Web Garapena",
+        "projects": {
+          "nalion": {
+            "title": "NALION",
+            "descri": "Streaming plataforma bat sortzea HTML, CSS eta JS erabiliz"
+          },
+          "playwrong": {
+            "title": "PLAYWRONG",
+            "descri": "Streaming plataforma bat sortzea REACT + VITE erabiliz"
+          },
+          "portfolio": {
+            "title": "PORTFOLIO",
+            "descri": "Nire proiektu eta informazioaren portfolioa"
+          },
+          "larulla": {
+            "title": "LA RULLA",
+            "descri": "Produktuen erakusleiho baten sorrera"
+          }
+        }
+      },
       "photography": {
         "title": "Argazkigintza",
         "animal": "Animaliak",

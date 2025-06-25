@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // Importar imágenes de desarrollo web
 import naliImg from '@/assets/desweb/nalion/nali.jpg';
@@ -9,6 +10,7 @@ import ionImg from '@/assets/desweb/portfolio/ion.jpg';
 import pwImg from '@/assets/desweb/playwrong/pw.jpg';
 
 const WebDevelopment = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [hasAnimated, setHasAnimated] = useState(() => {
     const saved = sessionStorage.getItem('webDevAnimations');
@@ -87,7 +89,7 @@ const WebDevelopment = () => {
           </div>
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">NALION</h3>
-            <p className="text-lg">1.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.webdevelopment.projects.nalion.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Nalion"
@@ -110,7 +112,7 @@ const WebDevelopment = () => {
           </div>
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">LA RULLA</h3>
-            <p className="text-lg">2.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.webdevelopment.projects.larulla.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre La Rulla"
@@ -139,7 +141,7 @@ const WebDevelopment = () => {
           </div>
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">PORTFOLIO</h3>
-            <p className="text-lg">3.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.webdevelopment.projects.portfolio.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Portfolio"
@@ -155,7 +157,7 @@ const WebDevelopment = () => {
         <div className="flex flex-row lg:flex-row w-full lg:w-1/2">
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
             <h3 className="text-2xl font-semibold mb-3">PLAYWRONG</h3>
-            <p className="text-lg">4.</p>
+            <p className="text-lg">{t("HomePage.ProjectsSection.webdevelopment.projects.playwrong.descri")}</p>
             <button
               type="button"
               aria-label="Más info sobre Playwrong"
