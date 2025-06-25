@@ -121,12 +121,12 @@ const OtrosCat = () => {
           </div>
 
           <div className="w-1/2 flex flex-col pt-8 p-6 relative text-white justify-center">
-            <h3 className="text-2xl font-semibold mb-3">CASCOS</h3>
+            <h3 className="text-2xl font-semibold mb-3">TRITON</h3>
             <p className="text-lg">2.</p>
             <button
               type="button"
               aria-label="Más info sobre Cascos"
-              onClick={() => handleProjectClick('cascos')}
+              onClick={() => handleProjectClick('triton')}
               className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
             >
               +
