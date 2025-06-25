@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 // Importar imágenes de OtrosCat
-import brokisImg from '@/assets/otros/brokis/trptico argi2 trasero.jpg';
-import cascosImg from '@/assets/otros/cascos/Packaging cascos 3D.jpg';
-import tripticoImg from '@/assets/otros/tripticos/triptico la salle.jpg';
+import brokisImg from '@/assets/otros/brokis/triptico2.jpg';
+import cascosImg from '@/assets/otros/cascos/Packagingd.jpg';
+import tripticoImg from '@/assets/otros/tripticos/triptico2.jpg';
 
 const OtrosCat = () => {
   const navigate = useNavigate();
