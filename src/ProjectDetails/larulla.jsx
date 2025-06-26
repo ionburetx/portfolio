@@ -15,58 +15,52 @@ const LaRulla = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="text-white px-4 py-8 space-y-6">
+    <div className="w-full min-h-screen px-4 py-8 text-white flex flex-row gap-6" style={{ height: '100vh' }}>
+      
+      {/* Columna izquierda */}
+      <div 
+        className="w-[40%] flex flex-col gap-6 overflow-y-auto" 
+        style={{ position: 'sticky', top: 0, maxHeight: '100vh' }}
+      >
+        {/* Marca */}
+        <h2 className="text-lg md:text-2xl lg:text-xl font-bold uppercase mb-2 break-words">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titlanding")}
+        </h2>
+        <img src={images['zapa1.png']} alt="Marca imagen" className="w-full object-contain" />
 
-      {/* 1. Intro */}
-      <p className="text-base md:text-lg w-full">
-        {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.intro")}
-      </p>
+        <h2 className="text-lg md:text-2xl lg:text-xl font-bold uppercase mb-2 break-words">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titcarro")}
+        </h2>
+        <img src={images['zapa2.png']} alt="Marca imagen" className="w-full object-contain" />
 
-      {/* 2. TÍTULO: IMAGEN */}
-      <h2 className="text-xl font-bold uppercase w-full">
-        {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titlanding")}
-      </h2>
+        <h2 className="text-lg md:text-2xl lg:text-xl font-bold uppercase mb-2 break-words">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titpdf")}
+        </h2>
+        <img src={images['zapa3.png']} alt="Marca imagen" className="w-full object-contain" />
+      </div>
 
-      {/* 3. Imagen LANDING */}
-      <img
-        src={images['zapa1.png']}
-        alt="Packaging planta"
-        className="w-full lg:w-1/2 object-contain mx-auto"
-      />
+      {/* Columna derecha */}
+      <div 
+        className="w-[60%] flex flex-col gap-6 overflow-y-auto" 
+        style={{ position: 'sticky', top: 0, maxHeight: '100vh' }}
+      >
+        <p className="text-base md:text-xl lg:text-xl font-bold">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.descri1")}
+        </p>
+        <p className="text-base md:text-xl lg:text-xl">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.intro")}
+        </p>
+        <p className="text-base md:text-xl lg:text-xl">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.para")}
+        </p>
+        <p className="text-base md:text-xl lg:text-xl">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.como")}
+        </p>
+        <p className="text-base md:text-xl lg:text-xl">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.este")}
+        </p>
+      </div>
 
-      {/* 4. Texto DESARROLLAR */}
-      <p className="text-base w-full">
-        {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.para")}
-      </p>
-
-      {/* 5. Titulo CARRITO */}
-      <h2 className="text-xl font-bold uppercase w-full">
-        {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titcarro")}
-      </h2>
-
-      {/* 6. Imagen CARRITO */}
-      <img
-        src={images['zapa2.png']}
-        alt="Packaging 3D"
-        className="w-full lg:w-1/2 object-contain mx-auto"
-      />
-
-      {/* 7. Texto COMO */}
-      <p className="text-base w-full">
-        {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.como")}
-      </p>
-
-      {/* 8. Titulo DOCUMENTO */}
-      <h2 className="text-xl font-bold uppercase w-full">
-        {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titpdf")}
-      </h2>
-
-      {/* 9. Imagen DOCUMENTO */}
-      <img
-        src={images['zapa3.png']}
-        alt="Packaging 3D"
-        className="w-full lg:w-1/2 object-contain mx-auto"
-      />
     </div>
   );
 };

@@ -31,6 +31,10 @@ h1 {
   line-height: 1.1;
 }
 
+.sticky-end {
+  position: sticky;
+  bottom: 0;
+}
 
   @keyframes spin360 {
   from {

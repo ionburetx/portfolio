@@ -41,22 +41,22 @@ const Triptico = () => {
       {/* Columna derecha */}
       <div className="w-[60vw] flex flex-col gap-6 pl-4">
         {/* Descri */}
-        <p className="text-base md:text-lg lg:text-2xl font-bold text-left leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl font-bold text-left leading-relaxed">
           {t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.tripticos.descri1")}
         </p>
 
         {/* Intro */}
-        <p className="text-base md:text-lg lg:text-2xl text-left leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl text-left leading-relaxed">
           {t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.tripticos.intro")}
         </p>
 
         {/* Descripción PLANTA */}
-        <p className="text-base md:text-lg lg:text-2xl text-left leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl text-left leading-relaxed">
           {t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.tripticos.utilizando")}
         </p>
 
         {/* Descripción 3D */}
-        <p className="text-base md:text-lg lg:text-2xl text-left leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl text-left leading-relaxed">
           {t("HomePage.ProjectsSection.graphicdesign.subcategories.others.projects.tripticos.este")}
         </p>
       </div>
