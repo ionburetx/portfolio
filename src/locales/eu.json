@@ -150,7 +150,27 @@
           "nalion": {
             "title": "NALION",
             "descri": "Streaming plataforma bat sortzea HTML, CSS eta JS erabiliz",
-            "descri1": "PROYECTUAREN AZALPENA"
+            "descri1": "PROYECTUAREN AZALPENA",
+            "metodo": "METODOLOGIA",
+            "metodoDesc": "Proiektu hau Scrum metodologia arina erabiliz garatu genuen osorik taldean, modu eraginkor eta profesionalean antolatzeko aukera emanez. Taldeko rolak definitu genituen (Scrum Master, Product Owner eta Developers) eta lana asteko sprint-etan egituratu genuen, egunero jarraipen-bilera laburrak eta ziklo bakoitzaren amaieran atzera begirakoak eginez. Taiga erabili genuen proiektuaren kudeaketarako tresna nagusi gisa: erabiltzaile-istorioak sortu, lanak denbora-estimazioekin, arduradunekin eta egoerekin zehaztu. Gainera, FigJam erabiliz planifikazio hasierako eta talde-akordioak (barne-arauak, helburu komunak, konpromisoak…) ezarri genituen.",
+            "boceto": "ZIRRIBORROAK ETA BISUALAREN PROTOTIPATZEA",
+            "bocetoDesc": "Diseinu-fasea fideltasun baxuko zirriborro batekin hasi genuen, web-kartelaren egitura nagusia, hierarkia bisuala eta edukien banaketa planteatuz. Ondoren, fideltasun handiko prototipo batean lan egin genuen, Penpot izeneko diseinu-tresna irekiarekin. Bertan, azken diseinuaren egitura eta estilo-gida definitu genituen: tipografiak, kolore-paleta, ikonoak eta elementu interaktiboak. Prototipo honek erreferentzia zuzena izan zuen garapen-prozesuan zehar, koherentzia bisuala bermatuz.",
+            "desarrollo": "PROIEKTUAREN GARAPEN TEKNIKOA",
+            "desarrolloDesc": "Garapena HTML, CSS eta JavaScript erabiliz egin zen. Erronka nagusia TheMovieDB API-tik denbora errealeko datuak kontsumitzea izan zen, edukia dinamikoki sortzeko. Webguneak funtzionalitate hauek zituen: Hiru pelikula nabarmendu trending, irudi, izenburu, sinopsi eta xehetasunetarako estekarekin. Generoka sailkatutako hainbat pelikula, banakako txarteletan. Bilaketa-orri interaktiboa, izenaren arabera filmak iragazteko. Xehetasun-orriak aukeratutako film bakoitzerako, informazio zabalduarekin. Interfaze osoa erabat responsive diseinatu zen, gailu desberdinetara egokituz.",
+            "calidad": "JARDUNBIDE EGOKIAK ETA KODEAREN KALITATEA",
+            "calidadDesc": "Garapenean zehar, kalitate-irizpide zorrotzak aplikatu genituen: kode garbia, ondo indentatua eta beharrezkoa zen lekuetan komentatua. Fitxategien banaketa egokia (HTML, CSS, JS eta irudiak). GitHub bidezko bertsio-kontrol jarraitua, commita deskribatzaile eta progresiboekin, proiektuaren bilakaera jarraitzeko. Gainera, CORS eta Same-Origin Policy kontzeptuak ikasi genituen, kanpoko API-ekin lan egitean nabigatzaileen segurtasun-murrizketak ulertuz.",
+            "publi": "ARGITALPENA ETA AZKEN EMATEA",
+            "publiDesc": "Proiektua GitHub Pages bidez argitaratu zen, biltegi pertsonal batetik. Bertan, README.md oso bat txertatu genuen, beharrezko dokumentazio osoarekin: deskribapena, esteka, erabilera-argibideak, erabilitako teknologiak eta azken gogoetak. Taldeko kide bakoitzak barne-ebaluaziorako dokumentu bat prestatu zuen, egindako lanaren inguruko hausnarketa egituratua jasoz: lorpenak, zailtasunak, ikaskuntzak eta hobekuntza-proposamenak.",
+            "conclusion": "AZKEN ONDORIOAK",
+            "conclusionDesc": "Proiektu honek frontend garapen errealaren esperientzia osoa eman dit: diseinu bisualetik eta lan kolaboratibotik hasi, APIen erabilerara eta produktu profesionalaren entregara arte. Gaitasun tekniko eta metodologikoak sendotzeko aukera izan dut, eta frogatu dut gai naizela aplikazio web funtzional, garbi eta egituratuak garatzeko, ingurune arin eta antolatu batean.",
+            "logo": "LOGOA",
+            "cartel":"PELÍCULAREN KARTEL DISEINUA",
+            "desktop": "DESKTOP",
+            "principal":"HASIERA ORRIA",
+            "trending":"TRENDING",
+            "genero":"GENEROAK",
+            "detalle":"DETAILE ORRIA",
+            "movil": "MUGIKORRA"
           },
           "playwrong": {
             "title": "PLAYWRONG",

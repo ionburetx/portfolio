@@ -150,7 +150,27 @@
           "nalion": {
             "title": "NALION",
             "descri": "Creation of a Streaming Platform with HTML, CSS, and JS",
-            "descri1": "PROJECT DESCRIPTION"
+            "descri1": "PROJECT DESCRIPTION",
+            "metodo": "METHODOLOGY",
+            "metodoDesc": "This project was fully developed as a team following an agile Scrum methodology, which allowed us to stay organized in an efficient and professional way. We defined the team roles (Scrum Master, Product Owner, and Developers) and structured the work into weekly sprints, with short daily follow-up meetings and retrospectives at the end of each cycle. We used Taiga as our main project management tool, where we created user stories and defined specific tasks with estimated times, responsibilities, and progress status. We also used FigJam for initial planning and team agreements (internal rules, common goals, commitments, etc.).",
+            "boceto": "SKETCHES AND VISUAL PROTOTYPING",
+            "bocetoDesc": "The design phase started with a low-fidelity wireframe, where we outlined the basic structure of the website-poster, visual hierarchy, and the layout of key content. From there, we moved on to a high-fidelity prototype using Penpot, an open-source collaborative design tool. There, we defined the final layout and the style guide: typography, color palette, icons, and interactive elements. This prototype served as a direct reference during development, ensuring consistent visual implementation.",
+            "desarrollo": "TECHNICAL DEVELOPMENT OF THE PROJECT",
+            "desarrolloDesc": "The development was carried out using HTML, CSS, and JavaScript. The main challenge was integrating real-time data from the TheMovieDB API, which allowed us to dynamically generate website content. The key features of the site included: Three trending highlighted movies with poster, title, synopsis, and detail link. Display of multiple movies by genre with individual cards. An interactive search page to filter movies by title. Detail pages for each selected movie showing extended information. The entire interface was designed to be fully responsive across different devices.",
+            "calidad": "BEST PRACTICES AND CODE QUALITY",
+            "calidadDesc": "Throughout development, we applied strict quality standards: clean, properly indented code with comments when necessary. Proper file separation (HTML, CSS, JS, and images). Continuous version control on GitHub, with descriptive and progressive commits to track the project’s progress. We also learned about CORS and the Same-Origin Policy, understanding browser security restrictions when working with external APIs.",
+            "publi": "PUBLISHING AND FINAL DELIVERY",
+            "publiDesc": "The project was published on GitHub Pages from a personal repository, including a complete README.md with all the necessary documentation: description, site link, usage instructions, technologies used, and final reflections. Each team member created a personal evaluation document with a structured reflection on the work done: achievements, challenges, lessons learned, and proposals for improvement.",
+            "conclusion": "FINAL CONCLUSION",
+            "conclusionDesc": "This project provided me with a complete experience in real frontend development: from visual design and collaborative work to API integration and professional product delivery. It allowed me to strengthen both technical and methodological skills, demonstrating my ability to build functional, clean, and well-structured web applications in an agile and organized work environment.",
+            "logo": "LOGO",
+            "cartel":"MOVIE POSTER DESIGN",
+            "desktop": "DESKTOP",
+            "principal":"MAIN PAGE",
+            "trending":"TRENDING",
+            "genero":"GENRE",
+            "detalle":"DETAILS PAGE",
+            "movil": "MOBILE"
           },
           "playwrong": {
             "title": "PLAYWRONG",

@@ -1,6 +1,5 @@
 import Dra from './dra';
 import Metropolis from './metropolis';
-// Cuando crees más proyectos, los importas aquí
 import Kresala from './kresala';
 //import Codigo from './codigo';
 //import Constone from './constone';
@@ -9,7 +8,7 @@ import Brokis from './brokis';
 import Triton from './triton';
 import Triptico from './triptico';
 import LaRulla from './larulla';
-//import Nalion from './nalion';
+import Nalion from './nalion';
 //import Playwrong from './playwrong';
 //import Portfolio from './portfolio';
 
@@ -20,7 +19,8 @@ const projectComponents = {
   triptico: Triptico,
   triton: Triton,
   brokis: Brokis,
-  larulla: LaRulla
+  larulla: LaRulla,
+  nalion: Nalion
 };
 
 export default projectComponents;

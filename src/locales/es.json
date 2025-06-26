@@ -149,7 +149,27 @@
           "nalion": {
             "title": "NALION",
             "descri": "Creación de una plataforma streaming con HTML,CSS y JS",
-            "descri1": "DESCRIPCIÓN DEL PROYECTO"
+            "descri1": "DESCRIPCIÓN DEL PROYECTO",
+            "metodo": "METODOLOGÍA",
+            "metodoDesc": "Este proyecto se desarrolló íntegramente en equipo siguiendo una metodología ágil Scrum, lo que nos permitió organizarnos de manera eficiente y profesional. Definimos los roles dentro del equipo (Scrum Master, Product Owner y Developers) y estructuramos el trabajo en sprints semanales, con reuniones breves de seguimiento (dailys) y retrospectivas al cierre de cada ciclo. Utilizamos Taiga como herramienta principal de gestión de proyecto, donde creamos nuestras historias de usuario, definimos tareas específicas con tiempos estimados, responsables y estados de avance. Además, usamos FigJam para la planificación inicial y los acuerdos de equipo (normas internas, objetivos comunes, compromisos, etc.).",
+            "boceto": "BOCETOS Y PROTOTIPADO VISUAL",
+            "bocetoDesc": "La fase de diseño comenzó con la elaboración de un boceto de baja fidelidad, donde planteamos la estructura básica de la web-cartelera, la jerarquía visual y la distribución de los contenidos clave. A partir de ahí, trabajamos en un prototipo de alta fidelidad utilizando Penpot, una herramienta open source de diseño colaborativo, donde definimos tanto el layout final como la guía de estilos: tipografías, paleta cromática, iconografía y elementos interactivos. Este prototipo nos sirvió de referencia directa durante el desarrollo, asegurando una implementación coherente a nivel visual.",
+            "desarrollo": "DESARROLLO TÉCNICO DEL PROYECTO",
+            "desarrolloDesc": "El desarrollo se llevó a cabo utilizando HTML, CSS y JavaScript. El reto principal fue el consumo de datos en tiempo real desde la API de TheMovieDB, que permitió generar dinámicamente los contenidos del sitio. La web incluía las siguientes funcionalidades clave: Tres películas destacadas trending con póster, título, sinopsis y enlace al detalle. Visualización de múltiples películas por género, con tarjetas individuales. Una página de búsqueda interactiva para filtrar películas por nombre. Páginas de detalle para cada título seleccionado, mostrando información ampliada. Toda la interfaz fue diseñada para ser completamente responsive, adaptándose a distintos dispositivos.",
+            "calidad": "BUENAS PRÁCTICAS Y CALIDAD DEL CÓDIGO",
+            "calidadDesc": "Durante el desarrollo, aplicamos criterios estrictos de calidad: Código limpio, indentado y comentado cuando fue necesario. Separación correcta de archivos (HTML, CSS, JS e imágenes). Versionado continuo en GitHub, con commits descriptivos y progresivos que permiten rastrear el avance del proyecto. Además, aprendimos sobre CORS y la Same-Origin Policy, entendiendo las restricciones de seguridad de los navegadores al trabajar con APIs externas.",
+            "publi": "PUBLICACIÓN Y ENTREGA FINAL",
+            "publiDesc": "El proyecto fue publicado en GitHub Pages desde un repositorio personal, incluyendo un README.md completo con toda la documentación necesaria: descripción, enlace al sitio, instrucciones de uso, tecnologías empleadas y reflexiones finales. Cada miembro del equipo elaboró un documento de evaluación interna con una reflexión estructurada sobre el trabajo realizado: logros, dificultades, aprendizajes y propuestas de mejora.",
+            "conclusion": "CONCLUSIÓN FINAL",
+            "conclusionDesc": "Este proyecto me brindó una experiencia completa en el desarrollo frontend real: desde el diseño visual y el trabajo colaborativo, hasta el consumo de APIs y la entrega profesional del producto. Me permitió afianzar habilidades tanto técnicas como metodológicas, demostrando mi capacidad para desarrollar aplicaciones web funcionales, limpias y bien estructuradas, en un entorno de trabajo ágil y organizado.",
+            "logo": "LOGO",
+            "cartel":"DISEÑO CARTEL PELÍCULA",
+            "desktop": "DESKTOP",
+            "principal":"PÁGINA PRINCIPAL",
+            "trending":"TRENDING",
+            "genero":"GÉNEROS",
+            "detalle":"PÁGINA DETALLES",
+            "movil": "MÓVIL"
           },
           "playwrong": {
             "title": "PLAYWRONG",
