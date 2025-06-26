@@ -51,19 +51,19 @@ const ProjectsSection = () => {
       <SectionHeader titleKey="projects" />
 
       {/* Diseño Gráfico */}
-      <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
+      <h2 className="text-center text-white text-3xl md:text-4xl font-bold uppercase my-16 tracking-wider">
         {t("HomePage.ProjectsSection.graphicdesign.title")}
       </h2>
       <GraphicDesignCat />
 
       {/* Desarrollo Web */}
-      <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-16 tracking-wider">
+      <h2 className="text-center text-white text-3xl md:text-4xl font-bold uppercase my-16 tracking-wider">
         {t("HomePage.ProjectsSection.webdevelopment.title")}
       </h2>
       <WebDevelopmentCat />
 
       {/* Categoría Fotografía */}
-      <h2 className="text-center text-white text-3xl md:text-4xl font-bold my-12 tracking-wider">
+      <h2 className="text-center text-white text-3xl md:text-4xl font-bold uppercase my-12 tracking-wider">
         {t("HomePage.ProjectsSection.photography.title")}
       </h2>
 
