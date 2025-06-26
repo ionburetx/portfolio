@@ -23,17 +23,17 @@ const LaRulla = () => {
         style={{ position: 'sticky', top: 0, maxHeight: '100vh' }}
       >
         {/* Marca */}
-        <h2 className="text-lg md:text-2xl lg:text-xl font-bold uppercase mb-2 break-words">
+        <h2 className="text-base md:text-xl lg:text-xl font-bold uppercase mb-2 break-words">
           {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titlanding")}
         </h2>
         <img src={images['zapa1.png']} alt="Marca imagen" className="w-full object-contain" />
 
-        <h2 className="text-lg md:text-2xl lg:text-xl font-bold uppercase mb-2 break-words">
+        <h2 className="text-base md:text-xl lg:text-xl font-bold uppercase mb-2 break-words">
           {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titcarro")}
         </h2>
         <img src={images['zapa2.png']} alt="Marca imagen" className="w-full object-contain" />
 
-        <h2 className="text-lg md:text-2xl lg:text-xl font-bold uppercase mb-2 break-words">
+        <h2 className="text-base md:text-xl lg:text-xl font-bold uppercase mb-2 break-words">
           {t("HomePage.ProjectsSection.webdevelopment.projects.larulla.titpdf")}
         </h2>
         <img src={images['zapa3.png']} alt="Marca imagen" className="w-full object-contain" />
