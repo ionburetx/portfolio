@@ -116,7 +116,7 @@ const WebDevelopment = () => {
             <button
               type="button"
               aria-label="Más info sobre La Rulla"
-              onClick={() => handleProjectClick('zapateria')}
+              onClick={() => handleProjectClick('larulla')}
               className="mt-4 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-600 transition border border-white"
             >
               +

@@ -149,7 +149,14 @@
           },
           "larulla": {
             "title": "LA RULLA",
-            "descri": "Produktuen erakusleiho baten sorrera"
+            "descri": "Produktuen erakusleiho baten sorrera",
+            "intro": "Frontend garatzaile izateko prestakuntzan, talde-laneko proiektu bat burutu nuen, non dashboard motako erakusleiho digital bat sortu genuen, produktu zerrenda bat erakusteko, sailkatuta eta oinarrizko informazioarekin: izena, deskribapena, irudia, prezioa eta stock-a.",
+            "titlanding": "HASIERA ORRIA",
+            "para": "Proiektu hau garatzeko, Scrum-en oinarritutako metodologia arinak erabili genituen. Taldean, kide bakoitzak rol zehatz bat izan zuen (Scrum Master, Product Owner, Garatzaileak) eta lan tresna kolaboratiboak erabili genituen, hala nola Taiga, atazen kudeaketarako, erabiltzaile-istorioetarako eta lan-fluxuaren jarraipenerako. Barne-arauak, talde-helburuak eta konpromiso partekatuak ezarri genituen, dokumentu bateratu batean jasota, prozesuaren azken gogoeta eta ikaskuntza barne. Maila teknikoan, HTML eta CSS erabiliz interfaz web erantzunkor bat inplementatu genuen, irisgarritasuna eta bateragarritasuna bermatuz W3C egiaztapenen eta kodeketa-praktika egokien bidez. Kodea Git eta GitHub bidez kudeatu genuen, garapenaren aurrerapena islatzen zuen commit historiaren bidez. Ataza bakoitza banaka esleitu eta denbora estimazioarekin planifikatu zen, proiektuaren trazabilitate osoa ahalbidetuz.",
+            "titcarro": "SESTAREN ORRIA",
+            "como": "Balio erantsia emateko, bezeroak eskatu zituen funtzionalitate osagarriak integratu genituen: Datuen eta logikaren bereizketa, kategoriak eta produktuak .json fitxategietan gordez, kodea ukitu gabe mantentzea erraztuz. Erosketa-saski sistema, erabiltzaileari aurrekontu pertsonalizatua sortzeko aukera ematen diona. Inprimatzeko optimizatutako diseinua, A4 dokumentu bat sortuz estilo zehatzarekin aurrekontua argi erakusteko.",
+            "titpdf": "DESKARGATZEKO DOKUMENTUA",
+            "este": "Proiektu honek aukera eman zidan nire frontend garapeneko gaitasun teknikoak ez ezik, talde-lan profesionalean aritzeko trebetasuna ere erakusteko, lan-fluxu errealak kudeatuz eta bezeroaren eskakizun aldakorretara egokituz."
           }
         }
       },

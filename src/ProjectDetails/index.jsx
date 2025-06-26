@@ -8,7 +8,7 @@ import Kresala from './kresala';
 import Brokis from './brokis';
 import Triton from './triton';
 import Triptico from './triptico';
-//import LaRulla from './larulla';
+import LaRulla from './larulla';
 //import Nalion from './nalion';
 //import Playwrong from './playwrong';
 //import Portfolio from './portfolio';
@@ -19,7 +19,8 @@ const projectComponents = {
   metropolis: Metropolis,
   triptico: Triptico,
   triton: Triton,
-  brokis: Brokis
+  brokis: Brokis,
+  larulla: LaRulla
 };
 
 export default projectComponents;

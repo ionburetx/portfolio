@@ -149,7 +149,14 @@
           },
           "larulla": {
             "title": "LA RULLA",
-            "descri": "Creación de un escaparate de productos"
+            "descri": "Creación de un escaparate de productos",
+            "intro": "Durante mi formación como desarrollador frontend, llevé a cabo un proyecto en equipo consistente en la creación de un escaparate digital tipo dashboard, cuyo objetivo era mostrar una lista de productos clasificados con información esencial como nombre, descripción, imagen, precio y stock.",
+            "titlanding": "PÁGINA PRINCIPAL",
+            "para": "Para desarrollar este proyecto seguimos metodologías ágiles basadas en Scrum. Dentro del equipo, cada miembro asumió un rol definido (Scrum Master, Product Owner, Developers) y trabajamos con herramientas colaborativas como Taiga para la gestión de tareas, historias de usuario y seguimiento del flujo de trabajo. Establecimos normas internas, objetivos de equipo y compromisos comunes, reflejados en un documento compartido, junto con una reflexión final del proceso y el aprendizaje obtenido. A nivel técnico, implementamos una interfaz web responsive utilizando HTML y CSS, asegurando accesibilidad y compatibilidad mediante validaciones (W3C) y buenas prácticas de codificación. El código fue gestionado a través de Git y GitHub, con un historial claro de commits que reflejan el progreso del desarrollo. Cada tarea fue planificada con estimaciones temporales y asignada individualmente, lo que permitió una trazabilidad completa del proyecto.",
+            "titcarro": "PÁGINA CARRITO",
+            "como": "Como valor añadido, integramos funcionalidades extra solicitadas por el cliente: Separación de datos y lógica, almacenando categorías y productos en archivos .json para facilitar su mantenimiento sin tocar el código. Sistema de carrito de la compra, que permite al usuario generar un presupuesto personalizado. Diseño optimizado para impresión, generando un documento A4 con estilo específico para visualizar el presupuesto de forma clara.",
+            "titpdf": "DOCUMENTO DESCARGABLE",
+            "este": "Este proyecto me permitió demostrar no solo mis habilidades técnicas en desarrollo frontend, sino también mi capacidad para trabajar de forma profesional en equipo, gestionando flujos de trabajo reales y adaptándome a los requerimientos cambiantes del cliente."
           }
         }
       },

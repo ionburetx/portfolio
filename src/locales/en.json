@@ -137,7 +137,7 @@
         "projects": {
           "nalion": {
             "title": "NALION",
-            "descri": "Creation of a streaming platform using HTML, CSS, and JS"
+            "descri": "Creation of a Streaming Platform with HTML, CSS, and JS"
           },
           "playwrong": {
             "title": "PLAYWRONG",
@@ -149,7 +149,14 @@
           },
           "larulla": {
             "title": "LA RULLA",
-            "descri": "Creation of a product showcase"
+            "descri": "Creation of a product showcase",
+            "intro": "During my training as a frontend developer, I participated in a team project consisting of the creation of a digital dashboard-style showcase, aimed at displaying a list of categorized products with essential information such as name, description, image, price, and stock.",
+            "titlanding": "MAIN PAGE",
+            "para": "To develop this project, we followed agile methodologies based on Scrum. Within the team, each member assumed a defined role (Scrum Master, Product Owner, Developers), and we worked with collaborative tools like Taiga for task management, user stories, and workflow tracking. We established internal rules, team goals, and shared commitments, all reflected in a shared document, along with a final reflection on the process and the learning outcomes. Technically, we implemented a responsive web interface using HTML and CSS, ensuring accessibility and compatibility through validations (W3C) and good coding practices. The code was managed using Git and GitHub, with a clear commit history that reflected development progress. Each task was planned with time estimates and assigned individually, allowing complete project traceability.",
+            "titcarro": "CART PAGE",
+            "como": "As an added value, we integrated extra features requested by the client: Separation of data and logic, storing categories and products in .json files to facilitate maintenance without touching the code. Shopping cart system that allows users to generate a personalized quote. Print-optimized design, generating an A4 document with specific styling to clearly display the quote.",
+            "titpdf": "DOWNLOADABLE DOCUMENT",
+            "este": "This project allowed me to demonstrate not only my technical skills in frontend development but also my ability to work professionally in a team, managing real workflows and adapting to the client’s changing requirements."
           }
         }
       },
