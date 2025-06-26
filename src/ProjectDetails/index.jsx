@@ -9,7 +9,7 @@ import Triton from './triton';
 import Triptico from './triptico';
 import LaRulla from './larulla';
 import Nalion from './nalion';
-//import Playwrong from './playwrong';
+import Playwrong from './playwrong';
 //import Portfolio from './portfolio';
 
 const projectComponents = {
@@ -20,7 +20,8 @@ const projectComponents = {
   triton: Triton,
   brokis: Brokis,
   larulla: LaRulla,
-  nalion: Nalion
+  nalion: Nalion,
+  playwrong: Playwrong
 };
 
 export default projectComponents;
