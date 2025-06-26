@@ -35,6 +35,7 @@
               "7metropolis": {
                 "title": "7Metropolis",
                 "descri": "Creation of the company's full corporate identity",
+                "descri1": "PROJECT DESCRIPTION",
                 "intro": "A young company with a philanthropic soul. It imports Basque and Catalan wines, allocating part of each sale to reforest and reurbanize neglected areas of Colombia. Inspired by the book Metropolis by Ben Wilson, the brand evokes great civilizations, nautical maps, ancient trade, and urban evolution. Everything was carefully designed to convey strength, legacy, and social commitment. From the logo to the smallest applications, each piece is part of a graphic universe with its own personality. Each element had to express both the flavor of the wine and the project’s social commitment. An experience where design not only sold products but helped sow the seeds of the future.",
                 "logocola": "COLLABORATIVE LOGO",
                 "logocolaDesc": "I designed logo variations to integrate the identities of 7Metropolis with those of the restaurants and distributors they collaborated with. The challenge was to merge styles without losing the essence of each brand. Flexible and balanced compositions were chosen, maintaining 7Metropolis's classic aesthetic while incorporating representative elements of the collaborating partner.",
@@ -49,6 +50,7 @@
               "dra": {
                 "title": "DRA!",
                 "descri": "Company rebranding, photo and illustration catalog",
+                "descri1": "PROJECT DESCRIPTION",
                 "intro": "I joined the company during my internship to lead a comprehensive redesign of their corporate identity. The store, specializing in fashion accessories and children’s products, needed to differentiate both lines with unique visual identities while maintaining the brand’s essence. At the same time, we aimed to refresh the company's overall image. To achieve this, we worked as a team to understand their needs and final goals.",
                 "logo": "LOGO DESIGN",
                 "para": "I began by researching the company’s target audience (adults vs. children), creating two distinct logos under a single brand. The name was preserved, but the aesthetic was renewed for each segment.",
@@ -69,21 +71,25 @@
               "constone": {
                 "title": "Constone",
                 "descri": "Logo and merchandise design",
+                "descri1": "PROJECT DESCRIPTION",
                 "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
               },
               "codigo": {
                 "title": "Código",
                 "descri": "Logo and merchandise design",
+                "descri1": "PROJECT DESCRIPTION",
                 "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
               },
               "alquimia": {
                 "title": "Alquimia Trip",
                 "descri": "Target audience analysis, brand creation, and social media",
+                "descri1": "PROJECT DESCRIPTION",
                 "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
               },
               "kresala": {
                 "title": "Kresala",
                 "descri": "Building my own personal project from the ground up",
+                "descri1": "PROJECT DESCRIPTION",
                 "intro": "What began as a personal drawing for a tattoo has ended up becoming the inspiration to shape my own brand. A project that emerges organically, from the personal realm, but expands toward the collective by deeply connecting with the history, aesthetics, and identity symbols of the Basque Country.",
                 "marca": "THE BRAND",
                 "marcaDesc": "The conceptual core of the project revolves around a symbol loaded with history: the oak tree—more specifically, the Tree of Gernika. Located at the Assembly House of Gernika, this tree not only represents the strength and resilience of the Basque people but has also been, for centuries, the place where lords swore to uphold the Basque legal codes (fueros). Over time, it has become an emblem of freedom, cultural identity, and connection to the land. This symbolic dimension is what I chose to transfer to the brand's visual identity: strong, rooted, with solid values and deeply anchored in the collective memory.",
@@ -106,6 +112,7 @@
               "brokis": {
                 "title": "BROKIS",
                 "descri": "Brochure design for an energy company",
+                "descri1": "PROJECT DESCRIPTION",
                 "intro": "In this project, I designed a fold-out brochure for a small shop specializing in lamps, including pendant models, floor lamps, and other styles. The client provided the images and texts, and my responsibility was to structure and organize that content to achieve a design that was attractive, clear, and functional.",
                 "planta": "TOP VIEW IMAGE",
                 "plantaDesc": "I worked on the strategic distribution of images and information, carefully managing the visual hierarchy and consistency throughout the brochure to ensure a smooth reading flow and effective communication. I used professional design tools to balance aesthetics with practicality, aiming for a brochure that would reflect the shop’s identity and support the customer's purchasing decision.",
@@ -115,6 +122,8 @@
               "tripticos": {
                 "title": "TRÍPTICOS",
                 "descri": "Content redistribution and design for school brochures",
+                "descri1": "PROJECT DESCRIPTION",
+                "titima": "EXAMPLES",
                 "intro": "In this project, I designed several promotional brochures for different schools that were beginning their pre-enrollment period. The content—including texts, images, and logos—was provided by the institutions; my main task was to organize and structure this information effectively in order to achieve an attractive and functional design.",
                 "utilizando": "Using graphic design tools, I focused on distributing the content in a clear and hierarchical way, ensuring that each key message had proper visibility and that the overall layout maintained a visual flow that made reading easier. I aimed to strike a balance between aesthetics and practicality, so that the brochures would not only catch attention but also clearly communicate the essential information to prospective students and their families.",
                 "este": "This project allowed me to refine my skills in organizing complex content and creating graphic pieces that meet specific communication goals. Additionally, it helped me better understand the importance of adapting design to different audiences and the relevance of visual consistency in strengthening each school's identity."
@@ -122,6 +131,7 @@
               "cascos": {
                 "title": "TRITON",
                 "descri": "Headphone packaging design",
+                "descri1": "PROJECT DESCRIPTION",
                 "intro": "In this project, my goal was to design the packaging for a pair of headphones based on pre-established content, which included the logo, texts, and provided images. My main challenge was to structure and strategically distribute these elements so that the design would flow harmoniously across all sides of the packaging, ensuring clear and appealing communication.",
                 "planta": "TOP VIEW",
                 "plantaDesc": "I used Adobe InDesign to carefully organize each visual and textual component, aiming for a balance between aesthetics and functionality. I paid special attention to visual hierarchy, readability, and coherence across the different faces of the packaging, ensuring that the design looked consistent and attractive from any angle. Then, using Adobe Photoshop, I created a mockup to present a realistic view of the packaging, showing how the final product would look in a real-world setting.",
@@ -137,19 +147,23 @@
         "projects": {
           "nalion": {
             "title": "NALION",
-            "descri": "Creation of a Streaming Platform with HTML, CSS, and JS"
+            "descri": "Creation of a Streaming Platform with HTML, CSS, and JS",
+            "descri1": "PROJECT DESCRIPTION"
           },
           "playwrong": {
             "title": "PLAYWRONG",
-            "descri": "Creation of a streaming platform using REACT + VITE"
+            "descri": "Creation of a streaming platform using REACT + VITE",
+            "descri1": "PROJECT DESCRIPTION"
           },
           "portfolio": {
             "title": "PORTFOLIO",
-            "descri": "Portfolio showcasing my projects and information"
+            "descri": "Portfolio showcasing my projects and information",
+            "descri1": "PROJECT DESCRIPTION"
           },
           "larulla": {
             "title": "LA RULLA",
             "descri": "Creation of a product showcase",
+            "descri1": "PROJECT DESCRIPTION",
             "intro": "During my training as a frontend developer, I participated in a team project consisting of the creation of a digital dashboard-style showcase, aimed at displaying a list of categorized products with essential information such as name, description, image, price, and stock.",
             "titlanding": "MAIN PAGE",
             "para": "To develop this project, we followed agile methodologies based on Scrum. Within the team, each member assumed a defined role (Scrum Master, Product Owner, Developers), and we worked with collaborative tools like Taiga for task management, user stories, and workflow tracking. We established internal rules, team goals, and shared commitments, all reflected in a shared document, along with a final reflection on the process and the learning outcomes. Technically, we implemented a responsive web interface using HTML and CSS, ensuring accessibility and compatibility through validations (W3C) and good coding practices. The code was managed using Git and GitHub, with a clear commit history that reflected development progress. Each task was planned with time estimates and assigned individually, allowing complete project traceability.",
