@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-const imageModules = import.meta.glob('/src/assets/desweb/porfolio/**/*.{png,jpg,jpeg}', { eager: true });
+const imageModules = import.meta.glob('/src/assets/desweb/portfolio/**/*.{png,jpg,jpeg}', { eager: true });
 
 const images = Object.fromEntries(
   Object.entries(imageModules).map(([path, mod]) => {
@@ -30,6 +30,29 @@ const Portfolio = () => {
         </h2>
 
         <img src={images['1.png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Sobre mi Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Ide Cor Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Ide Cor Movil (Vertical) (1).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Fotografía Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Rama fotográfica Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Modal Fotografía Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['CV Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Contacto Movil (Vertical).png']} alt="Marca imagen" className="w-full object-contain" />
+
+        <h2 className="text-base md:text-xl lg:text-xl uppercase mb-2 break-words">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.portfolio.hori")}
+        </h2>
+
+        <img src={images['Idiomas Movil (Horizontal).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Linea Movil (Horizontal) (1).png']} alt="Marca imagen" className="w-full object-contain" />
+
+        <h2 className="text-xl md:text-2xl lg:text-4xl font-light uppercase break-words">
+          {t("HomePage.ProjectsSection.webdevelopment.projects.portfolio.desktop")}
+        </h2>
+
+        <img src={images['Idiomas (DeskTop).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Línea (DeskTop).png']} alt="Marca imagen" className="w-full object-contain" />
+        <img src={images['Presentación(DeskTop).png']} alt="Marca imagen" className="w-full object-contain" />
       </div>
 
       {/* Columna derecha */}
