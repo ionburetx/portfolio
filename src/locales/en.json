@@ -74,13 +74,19 @@
                 "title": "Constone",
                 "descri": "Logo and merchandise design",
                 "descri1": "PROJECT DESCRIPTION",
-                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
+                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales.",
+                "logo": "LOGO",
+                "merchan": "MERCHANDISING",
+                "texto": "Constone was an academic project based on a real case: a company dedicated to construction and real estate development management that required a solid, coherent corporate identity capable of reflecting its international reach. The first step was creating the name. I chose CONSTONE as a fusion of Construction and Stone, evoking strength, reliability, and permanence. To reinforce this visual and conceptual idea, I took Stonehenge as a starting point—the iconic megalithic structure located in the United Kingdom. This millennia-old monument has long symbolized resilience, balance, and mystery, and is commonly associated with strong, enduring structures built with deep technical and symbolic knowledge. Inspired by these values, I developed a logo that incorporates graphic elements referencing Stonehenge, creating a visual link between the brand and the concept of a strong, secure foundation. This choice not only gives the identity a recognizable and memorable character, but also connects with the international dimension of the company, which operates mainly in Spain, the UK, and other European countries. In addition to the naming and logo design, I developed the entire visual identity system, including corporate stationery, construction equipment, uniforms, vehicles, and promotional materials—adapting the design to different formats and usage contexts, while always maintaining the brand's visual and communicative coherence. The result is an identity that conveys trust, stability, and professionalism, aligned with the values of a modern construction company with an international outlook."
               },
               "codigo": {
                 "title": "Código",
                 "descri": "Logo and merchandise design",
                 "descri1": "PROJECT DESCRIPTION",
-                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive.",
+                "logo": "LOGO",
+                "merchan": "MERCHANDISING",
+                "texto": "CÓDIGO was a project developed during my master's degree, focused on creating a visual identity for a company specialized in data management, information services, and corporate security. One of its key services was the installation of video surveillance systems, which became the conceptual foundation for the brand identity. The proposal was based on the idea that both information and surveillance rely on a fundamental element: constant and precise observation. With that in mind, I designed a logo that represents an eye, using geometric forms that simulate the lens of a security camera, merging the concepts of vision, focus, and technology. The result is an identity that conveys control, clarity, and precision—key attributes for a company whose core business revolves around collecting, analyzing, and protecting data. The circular shapes and symmetrical structure in the logo reinforce the idea of 360º surveillance, while the color palette—sober and tech-oriented—adds a modern, professional, and trustworthy tone. In addition to the logo, I developed the brand’s application across various corporate and promotional materials, ensuring visual coherence and functional consistency throughout all points of contact with clients and partners."
               },
               "alquimia": {
                 "title": "Alquimia Trip",
@@ -202,7 +208,12 @@
           "portfolio": {
             "title": "PORTFOLIO",
             "descri": "Portfolio showcasing my projects and information",
-            "descri1": "PROJECT DESCRIPTION"
+            "descri1": "PROJECT DESCRIPTION",
+            "movil": "MOBILE MOCKUP",
+            "vert": "VERTICAL",
+            "hori": "HORIZONTAL",
+            "desk": "DESKTOP MOCKUP",
+            "texto": "This project was part of the final assignment for the Front-End Web Development Bootcamp, where we were asked to create a personal project from scratch. The exercise included a set of mandatory minimum requirements for validation, such as using the React framework with Vite, writing some tests, connecting to an external API, among other technical aspects. All details are documented in the project’s README file, which is available for those interested in exploring the structure and functionality in more depth. Beyond the technical development, I also invested significant effort into the design and planning stage. I created numerous wireframes in Penpot, for both mobile and desktop screens, with the goal of anticipating content organization, establishing a clear visual hierarchy, and properly structuring navigation before writing a single line of code. This approach allowed me to build a coherent, functional, and responsive portfolio, one that not only presents my work in a professional manner but also highlights the design and development process behind it."
           },
           "larulla": {
             "title": "LA RULLA",

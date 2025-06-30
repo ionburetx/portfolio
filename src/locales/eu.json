@@ -74,13 +74,19 @@
                 "title": "Constone",
                 "descri": "Logotipoaren eta merkataritza-produktuen sorrera",
                 "descri1": "PROYECTUAREN AZALPENA",
-                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
+                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales.",
+                "logo": "LOGO",
+                "merchan": "MERCHANDISING",
+                "texto": "Constone benetako kasu batean oinarritutako proiektu akademikoa izan zen: eraikuntza eta sustapen inmobiliarioen kudeaketara dedikatutako enpresa batek nazioarteko hedadura islatzeko gai izango zen irudi korporatibo sendo eta koherente bat behar zuen. Lehen urratsa izenaren sorkuntza izan zen. CONSTONE hautatu nuen, Construction (eraikuntza) eta Stone (harri) hitzen arteko fusio gisa, sendoa, fidagarria eta iraunkorra den zerbait iradokitzen duelako. Ideia bisual eta kontzeptual hori indartzeko, Stonehenge hartu nuen abiapuntu gisa—Erresuma Batuan kokatutako egitura megalitiko enblematikoa. Milaka urteko monumentu hau erresilientzia, oreka eta misterioaren ikur bihurtu da historian zehar, eta ohikoa da egitura sendo, iraunkor eta ezagutza tekniko eta sinboliko sakonez eraikiekin lotzea. Balio horietan inspiratuta, logotipo bat diseinatu nuen Stonehenge gogorarazten duten elementu grafikoak barne hartzen dituena, markaren eta oinarri sendo eta seguru baten ideiaren arteko lotura bisuala sortuz. Aukera horrek nortasun ezagun eta gogoangarri bat emateaz gain, enpresaren nazioarteko izaerarekin konektatzen du; izan ere, bere jarduera nagusia Espainian, Erresuma Batuan eta Europako beste herrialde batzuetan burutzen du. Izendapenaren eta logotipoaren diseinuaz gain, ikus-identitate sistema osoa garatu nuen: papergintza korporatiboa, obra-ekipamendua, uniformeak, ibilgailuak eta material promozionalak barne—betiere erabilera testuinguru eta euskarrietara egokituz, markaren koherentzia bisuala eta komunikatiboa mantenduz. Emaitza irudi bat da, konfiantza, egonkortasuna eta profesionaltasuna transmititzen dituena, ikuspegi internazionala duen eraikuntza-enpresa moderno baten balioekin bat datorrena."
               },
               "codigo": {
                 "title": "Código",
                 "descri": "Logotipoaren eta merkataritza-produktuen sorrera",
                 "descri1": "PROYECTUAREN AZALPENA",
-                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive.",
+                "logo": "LOGO",
+                "merchan": "MERCHANDISING",
+                "texto": "CÓDIGO masterreko proiektu gisa garatu nuen, datuen kudeaketan, informazio zerbitzuetan eta enpresa-segurtasunean espezializatutako enpresa baten identitate bisuala sortzera bideratuta. Bere zerbitzu nagusietako bat bideozaintza sistemak instalatzea zen, eta hori izan zen markaren identitatearen oinarri kontzeptuala. Proposamena behatze jarrai eta zehatza bezalako funtsezko elementu baten inguruan eraiki nuen, informazioaren eta zaintzaren arteko lotura gisa. Hori kontuan hartuta, begi bat irudikatzen duen logotipo bat diseinatu nuen, segurtasun kameraren objektiboa simulatzen duten forma geometrikoak erabiliz. Horrela, ikusmena, fokua eta teknologia kontzeptuak uztartzen dira. Emaitza kontrola, argitasuna eta zehaztasuna transmititzen duen identitate bat da, eta balio horiek ezinbestekoak dira datuak biltzen, aztertzen eta babesten diharduen enpresa baterako. Logotipoan dauden forma zirkularrek eta egitura simetrikoak 360º-ko zaintza irudikatzen dute, eta kolore-paletak —soila eta teknologikoa— tonu moderno, profesional eta fidagarria ematen dio. Logotipoaz gain, markaren aplikazio grafikoa garatu nuen euskarri korporatibo eta promozional ezberdinetan, bezero eta lankideekin izandako kontaktu puntu guztietan koherentzia bisuala eta funtzionala bermatuz."
               },
               "alquimia": {
                 "title": "Alquimia Trip",
@@ -202,7 +208,12 @@
           "portfolio": {
             "title": "PORTFOLIO",
             "descri": "Nire proiektu eta informazioaren portfolioa",
-            "descri1": "PROYECTUAREN AZALPENA"
+            "descri1": "PROYECTUAREN AZALPENA",
+            "movil": "MUGIKORREN MAKETA",
+            "vert": "BERTICALA",
+            "hori": "HORIZONTALA",
+            "desk": "DESKTOP MAKETA",
+            "texto": "Proiektu hau Front-End Web Garapeneko Bootcamp-eko azken lanaren parte izan zen, eta bertan nork bere proiektu pertsonala hutsetik garatzea eskatu ziguten. Ariketak hainbat baldintza tekniko minimo derrigorrezko zituen: React framework-a Vite-rekin erabiltzea, test batzuk egitea, kanpoko API batera konektatzea eta beste hainbat alderdi tekniko. Xehetasun guztiak README fitxategian daude jasota, eta interesa duen orok bertatik proiektuaren egitura eta funtzionamendua sakonago ezagutu ditzake. Garapen teknikotik harago, ahalegin handia egin nuen diseinuaren eta aurreko planifikazioaren alorrean ere. Penpot-en hainbat boceto sortu nituen, mugikor zein ordenagailu pantailentzat, edukien antolaketa aurreikusteko, hierarkia bisual argia ezartzeko eta nabigazioa ondo egituratzeko. Horrela, portfolio koherente, funtzional eta gailu desberdinetara egokitua eraikitzea lortu nuen, non ez den soilik nire lana modu profesionalean aurkezten, baizik eta atzean dagoen diseinu- eta garapen-prozesua ere balioan jartzen den."
           },
           "larulla": {
             "title": "LA RULLA",

@@ -73,13 +73,19 @@
               "constone": {
                 "title": "Constone",
                 "descri": "Creación de logo y merchandising",
-                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales."
+                "description": "Colaboración con esta marca para desarrollar una identidad visual coherente a través del diseño de logotipo, tarjetas de visita y materiales promocionales.",
+                "logo": "LOGO",
+                "merchan": "MERCHANDISING",
+                "texto": "Constone fue un proyecto académico desarrollado a partir de un caso real: una empresa dedicada a la construcción y a la gestión de promociones inmobiliarias que necesitaba una identidad corporativa sólida, coherente y capaz de reflejar su alcance internacional. El primer paso fue la creación del nombre. Elegí CONSTONE como una fusión de Construction (construcción) y Stone (piedra), evocando solidez, fiabilidad y permanencia. Para reforzar esa idea visual y conceptual, tomé como punto de partida Stonehenge, la emblemática estructura megalítica ubicada en el Reino Unido. Este monumento milenario ha sido símbolo de resistencia, equilibrio y misterio a lo largo de los siglos, y se asocia comúnmente con estructuras firmes, perdurables y construidas con un profundo conocimiento técnico y simbólico. Inspirado en estos valores, desarrollé un logotipo que incorpora elementos gráficos que remiten a Stonehenge, generando un vínculo visual entre la marca y la idea de una base firme y segura. Esta elección no solo dota a la identidad de un carácter reconocible y memorable, sino que también conecta con la dimensión internacional de la empresa, que opera principalmente en España, Reino Unido y otros países europeos. Además del naming y el diseño del logotipo, desarrollé todo el sistema de identidad visual, incluyendo la papelería corporativa, equipamiento de obra, uniformes, vehículos y material promocional, adaptando la gráfica a distintos soportes y contextos de uso, siempre manteniendo la coherencia visual y comunicativa de la marca. El resultado es una identidad que transmite confianza, estabilidad y profesionalidad, alineada con los valores de una empresa constructora moderna y con visión internacional."
               },
               "codigo": {
                 "title": "Código",
                 "descri": "Creación de logo y merchandising",
                 "descri1": "DESCRIPCIÓN DEL PROYECTO",
-                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive."
+                "description": "Diseño de interfaz y experiencia de usuario para una plataforma web, integrando componentes gráficos modernos y responsive.",
+                "logo": "LOGO",
+                "merchan": "MERCHANDISING",
+                "texto": "CÓDIGO fue un proyecto desarrollado durante el máster, enfocado en la creación de una identidad visual para una empresa especializada en gestión de datos, servicios de información y seguridad empresarial. Entre sus actividades, destacaba la instalación de sistemas de videovigilancia, lo cual sirvió como eje conceptual para el desarrollo de la identidad. La propuesta parte de la premisa de que la información y la vigilancia comparten un elemento clave: la observación constante y precisa. Por ello, decidí diseñar un logotipo que representara un ojo a través de formas geométricas que simulan el objetivo de una cámara de seguridad, uniendo los conceptos de visión, enfoque y tecnología. El resultado es una identidad que comunica control, claridad y precisión, cualidades imprescindibles para una empresa cuya labor se basa en la recopilación, análisis y protección de datos. Las formas circulares y los juegos de simetría presentes en el logotipo refuerzan la idea de vigilancia 360º, mientras que la elección cromática —sobria y tecnológica— aporta un tono moderno, profesional y fiable. Además del logotipo, desarrollé la aplicación de la marca en diferentes soportes corporativos y promocionales, asegurando coherencia visual y funcionalidad en todos los puntos de contacto de la empresa con sus clientes y colaboradores."
               },
               "alquimia": {
                 "title": "Alquimia Trip",
@@ -201,7 +207,12 @@
           "portfolio": {
             "title": "PORTFOLIO",
             "descri": "Portfolio de mis proyectos e información",
-            "descri1": "DESCRIPCIÓN DEL PROYECTO"
+            "descri1": "DESCRIPCIÓN DEL PROYECTO",
+            "movil": "BOCETO MOVIL",
+            "vert": "VERTICAL",
+            "hori": "HORIZONTAL",
+            "desktop": "BOCETO DESKTOP",
+            "texto": "Este proyecto forma parte del último proyecto de la BootCamp de Desarrollo Web FrontEnd, en el que se nos pidió desarrollar un proyecto personal desde cero. El ejercicio incluía una serie de requisitos mínimos obligatorios para su validación, como el uso del framework React con Vite, la realización de algunos tests, la conexión con una API externa, entre otros aspectos técnicos. Todos los detalles están especificados en el archivo README del proyecto, accesible para quien tenga interés en conocer más a fondo su estructura y funcionamiento. Más allá del desarrollo técnico, también dediqué un esfuerzo importante a la parte de diseño y planificación previa. Realicé numerosos bocetos en Penpot, tanto para pantallas móviles como de escritorio, con el objetivo de prever cómo se organizarían los contenidos, establecer una jerarquía visual clara y estructurar correctamente la navegación antes de comenzar a escribir una sola línea de código. Este enfoque me permitió construir un portfolio coherente, funcional y adaptado a distintos dispositivos, donde no solo se presenta mi trabajo de forma profesional, sino que también se pone en valor el propio proceso de desarrollo y diseño que hay detrás del mismo."
           },
           "larulla": {
             "title": "LA RULLA",
