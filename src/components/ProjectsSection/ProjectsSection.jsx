@@ -5,6 +5,7 @@ import PhotographyCard from './Photography/PhotographyCard'
 import GraphicDesignCat from './GraphicDesign/GraphicDesignCat'
 import WebDevelopmentCat from "./WebDevelopmentCat/WebDevelopmentCat";
 import { useTranslation } from "react-i18next";
+import ilustracion1 from '@/assets/ilustracion/ilustracion1.png'
 
 const ProjectsSection = () => {
   const { t } = useTranslation();
@@ -81,6 +82,30 @@ const ProjectsSection = () => {
             />
           </div>
         ))}
+      </div>
+
+      {/* Ilustración scrollable en todas las pantallas con barra visible y nítida en móviles */}
+      <div
+        className="w-full overflow-x-auto my-8"
+        style={{
+          WebkitOverflowScrolling: 'touch',
+          overflowY: 'hidden',
+          scrollbarColor: '#6b7280 #e5e7eb',
+          scrollbarWidth: 'thin',
+          willChange: 'transform',
+        }}
+      >
+        <img
+          src={ilustracion1}
+          alt="Ilustración"
+          className="min-w-[1200px] max-w-none h-auto mx-auto block"
+          style={{
+            display: 'inline-block',
+            imageRendering: 'crisp-edges',
+            willChange: 'transform',
+            transform: 'translateZ(0)',
+          }}
+        />
       </div>
     </section>
   )
