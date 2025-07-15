@@ -101,9 +101,11 @@ const ProjectsSection = () => {
           className="min-w-[1200px] max-w-none h-auto mx-auto block"
           style={{
             display: 'inline-block',
-            imageRendering: 'crisp-edges',
             willChange: 'transform',
             transform: 'translateZ(0)',
+            // Solo en móviles: fuerza pixelado/nitidez
+            imageRendering: 'auto',
+            ...(window.innerWidth <= 768 ? { imageRendering: 'pixelated' } : {})
           }}
         />
       </div>
