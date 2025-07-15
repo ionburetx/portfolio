@@ -84,31 +84,7 @@ const ProjectsSection = () => {
         ))}
       </div>
 
-      {/* Ilustración scrollable en todas las pantallas con barra visible y nítida en móviles */}
-      <div
-        className="w-full overflow-x-auto my-8"
-        style={{
-          WebkitOverflowScrolling: 'touch',
-          overflowY: 'hidden',
-          scrollbarColor: '#6b7280 #e5e7eb',
-          scrollbarWidth: 'thin',
-          willChange: 'transform',
-        }}
-      >
-        <img
-          src={ilustracion1}
-          alt="Ilustración"
-          className="min-w-[1200px] max-w-none h-auto mx-auto block"
-          style={{
-            display: 'inline-block',
-            willChange: 'transform',
-            transform: 'translateZ(0)',
-            // Solo en móviles: fuerza pixelado/nitidez
-            imageRendering: 'auto',
-            ...(window.innerWidth <= 768 ? { imageRendering: 'pixelated' } : {})
-          }}
-        />
-      </div>
+      {/* Ilustración eliminada del final. Ahora solo se muestra en la subcategoría Ilustraciones. */}
     </section>
   )
 }
