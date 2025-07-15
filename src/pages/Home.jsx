@@ -60,7 +60,7 @@ const Home = () => {
   }, [location]);
 
   return (
-    <div className="relative w-screen min-h-screen overflow-auto">
+    <div className="relative w-screen min-h-screen overflow-auto overflow-x-hidden">
       <TransitionOverlay isActive={showOverlay} />
       {/* Fondo que cubre todo el viewport */}
       <img
@@ -70,7 +70,7 @@ const Home = () => {
       />
 
       {/* Overlay negro encima del fondo */}
-      <div className="absolute inset-0 bg-black opacity-60 z-10" />
+      <div className="absolute inset-0 bg-black opacity-60 z-10 overflow-x-hidden" />
 
       <Header />
 
@@ -81,7 +81,7 @@ const Home = () => {
 </section>
 
       {/* Contenido principal con padding top para no quedar debajo del header */}
-     <main className="relative z-10 text-white pt-20 md:pt-24">
+     <main className="relative z-10 text-white pt-20 md:pt-24 overflow-x-hidden">
         {/* 👉 Pasamos la función de scroll como prop */}
         <AboutSection onScrollToNext={scrollToProjects} />
         <ProjectsSection />
