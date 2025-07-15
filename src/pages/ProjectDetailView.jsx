@@ -5,8 +5,28 @@ import FlechaSimple from '../components/FlechaSimple';
 import projectComponents from '../ProjectDetails';
 import fondoBio from '@/assets/generalAssets/fondoBio.png'
 
-// Array de proyectos para la navegación
-const PROJECTS = ['dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip', 'brokis', 'triton', 'triptico', 'larulla', 'nalion', 'playwrong', 'portfolio'];
+// Mapeo de proyectos a subcategoría
+const PROJECT_CATEGORIES = {
+  dra: 'identidad',
+  metropolis: 'identidad',
+  kresala: 'identidad',
+  constone: 'identidad',
+  codigo: 'identidad',
+  alquimiatrip: 'identidad',
+  brokis: 'otros',
+  triton: 'otros',
+  triptico: 'otros',
+  nalion: 'web',
+  larulla: 'web',
+  portfolio: 'web',
+  playwrong: 'web',
+};
+
+const PROJECTS = [
+  'dra', 'metropolis', 'kresala', 'constone', 'codigo', 'alquimiatrip',
+  'brokis', 'triton', 'triptico',
+  'nalion', 'larulla', 'portfolio', 'playwrong'
+];
 
 const ProjectDetailView = () => {
   const navigate = useNavigate();
@@ -17,8 +37,13 @@ const ProjectDetailView = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const currentIndex = PROJECTS.indexOf(projectId);
-console.log('Current project index:', currentIndex);
+  // Filtrar proyectos de la misma subcategoría
+  const currentCategory = PROJECT_CATEGORIES[projectId];
+  const filteredProjects = PROJECTS.filter(
+    (id) => PROJECT_CATEGORIES[id] === currentCategory
+  );
+  const currentIndex = filteredProjects.indexOf(projectId);
+
   const handleClose = () => {
     const lastScrollPosition = localStorage.getItem('lastScrollPosition');
     if (!lastScrollPosition) {
@@ -28,19 +53,15 @@ console.log('Current project index:', currentIndex);
   };
 
   const handlePrevious = () => {
-    if (currentIndex > 0) {
-      navigate(`/project/${PROJECTS[currentIndex - 1]}`);
-    } else {
-      navigate(`/project/${PROJECTS[PROJECTS.length - 1]}`);
-    }
+    if (filteredProjects.length === 0) return;
+    const prevIndex = (currentIndex - 1 + filteredProjects.length) % filteredProjects.length;
+    navigate(`/project/${filteredProjects[prevIndex]}`);
   };
 
   const handleNext = () => {
-    if (currentIndex < PROJECTS.length - 1) {
-      navigate(`/project/${PROJECTS[currentIndex + 1]}`);
-    } else {
-      navigate(`/project/${PROJECTS[0]}`);
-    }
+    if (filteredProjects.length === 0) return;
+    const nextIndex = (currentIndex + 1) % filteredProjects.length;
+    navigate(`/project/${filteredProjects[nextIndex]}`);
   };
 
   return (

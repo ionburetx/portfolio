@@ -2,21 +2,30 @@ import React, { useEffect, useState } from 'react'
 import TransitionOverlay from '../components/TransitionOverlay'
 import { TRANSITION_DURATION } from '../utils/Constants'
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom' // 👈 AÑADIDO
+import { useNavigate } from 'react-router-dom'
 import fondoBienvenida from '@/assets/generalAssets/fondoBienvenida.png'
-import Logo from '@/assets/generalAssets/logo.png' 
+import Logo from '@/assets/generalAssets/logo.png'
+
 const Welcome = () => {
   const [showOverlay, setShowOverlay] = useState(true)
   const { t } = useTranslation()
-  const navigate = useNavigate() // 👈 AÑADIDO
+  const navigate = useNavigate()
 
+  // Fade-out al montar
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowOverlay(false)
     }, TRANSITION_DURATION)
-
     return () => clearTimeout(timeout)
   }, [])
+
+  // Handler para ir a Home con fade-in negro
+  const handleGoHome = () => {
+    setShowOverlay(true)
+    setTimeout(() => {
+      navigate('/Home')
+    }, TRANSITION_DURATION)
+  }
 
   return (
     <div className="relative w-screen h-screen overflow-hidden">
@@ -62,7 +71,7 @@ const Welcome = () => {
             {t('WelcomePage.click')}{' '}
             <button
               className="text-[#FF6347] italic bg-transparent p-0 m-0 border-none focus:outline-none focus:ring-0"
-              onClick={() => navigate('/transition-to-home', { state: { target: '/Home' } })} // 👈 CAMBIO AQUI
+              onClick={handleGoHome}
               style={{ fontWeight: 400 }}
             >
               {t('WelcomePage.aquí')}

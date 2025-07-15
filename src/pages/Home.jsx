@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Header from '../components/Header'
 import ContactSection from "../components/ContactSection/ContactSection";
@@ -6,9 +6,12 @@ import CV from "../components/CVSection/CV";
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
 import AboutSection from "../components/AboutSection/AboutSection";
 import fondoBio from '@/assets/generalAssets/fondoBio.png'
+import TransitionOverlay from '../components/TransitionOverlay'
+import { TRANSITION_DURATION } from '../utils/Constants'
 
 const Home = () => {
   const location = useLocation()
+  const [showOverlay, setShowOverlay] = useState(true)
 
   const scrollToProjects = () => {
     const el = document.getElementById('trabajos');
@@ -48,11 +51,17 @@ const Home = () => {
       return () => clearTimeout(hashTimer);
     }
 
-    return () => clearTimeout(timer);
+    // Fade-out overlay al montar Home
+    const overlayTimer = setTimeout(() => setShowOverlay(false), TRANSITION_DURATION)
+    return () => {
+      clearTimeout(timer)
+      clearTimeout(overlayTimer)
+    }
   }, [location]);
 
   return (
     <div className="relative w-screen min-h-screen overflow-auto">
+      <TransitionOverlay isActive={showOverlay} />
       {/* Fondo que cubre todo el viewport */}
       <img
         src={fondoBio}
