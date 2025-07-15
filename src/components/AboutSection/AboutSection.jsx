@@ -24,24 +24,23 @@ const AboutSection = ({ onScrollToNext }) => {
 
   // Cuando termina el slide, empieza rotar cada 5 segundos
   useEffect(() => {
-    if (!slideFinished) return
+    if (!slideFinished) return;
 
-    // Rota 180° para quedar derecho
     controls.start({
       rotateX: 0,
       transition: { duration: 1, ease: "easeInOut" }
-    }).then(() => {
-      let rotated = false
-      const interval = setInterval(() => {
-        controls.start({
-          rotateX: rotated ? 0 : 180,
-          transition: { duration: 1, ease: "easeInOut" }
-        })
-        rotated = !rotated
-      }, 5000)
+    });
 
-      return () => clearInterval(interval)
-    })
+    let rotated = false;
+    const interval = setInterval(() => {
+      controls.start({
+        rotateX: rotated ? 0 : 180,
+        transition: { duration: 1, ease: "easeInOut" }
+      });
+      rotated = !rotated;
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, [slideFinished, controls])
 
   return (
