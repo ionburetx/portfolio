@@ -3,7 +3,7 @@ import Metropolis from './metropolis';
 import Kresala from './kresala';
 import Codigo from './codigo';
 import Constone from './constone';
-//import Alquimia from './alquimia';
+import Alquimia from './alquimia';
 import Brokis from './brokis';
 import Triton from './triton';
 import Triptico from './triptico';
@@ -24,7 +24,8 @@ const projectComponents = {
   playwrong: Playwrong,
   codigo: Codigo,
   constone: Constone,
-  portfolio: Portfolio
+  portfolio: Portfolio,
+  alquimiatrip: Alquimia
 };
 
 export default projectComponents;
