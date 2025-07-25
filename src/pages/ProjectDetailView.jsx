@@ -80,23 +80,25 @@ const ProjectDetailView = () => {
         {/* Navigation Bar sticky */}
         <div className="sticky top-16 z-40 w-full">
           <div className="w-full flex justify-center px-4 py-4 relative">
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-px md:gap-1">
               <button
                 onClick={handlePrevious}
-                className="text-white hover:text-tomato transition-colors bg-transparent"
+                className="text-white hover:text-tomato transition-colors bg-transparent text-base md:text-3xl"
                 aria-label="Previous project"
+                style={{ minWidth: '32px' }}
               >
                 <FlechaSimple direction="left" />
               </button>
 
-              <h1 className="text-white text-3xl font-bold uppercase">
+              <h1 className="text-white text-xl md:text-3xl font-bold uppercase max-w-[50vw] truncate text-center">
                 {projectId}
               </h1>
 
               <button
                 onClick={handleNext}
-                className="text-white hover:text-tomato transition-colors bg-transparent"
+                className="text-white hover:text-tomato transition-colors bg-transparent text-base md:text-3xl"
                 aria-label="Next project"
+                style={{ minWidth: '32px' }}
               >
                 <FlechaSimple direction="right" />
               </button>
