@@ -61,10 +61,14 @@ const PhotographyGallery = () => {
     {/* Bloque sticky: Título + flechas + botón X */}
     <div className="sticky top-16 z-40 bg-black shadow-md px-4">
       <div className="flex items-center justify-center py-4 relative">
-        <div className="flex items-center space-x-2">
-          <FlechaSimple direction="left" onClick={goToPrevious} />
-          <h1 className="text-3xl font-bold uppercase">{category}</h1>
-          <FlechaSimple direction="right" onClick={goToNext} />
+        <div className="flex items-center gap-px md:gap-1">
+          <span className="text-base md:text-3xl">
+            <FlechaSimple direction="left" onClick={goToPrevious} />
+          </span>
+          <h1 className="text-xl md:text-3xl font-bold uppercase max-w-[50vw] truncate text-center">{category}</h1>
+          <span className="text-base md:text-3xl">
+            <FlechaSimple direction="right" onClick={goToNext} />
+          </span>
         </div>
 
         {/* Botón cerrar */}
